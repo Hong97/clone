@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#050505"/>
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6e0b3"/>
+      <stop offset="50%" stop-color="#e5c185"/>
+      <stop offset="100%" stop-color="#a07a3e"/>
+    </linearGradient>
+  </defs>
+  <!-- X shape made of two crossing thick bars -->
+  <line x1="14" y1="14" x2="50" y2="50" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+  <line x1="50" y1="14" x2="14" y2="50" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+  <!-- Center glow dot -->
+  <circle cx="32" cy="32" r="4" fill="#f4cf8a" opacity="0.9"/>
+</svg>
