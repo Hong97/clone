@@ -1,69 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #0a0a0a;
-  --color-bg-card: #141414;
-  --color-bg-elevated: #1c1c1c;
-  --color-border: rgba(255, 255, 255, 0.08);
-  --color-border-strong: rgba(255, 255, 255, 0.16);
-  --color-fg: #fafafa;
-  --color-fg-muted: #a1a1aa;
-  --color-fg-dim: #71717a;
-  --color-gold: #fbbf24;
-  --color-gold-light: #fcd34d;
-  --color-gold-dark: #d97706;
-  --color-amber-glow: #f59e0b;
-
-  --font-sans:
-    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-display:
-    "Space Grotesk", "Inter", -apple-system, sans-serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-html,
+/* Base Body settings - Swiss modernism minimalist background, hyper-clean typesetting */
 body {
-  background-color: var(--color-bg);
-  color: var(--color-fg);
   font-family: var(--font-sans);
+  background-color: #050505;
+  color: rgba(255, 255, 255, 0.65); /* Low-contrast comfortable premium grey */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Reusable utilities */
-@utility card-surface {
-  background-color: var(--color-bg-card);
-  border: 1px solid var(--color-border);
-  border-radius: 1rem;
+/* Master heading configurations following the 400-500 weight, tight line-height, micro-negative tracking directive */
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+  font-weight: 450 !important; /* restrained premium weight */
+  letter-spacing: -0.03em !important;
+  line-height: 1.05 !important;
+  color: rgba(255, 255, 255, 0.90); /* soft premium off-white title */
 }
 
-@utility text-gold-gradient {
-  background: linear-gradient(135deg, #fcd34d 0%, #f59e0b 50%, #d97706 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+/* Custom styles for paragraph texts to ensure lighter weight and premium aesthetic */
+p, .font-sans {
+  font-weight: 350; /* light weight for maximum readability and clean comfort */
+  letter-spacing: -0.01em;
 }
 
-@utility glow-gold {
-  box-shadow:
-    0 0 60px 10px rgba(245, 158, 11, 0.25),
-    0 0 120px 40px rgba(245, 158, 11, 0.1);
+/* Smooth custom transitions across the site */
+* {
+  transition-property: color, border-color, background-color, transform, opacity;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-duration: 250ms;
 }
 
-/* Background glows */
-.gold-radial-right {
-  background-image: radial-gradient(
-    ellipse 60% 80% at 85% 50%,
-    rgba(245, 158, 11, 0.35) 0%,
-    rgba(245, 158, 11, 0.1) 30%,
-    transparent 60%
-  );
+/* Custom Scrollbar styled for Xenith's premium dark UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
 
-.gold-radial-center {
-  background-image: radial-gradient(
-    ellipse 40% 60% at 50% 50%,
-    rgba(245, 158, 11, 0.3) 0%,
-    rgba(245, 158, 11, 0.08) 40%,
-    transparent 70%
-  );
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.16);
 }
