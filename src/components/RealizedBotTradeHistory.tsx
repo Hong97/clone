@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { ArrowUpRight, ArrowDownRight } from "lucide-react";
 
 interface Trade {
@@ -59,7 +59,7 @@ export default function RealizedBotTradeHistory() {
   const [showArchived, setShowArchived] = useState(false);
 
   return (
-    <div className="w-full rounded-2xl bg-[#0b0f18] border border-white/[0.06] p-5 font-mono">
+    <div className="w-full rounded-2xl bg-[#0b0f18] border border-white/[0.06] p-5 ">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-xs font-bold tracking-[0.18em] text-white uppercase">

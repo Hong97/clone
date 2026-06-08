@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+﻿import React, { useState, useEffect } from "react";
 import { 
   User, 
   Lock, 
@@ -180,7 +180,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-[#16120e] border border-[#f4cf8a]/30 text-[#f4cf8a] px-5 py-3 rounded-xl shadow-xl shadow-black/80 flex items-center gap-2.5 text-xs font-mono tracking-wide"
+            className="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-[#16120e] border border-[#f4cf8a]/30 text-[#f4cf8a] px-5 py-3 rounded-xl shadow-xl shadow-black/80 flex items-center gap-2.5 text-xs  tracking-wide"
           >
             <CheckCircle size={14} className="text-emerald-400" />
             <span>{notification}</span>
@@ -202,7 +202,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
               <div className="flex items-center gap-3">
                 <button 
                   onClick={handleSignOut}
-                  className="rounded-lg border border-white/[0.08] hover:border-white/20 bg-transparent hover:bg-white/[0.03] text-white px-5 py-2 text-[10px] tracking-[0.16em] transition-all duration-300 font-mono"
+                  className="rounded-lg border border-white/[0.08] hover:border-white/20 bg-transparent hover:bg-white/[0.03] text-white px-5 py-2 text-[10px] tracking-[0.16em] transition-all duration-300 "
                 >
                   Sign Out
                 </button>
@@ -211,14 +211,14 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                     onLaunchAi("Show me diagnostic stats about my current black member security parameters.");
                     showToast("Triggering secure parameter overview...");
                   }}
-                  className="rounded-lg border border-white/[0.08] hover:border-white/20 bg-transparent hover:bg-white/[0.03] text-white/90 hover:text-white px-5 py-2 text-[10px] tracking-[0.16em] transition-all duration-300 font-mono flex items-center gap-2 cursor-pointer"
+                  className="rounded-lg border border-white/[0.08] hover:border-white/20 bg-transparent hover:bg-white/[0.03] text-white/90 hover:text-white px-5 py-2 text-[10px] tracking-[0.16em] transition-all duration-300  flex items-center gap-2 cursor-pointer"
                 >
                   <User size={12} className="text-[#f4cf8a]" />
                   <span>Profile</span>
                 </div>
               </div>
             ) : (
-              <span className="text-[10px] tracking-[0.25em] text-white/40 font-mono">
+              <span className="text-[10px] tracking-[0.25em] text-white/40 ">
                 Unauthorized Client Session
               </span>
             )}
@@ -323,14 +323,14 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                 {/* Separator block */}
                 <div className="relative my-5 text-center">
                   <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-white/[0.05]" /></div>
-                  <span className="relative bg-[#0c0909] px-3 text-[10px] font-mono text-white/20 tracking-widest">or</span>
+                  <span className="relative bg-[#0c0909] px-3 text-[10px]  text-white/20 tracking-widest">or</span>
                 </div>
 
                 {/* Ledger Key Card wallet option */}
                 <button 
                   onClick={handleWalletLogin}
                   disabled={walletConnecting}
-                  className="w-full rounded-xl border border-white/10 bg-[#070505] hover:bg-white/[0.02] hover:border-white/20 text-white/70 hover:text-white text-xs font-mono tracking-[0.2em] py-3.5 transition duration-200 cursor-pointer flex items-center justify-center gap-2.5"
+                  className="w-full rounded-xl border border-white/10 bg-[#070505] hover:bg-white/[0.02] hover:border-white/20 text-white/70 hover:text-white text-xs  tracking-[0.2em] py-3.5 transition duration-200 cursor-pointer flex items-center justify-center gap-2.5"
                 >
                   {walletConnecting ? (
                     <>
@@ -445,10 +445,10 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                 {/* 3. XAI TOKEN CARD */}
                 <div className="rounded-xl border border-white/[0.04] bg-[#0c0a0a]/40 p-6 flex items-center justify-between shadow-lg relative overflow-hidden select-none">
                   <div>
-                    <div className="text-[10px] tracking-[0.25em] text-[#f4cf8a] font-mono font-medium mb-2.5">XAI Token</div>
+                    <div className="text-[10px] tracking-[0.25em] text-[#f4cf8a]  font-medium mb-2.5">XAI Token</div>
                     <div className="flex items-baseline gap-1.5">
                       <span className="text-3xl font-light tracking-wide text-white font-sans">{saiBalance.toLocaleString()}</span>
-                      <span className="text-xs text-white/60 font-mono">XAI</span>
+                      <span className="text-xs text-white/60 ">XAI</span>
                     </div>
                     <div className="text-[10px] text-white/40 font-sans tracking-wide mt-1.5">Allocated to your account</div>
                   </div>
@@ -463,7 +463,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                       }}
                       className="w-16 h-16 rounded-full border border-[#f4cf8a]/45 bg-black/80 flex items-center justify-center shadow-[0_0_20px_rgba(244,207,138,0.15)] hover:shadow-[0_0_30px_rgba(244,207,138,0.3)] transition-all cursor-pointer group"
                     >
-                      <span className="text-[10px] font-bold font-mono tracking-[0.25em] text-[#f4cf8a] group-hover:scale-105 transition duration-300 pl-[0.1em]">XAI</span>
+                      <span className="text-[10px] font-bold  tracking-[0.25em] text-[#f4cf8a] group-hover:scale-105 transition duration-300 pl-[0.1em]">XAI</span>
                     </div>
                   </div>
                 </div>
@@ -590,7 +590,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                 {/* 5. LINKED ASSET VALUE (VIA API) */}
                 <div className="rounded-xl border border-white/[0.04] bg-[#0c0a0a]/40 p-6 flex flex-col md:flex-row items-start md:items-center justify-between shadow-lg gap-6 select-none font-sans">
                   <div>
-                    <div className="text-[10px] tracking-[0.25em] text-[#f4cf8a] font-mono font-medium mb-2.5">
+                    <div className="text-[10px] tracking-[0.25em] text-[#f4cf8a]  font-medium mb-2.5">
                       Linked Asset Value (Via API)
                     </div>
                     {isApiLinked ? (
@@ -598,15 +598,15 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                         <span className="text-3xl font-light tracking-wide text-white">
                           ${usdValuation.toLocaleString()}
                         </span>
-                        <span className="text-xs text-white/50 font-mono">USD</span>
+                        <span className="text-xs text-white/50 ">USD</span>
                       </div>
                     ) : (
                       <div className="flex items-baseline gap-2 mb-3">
                         <span className="text-3xl font-light tracking-wide text-white/35 font-sans">
                           $0.00
                         </span>
-                        <span className="text-xs text-white/30 font-mono">USD</span>
-                        <span className="inline-block bg-amber-500/10 border border-amber-500/20 text-amber-500 px-2 py-0.5 rounded text-[9px] font-mono tracking-wider animate-pulse ml-2 font-semibold">
+                        <span className="text-xs text-white/30 ">USD</span>
+                        <span className="inline-block bg-amber-500/10 border border-amber-500/20 text-amber-500 px-2 py-0.5 rounded text-[9px]  tracking-wider animate-pulse ml-2 font-semibold">
                           API Not Linked
                         </span>
                       </div>
@@ -668,7 +668,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
 
                     <button
                       onClick={() => setShowConfigPanel(!showConfigPanel)}
-                      className={`px-4 py-2.5 text-[10px] font-bold tracking-widest font-mono rounded-lg transition duration-200 cursor-pointer shrink-0 w-full sm:w-auto border select-none ${
+                      className={`px-4 py-2.5 text-[10px] font-bold tracking-widest  rounded-lg transition duration-200 cursor-pointer shrink-0 w-full sm:w-auto border select-none ${
                         showConfigPanel
                           ? "bg-[#f4cf8a] text-black hover:bg-[#ebd09d] border-[#f4cf8a]"
                           : "border-[#f4cf8a]/20 hover:border-[#f4cf8a]/45 text-[#f4cf8a] hover:bg-white/[0.02]"
@@ -696,7 +696,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                       <div className="flex items-center justify-between border-b border-white/[0.05] pb-2.5">
                         <div className="flex items-center gap-2">
                           <span className={`w-2 h-2 rounded-full ${isApiLinked ? "bg-emerald-500 animate-pulse" : "bg-amber-500"}`} />
-                          <h4 className="text-[10px] font-bold tracking-[0.25em] text-white font-mono">
+                          <h4 className="text-[10px] font-bold tracking-[0.25em] text-white ">
                             Trading Platform Engine Terminal (API Emulator)
                           </h4>
                         </div>
@@ -716,14 +716,14 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                         {/* Platform Configuration (Controls Exchange Numbers) */}
                         <div className="space-y-4 font-sans">
                           <div>
-                            <label className="text-[9px] tracking-widest text-[#f4cf8a] block mb-1.5 font-mono font-medium">Select Exchange Terminal</label>
+                            <label className="text-[9px] tracking-widest text-[#f4cf8a] block mb-1.5  font-medium">Select Exchange Terminal</label>
                             <select 
                               value={linkingExchange}
                               onChange={(e) => {
                                 setLinkingExchange(e.target.value);
                                 showToast(`Target exchange terminal re-routed to: ${e.target.value}`);
                               }}
-                              className="w-full bg-black border border-white/10 hover:border-white/20 text-xs text-white rounded-lg p-2.5 outline-none font-mono focus:border-[#f4cf8a]/40 cursor-pointer"
+                              className="w-full bg-black border border-white/10 hover:border-white/20 text-xs text-white rounded-lg p-2.5 outline-none  focus:border-[#f4cf8a]/40 cursor-pointer"
                             >
                               <option value="BINANCE">BINANCE (Tier-1 Liquidity Engine)</option>
                               <option value="BITCANO">BITCANO (Institutional Sovereign Vault)</option>
@@ -733,11 +733,11 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                           </div>
 
                           <div>
-                            <label className="text-[9px] tracking-widest text-[#f4cf8a] block mb-1.5 font-mono font-medium">
+                            <label className="text-[9px] tracking-widest text-[#f4cf8a] block mb-1.5  font-medium">
                               Exchange Asset Balance (Control Amount)
                             </label>
                             <div className="relative rounded-lg bg-black border border-white/10 focus-within:border-[#f4cf8a]/40 flex items-center">
-                              <span className="absolute left-3 text-xs text-white/40 font-mono font-semibold">$</span>
+                              <span className="absolute left-3 text-xs text-white/40  font-semibold">$</span>
                               <input 
                                 type="number"
                                 value={platformBalance}
@@ -748,7 +748,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                                     setUsdValuation(val);
                                   }
                                 }}
-                                className="w-full bg-transparent pl-7 pr-3 py-2.5 text-xs text-white outline-none font-mono font-medium"
+                                className="w-full bg-transparent pl-7 pr-3 py-2.5 text-xs text-white outline-none  font-medium"
                                 placeholder="0.00"
                               />
                             </div>
@@ -758,7 +758,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                           </div>
 
                           <div className="flex flex-wrap items-center gap-2">
-                            <span className="text-[8px] tracking-wider text-white/30 font-mono font-semibold font-sans">Quick Presets:</span>
+                            <span className="text-[8px] tracking-wider text-white/30  font-semibold font-sans">Quick Presets:</span>
                             <button 
                               type="button"
                               onClick={() => {
@@ -766,7 +766,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                                 if (isApiLinked) setUsdValuation(1500.00);
                                 showToast("Platform balance reset to $1,500.00.");
                               }}
-                              className="text-[9px] font-mono border border-white/5 bg-white/[0.02] hover:bg-white/[0.06] rounded px-2.5 py-1 text-white/100 transition cursor-pointer"
+                              className="text-[9px]  border border-white/5 bg-white/[0.02] hover:bg-white/[0.06] rounded px-2.5 py-1 text-white/100 transition cursor-pointer"
                             >
                               $1.5K
                             </button>
@@ -777,7 +777,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                                 if (isApiLinked) setUsdValuation(10064.80);
                                 showToast("Platform balance reset to $10,064.80.");
                               }}
-                              className="text-[9px] font-mono border border-white/5 bg-white/[0.02] hover:bg-white/[0.06] rounded px-2.5 py-1 text-white/100 transition cursor-pointer"
+                              className="text-[9px]  border border-white/5 bg-white/[0.02] hover:bg-white/[0.06] rounded px-2.5 py-1 text-white/100 transition cursor-pointer"
                             >
                               $10.0K
                             </button>
@@ -788,7 +788,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                                 if (isApiLinked) setUsdValuation(84390.00);
                                 showToast("Platform balance reset to $84,390.00.");
                               }}
-                              className="text-[9px] font-mono border border-white/5 bg-white/[0.02] hover:bg-white/[0.06] rounded px-2.5 py-1 text-white/100 transition cursor-pointer"
+                              className="text-[9px]  border border-white/5 bg-white/[0.02] hover:bg-white/[0.06] rounded px-2.5 py-1 text-white/100 transition cursor-pointer"
                             >
                               $84.3K
                             </button>
@@ -798,35 +798,35 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                         {/* Security Handshake Options */}
                         <div className="space-y-3.5 p-4 rounded-lg bg-black/60 border border-white/[0.04] flex flex-col justify-between font-sans">
                           <div>
-                            <div className="text-[9px] tracking-widest text-[#f4cf8a] font-mono font-semibold flex items-center gap-1.5 mb-2.5">
+                            <div className="text-[9px] tracking-widest text-[#f4cf8a]  font-semibold flex items-center gap-1.5 mb-2.5">
                               <ShieldCheck size={12} /> Crypto Authentication Keys
                             </div>
 
                             <div className="space-y-3 font-sans">
                               <div>
-                                <label className="text-[9px] tracking-wider text-white/40 block mb-1 font-mono">Exchange API Key</label>
+                                <label className="text-[9px] tracking-wider text-white/40 block mb-1 ">Exchange API Key</label>
                                 <input 
                                   type="text"
                                   value={apiKeyInput || "xk_live_b48f93cd8e019f2d119c4bb2720a4"}
                                   onChange={(e) => setApiKeyInput(e.target.value)}
-                                  className="w-full bg-black/40 border border-white/10 hover:border-white/15 text-xs text-white rounded-lg p-2 outline-none font-mono text-white/70 focus:border-[#f4cf8a]/40"
+                                  className="w-full bg-black/40 border border-white/10 hover:border-white/15 text-xs text-white rounded-lg p-2 outline-none  text-white/70 focus:border-[#f4cf8a]/40"
                                   placeholder={`Enter ${linkingExchange} secure API key`}
                                 />
                               </div>
 
                               <div>
-                                <label className="text-[9px] tracking-wider text-white/40 block mb-1 font-mono">API Secret Phrase</label>
+                                <label className="text-[9px] tracking-wider text-white/40 block mb-1 ">API Secret Phrase</label>
                                 <input 
                                   type="password"
                                   value="************************************************"
                                   disabled
-                                  className="w-full bg-black/[0.40] border border-[#f4cf8a]/10 text-xs text-white/20 rounded-lg p-2 outline-none font-mono select-none"
+                                  className="w-full bg-black/[0.40] border border-[#f4cf8a]/10 text-xs text-white/20 rounded-lg p-2 outline-none  select-none"
                                 />
                               </div>
                             </div>
                           </div>
 
-                          <div className="border-t border-white/[0.04] pt-2 flex items-center justify-between text-[10px] font-mono">
+                          <div className="border-t border-white/[0.04] pt-2 flex items-center justify-between text-[10px] ">
                             <span className="text-white/45">Withdrawal Permission:</span>
                             <span className="text-rose-400 font-semibold tracking-wider flex items-center gap-1">
                               <Lock size={10} /> Blocked (0% Risk)
@@ -837,7 +837,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
 
                       {/* Simulator controls execution */}
                       <div className="pt-3 border-t border-white/[0.06] flex items-center justify-between font-sans">
-                        <div className="text-[10px] text-white/45 font-mono">
+                        <div className="text-[10px] text-white/45 ">
                           API Link Pipeline Status:{" "}
                           <span className={`font-bold tracking-wider ${isApiLinked ? "text-emerald-400" : "text-amber-500 animate-pulse"}`}>
                             {isApiLinked ? "Active & Transmitting" : "Disconnected"}
@@ -853,7 +853,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                                   setIsApiLinked(false);
                                   showToast("API key disabled. Core valuation sync detached.");
                                 }}
-                                className="rounded-lg border border-red-500/30 hover:border-red-500/50 bg-red-500/10 hover:bg-red-500/20 text-red-400 text-[10px] font-bold font-mono tracking-wider px-4 py-2 cursor-pointer transition duration-200"
+                                className="rounded-lg border border-red-500/30 hover:border-red-500/50 bg-red-500/10 hover:bg-red-500/20 text-red-400 text-[10px] font-bold  tracking-wider px-4 py-2 cursor-pointer transition duration-200"
                               >
                                 Stop API Feed
                               </button>
@@ -863,7 +863,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                                   setUsdValuation(platformBalance);
                                   showToast(`Polled updated platform figures: $${platformBalance.toLocaleString()} USD!`);
                                 }}
-                                className="rounded-lg bg-[#f4cf8a]/15 border border-[#f4cf8a]/30 hover:border-[#f4cf8a] text-[#f4cf8a] text-[10px] font-bold font-mono uppercase tracking-wider px-4 py-2 cursor-pointer transition duration-200"
+                                className="rounded-lg bg-[#f4cf8a]/15 border border-[#f4cf8a]/30 hover:border-[#f4cf8a] text-[#f4cf8a] text-[10px] font-bold  uppercase tracking-wider px-4 py-2 cursor-pointer transition duration-200"
                               >
                                 Push Live Sync
                               </button>
@@ -880,7 +880,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                                   showToast("API key handshaked successfully. Valuation data synced!");
                                 }, 1500);
                               }}
-                              className="rounded-lg bg-[#f4cf8a] hover:bg-[#ebd09d] disabled:opacity-45 text-black text-[10px] font-bold font-mono tracking-wider px-4.5 py-2.5 cursor-pointer transition duration-200 flex items-center gap-1.5"
+                              className="rounded-lg bg-[#f4cf8a] hover:bg-[#ebd09d] disabled:opacity-45 text-black text-[10px] font-bold  tracking-wider px-4.5 py-2.5 cursor-pointer transition duration-200 flex items-center gap-1.5"
                             >
                               {isConnectingApi ? (
                                 <>
@@ -918,7 +918,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                         onLaunchAi("Detail the long-term technical roadmap of the SAI Token value network.");
                         onClose();
                       }}
-                      className="rounded-full border border-[#f4cf8a]/40 hover:border-[#ffd17d] hover:bg-white/[0.03] text-[9px] tracking-[0.2em] font-mono text-[#f4cf8a] hover:text-white px-5 py-2 transition-all cursor-pointer"
+                      className="rounded-full border border-[#f4cf8a]/40 hover:border-[#ffd17d] hover:bg-white/[0.03] text-[9px] tracking-[0.2em]  text-[#f4cf8a] hover:text-white px-5 py-2 transition-all cursor-pointer"
                     >
                       Learn More
                     </button>
@@ -934,7 +934,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                       <div className="absolute inset-0 rounded-full border border-[#f4cf8a]/20 animate-pulse scale-95" />
                     </div>
 
-                    <span className="text-[10px] font-bold font-mono tracking-[0.3em] text-white/70">
+                    <span className="text-[10px] font-bold  tracking-[0.3em] text-white/70">
                       X-Ai Framework
                     </span>
                   </div>
@@ -947,7 +947,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
         </div>
 
         {/* Global Footer Credits */}
-        <footer className="border-t border-white/[0.04] mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between text-[10px] tracking-[0.25em] text-white/30 font-mono gap-4 w-full select-none">
+        <footer className="border-t border-white/[0.04] mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between text-[10px] tracking-[0.25em] text-white/30  gap-4 w-full select-none">
           <div>
             © 2025 Xenith. All rights reserved.
           </div>

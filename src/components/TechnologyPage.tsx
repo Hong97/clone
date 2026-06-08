@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { 
   Shield, 
   Eye, 
@@ -172,7 +172,7 @@ export default function TechnologyPage({
         {/* HERO SECTION */}
         <div className="mb-12 sm:mb-16 md:mb-24 lg:mb-32">
           {/* Label Tag */}
-          <div className="mb-6 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 font-mono">
+          <div className="mb-6 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 ">
             [ Technology ]
           </div>
 
@@ -192,7 +192,7 @@ export default function TechnologyPage({
         {/* ARCHITECTURE SECTION */}
         <div className="border-t border-white/[0.08] lg:border-white/[0.04] pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-24 lg:pb-32">
           
-          <div className="mb-12 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 font-mono">
+          <div className="mb-12 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 ">
             [ Structure ]
           </div>
 
@@ -200,12 +200,12 @@ export default function TechnologyPage({
             
             {/* Architecture Row 01 */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 md:p-8 rounded-xl border border-white/[0.04] bg-[#0b0808]/20 hover:bg-[#0b0808]/40 hover:border-white/[0.1] transition-all duration-300">
-              <div className="md:col-span-1 text-base md:text-lg font-mono text-white/20">
+              <div className="md:col-span-1 text-base md:text-lg  text-white/20">
                 01
               </div>
               <div className="md:col-span-4 space-y-1">
                 <h3 className="text-sm font-normal text-white uppercase tracking-wider">Three Surfaces</h3>
-                <p className="text-[10px] uppercase tracking-widest text-[#f4cf8a]/55 font-mono">Xenith Chat, API, Guides</p>
+                <p className="text-[10px] uppercase tracking-widest text-[#f4cf8a]/55 ">Xenith Chat, API, Guides</p>
               </div>
               <div className="md:col-span-7 flex items-center">
                 <p className="text-xs sm:text-sm text-white/45 font-sans leading-relaxed">
@@ -216,12 +216,12 @@ export default function TechnologyPage({
 
             {/* Architecture Row 02 */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 md:p-8 rounded-xl border border-white/[0.04] bg-[#0b0808]/20 hover:bg-[#0b0808]/40 hover:border-white/[0.1] transition-all duration-300">
-              <div className="md:col-span-1 text-base md:text-lg font-mono text-white/20">
+              <div className="md:col-span-1 text-base md:text-lg  text-white/20">
                 02
               </div>
               <div className="md:col-span-4 space-y-1">
                 <h3 className="text-sm font-normal text-white uppercase tracking-wider">AId-Driven Planner</h3>
-                <p className="text-[10px] uppercase tracking-widest text-[#f4cf8a]/55 font-mono font-sans">Self-correcting helper</p>
+                <p className="text-[10px] uppercase tracking-widest text-[#f4cf8a]/55  font-sans">Self-correcting helper</p>
               </div>
               <div className="md:col-span-7 flex items-center">
                 <p className="text-xs sm:text-sm text-white/45 font-sans leading-relaxed">
@@ -232,12 +232,12 @@ export default function TechnologyPage({
 
             {/* Architecture Row 03 */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 md:p-8 rounded-xl border border-white/[0.04] bg-[#0b0808]/20 hover:bg-[#0b0808]/40 hover:border-white/[0.1] transition-all duration-300">
-              <div className="md:col-span-1 text-base md:text-lg font-mono text-white/20">
+              <div className="md:col-span-1 text-base md:text-lg  text-white/20">
                 03
               </div>
               <div className="md:col-span-4 space-y-1">
                 <h3 className="text-sm font-normal text-white uppercase tracking-wider">Simulated Ledger</h3>
-                <p className="text-[10px] uppercase tracking-widest text-[#f4cf8a]/55 font-mono">Test keys & mock holdings</p>
+                <p className="text-[10px] uppercase tracking-widest text-[#f4cf8a]/55 ">Test keys & mock holdings</p>
               </div>
               <div className="md:col-span-7 flex items-center">
                 <p className="text-xs sm:text-sm text-white/45 font-sans leading-relaxed">
@@ -248,12 +248,12 @@ export default function TechnologyPage({
 
             {/* Architecture Row 04 */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 md:p-8 rounded-xl border border-white/[0.04] bg-[#0b0808]/20 hover:bg-[#0b0808]/40 hover:border-white/[0.1] transition-all duration-300">
-              <div className="md:col-span-1 text-base md:text-lg font-mono text-white/20">
+              <div className="md:col-span-1 text-base md:text-lg  text-white/20">
                 04
               </div>
               <div className="md:col-span-4 space-y-1">
                 <h3 className="text-sm font-normal text-white uppercase tracking-wider">Private Workspace</h3>
-                <p className="text-[10px] uppercase tracking-widest text-[#f4cf8a]/55 font-mono">Isolated and safe memory</p>
+                <p className="text-[10px] uppercase tracking-widest text-[#f4cf8a]/55 ">Isolated and safe memory</p>
               </div>
               <div className="md:col-span-7 flex items-center">
                 <p className="text-xs sm:text-sm text-white/45 font-sans leading-relaxed">
@@ -269,7 +269,7 @@ export default function TechnologyPage({
         {/* SECURITY PILLARS SECTION */}
         <div className="border-t border-white/[0.08] pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-24 lg:pb-36">
           
-          <div className="mb-6 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 font-mono">
+          <div className="mb-6 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 ">
             [ Safety ]
           </div>
 
@@ -330,7 +330,7 @@ export default function TechnologyPage({
         {/* PERFORMANCE METRICS SECTION */}
         <div className="border-t border-white/[0.08] pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-24 lg:pb-32">
           
-          <div className="mb-12 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 font-mono">
+          <div className="mb-12 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 ">
             [ Key Numbers ]
           </div>
 
@@ -338,25 +338,25 @@ export default function TechnologyPage({
             {/* Metric 1 */}
             <div className="space-y-2 text-center sm:text-left sm:px-4 first:pl-0">
               <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display">Under 1s</p>
-              <p className="text-[9px] sm:text-[10px] font-mono tracking-widest text-[#f4cf8a]/70 font-semibold">Typical AI reply speed</p>
+              <p className="text-[9px] sm:text-[10px]  tracking-widest text-[#f4cf8a]/70 font-semibold">Typical AI reply speed</p>
             </div>
 
             {/* Metric 2 */}
             <div className="space-y-2 text-center sm:text-left sm:px-6">
               <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display">100%</p>
-              <p className="text-[9px] sm:text-[10px] font-mono tracking-widest text-white/40">Simulated risk-free sandbox</p>
+              <p className="text-[9px] sm:text-[10px]  tracking-widest text-white/40">Simulated risk-free sandbox</p>
             </div>
 
             {/* Metric 3 */}
             <div className="space-y-2 text-center sm:text-left sm:px-6">
               <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display">SOC 2</p>
-              <p className="text-[9px] sm:text-[10px] font-mono tracking-widest text-white/40">Secure platform standards</p>
+              <p className="text-[9px] sm:text-[10px]  tracking-widest text-white/40">Secure platform standards</p>
             </div>
 
             {/* Metric 4 */}
             <div className="space-y-2 text-center sm:text-left sm:px-6 last:pr-0">
               <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display font-sans">90+ days</p>
-              <p className="text-[9px] sm:text-[10px] font-mono tracking-widest text-[#f4cf8a]/70 font-semibold">Local history storage</p>
+              <p className="text-[9px] sm:text-[10px]  tracking-widest text-[#f4cf8a]/70 font-semibold">Local history storage</p>
             </div>
           </div>
 
@@ -365,7 +365,7 @@ export default function TechnologyPage({
         {/* STACK LIST SECTION */}
         <div className="border-t border-white/[0.08] pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-24 lg:pb-36">
           
-          <div className="mb-12 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 font-mono">
+          <div className="mb-12 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 ">
             [ Tech Stack ]
           </div>
 
@@ -390,9 +390,9 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Layers size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px] font-mono tracking-widest text-white/50 font-semibold">Core Framework</span>
+                  <span className="text-[9px] sm:text-[10px]  tracking-widest text-white/50 font-semibold">Core Framework</span>
                 </div>
-                <div className="text-xs sm:text-sm text-white/80 font-mono">
+                <div className="text-xs sm:text-sm text-white/80 ">
                   React 18 & Vite (Lightning-fast client rendering)
                 </div>
               </div>
@@ -403,9 +403,9 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Zap size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px] font-mono tracking-widest text-white/50 font-semibold">AI Integration</span>
+                  <span className="text-[9px] sm:text-[10px]  tracking-widest text-white/50 font-semibold">AI Integration</span>
                 </div>
-                <div className="text-xs sm:text-sm text-white/80 font-mono">
+                <div className="text-xs sm:text-sm text-white/80 ">
                   Server-side Google Gemini (Rich model reasoning)
                 </div>
               </div>
@@ -416,9 +416,9 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Database size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px] font-mono tracking-widest text-white/50 font-semibold">Data Safety</span>
+                  <span className="text-[9px] sm:text-[10px]  tracking-widest text-white/50 font-semibold">Data Safety</span>
                 </div>
-                <div className="text-xs sm:text-sm text-white/80 font-mono">
+                <div className="text-xs sm:text-sm text-white/80 ">
                   Browser-side LocalStorage (Zero leak guarantee)
                 </div>
               </div>
@@ -429,9 +429,9 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Lock size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px] font-mono tracking-widest text-white/50 font-semibold">Security Check</span>
+                  <span className="text-[9px] sm:text-[10px]  tracking-widest text-white/50 font-semibold">Security Check</span>
                 </div>
-                <div className="text-xs sm:text-sm text-white/80 font-mono">
+                <div className="text-xs sm:text-sm text-white/80 ">
                   Per-request sandbox simulation & rate guards
                 </div>
               </div>
@@ -442,9 +442,9 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Activity size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px] font-mono tracking-widest text-white/50 font-semibold">Visual Magic</span>
+                  <span className="text-[9px] sm:text-[10px]  tracking-widest text-white/50 font-semibold">Visual Magic</span>
                 </div>
-                <div className="text-xs sm:text-sm text-white/80 font-mono">
+                <div className="text-xs sm:text-sm text-white/80 ">
                   Tailwind CSS + Motion (Silky smooth feedback)
                 </div>
               </div>
@@ -486,7 +486,7 @@ export default function TechnologyPage({
       </div>
 
       {/* Footer Navigation */}
-      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-[0.15em] text-white/40 font-mono z-10 relative">
+      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-[0.15em] text-white/40  z-10 relative">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2.5 select-none pointer-events-none">
             <XenithLogo size={20} className="opacity-60" />

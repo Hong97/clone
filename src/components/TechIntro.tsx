@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { 
   Cpu, 
   ShieldCheck, 
@@ -70,7 +70,7 @@ export default function TechIntro() {
         {/* Left Side: interactive lists/triggers */}
         <div className="lg:col-span-5 flex flex-col justify-between space-y-4">
           <div className="space-y-4">
-            <div className="text-[10px] tracking-[0.32em] text-[#f4cf8a] font-mono font-semibold flex items-center gap-2">
+            <div className="text-[10px] tracking-[0.32em] text-[#f4cf8a]  font-semibold flex items-center gap-2">
               <Zap size={10} className="text-[#f4cf8a]" />
               <span>Core System Architecture</span>
             </div>
@@ -102,7 +102,7 @@ export default function TechIntro() {
                       {tech.icon}
                     </div>
                     <div>
-                      <div className="text-[9px] tracking-widest text-[#f4cf8a]/60 font-mono">{tech.tag}</div>
+                      <div className="text-[9px] tracking-widest text-[#f4cf8a]/60 ">{tech.tag}</div>
                       <div className="text-xs font-semibold text-white/90 mt-0.5">{tech.title}</div>
                     </div>
                   </div>
@@ -127,7 +127,7 @@ export default function TechIntro() {
             >
               {/* Feature info */}
               <div className="space-y-3.5">
-                <span className="text-[9px] tracking-[0.25em] text-[#f4cf8a]/60 font-mono">
+                <span className="text-[9px] tracking-[0.25em] text-[#f4cf8a]/60 ">
                   {currentTech.tag}
                 </span>
                 
@@ -141,7 +141,7 @@ export default function TechIntro() {
               </div>
 
               {/* Dynamic Metric HUD strip */}
-              <div className="grid grid-cols-2 gap-4 bg-white/[0.02] border border-white/5 rounded-xl p-4 font-mono">
+              <div className="grid grid-cols-2 gap-4 bg-white/[0.02] border border-white/5 rounded-xl p-4 ">
                 <div>
                   <div className="text-[8px] tracking-wider text-white/30">Metric Designate</div>
                   <div className="text-[10px] text-[#f4cf8a] font-semibold mt-0.5">{currentTech.metricLabel}</div>
@@ -154,11 +154,11 @@ export default function TechIntro() {
 
               {/* Process Flow Interactive diagram */}
               <div className="space-y-2.5">
-                <div className="text-[8px] tracking-[0.25em] text-white/35 font-mono">
+                <div className="text-[8px] tracking-[0.25em] text-white/35 ">
                   Active Ingress Sequence Flow
                 </div>
                 
-                <div className="grid grid-cols-3 gap-2 overflow-hidden text-center text-[9px] font-mono text-white/60">
+                <div className="grid grid-cols-3 gap-2 overflow-hidden text-center text-[9px]  text-white/60">
                   {currentTech.flowSteps.map((step, idx) => (
                     <div 
                       key={idx} 
@@ -175,7 +175,7 @@ export default function TechIntro() {
           </AnimatePresence>
 
           {/* Secure watermark block */}
-          <div className="mt-6 pt-4 border-t border-white/[0.04] flex items-center justify-between text-[9px] font-mono text-white/30">
+          <div className="mt-6 pt-4 border-t border-white/[0.04] flex items-center justify-between text-[9px]  text-white/30">
             <span className="flex items-center gap-1.5">
               <Lock size={9} className="text-[#f4cf8a]" />
               Secured with Standard High-Grade Encryption

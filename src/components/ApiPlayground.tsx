@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+﻿import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ShieldCheck, LineChart, Sparkles, Lock, ArrowRight, CornerDownRight } from "lucide-react";
 
@@ -207,7 +207,7 @@ export default function ApiPlayground() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
         {/* Left Side: Typography and Info Content */}
         <div className="lg:col-span-5 space-y-4">
-          <div className="text-xs uppercase tracking-[0.35em] text-[#f4cf8a]/65 font-mono">
+          <div className="text-xs uppercase tracking-[0.35em] text-[#f4cf8a]/65 ">
             [ API ]
           </div>
           
@@ -238,17 +238,17 @@ export default function ApiPlayground() {
 
             {/* Console Toolbar Header */}
             <div className="flex items-center justify-between border-b border-white/[0.05] pb-2 mb-4">
-              <span className="text-[10px] uppercase tracking-[0.15em] text-white/40 font-mono font-medium flex items-center gap-2">
+              <span className="text-[10px] uppercase tracking-[0.15em] text-white/40  font-medium flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                 Console Preview
               </span>
-              <span className="text-[10px] uppercase tracking-[0.15em] text-[#f4cf8a] font-semibold font-mono">
+              <span className="text-[10px] uppercase tracking-[0.15em] text-[#f4cf8a] font-semibold ">
                 Live Sandbox
               </span>
             </div>
 
             {/* Active Code Execution Path & Body */}
-            <div className="flex-1 space-y-4 font-mono">
+            <div className="flex-1 space-y-4 ">
               <div className="flex items-center gap-2 text-xs font-semibold tracking-wide">
                 <span className="text-emerald-400 font-bold">{activeState.method}</span>
                 <span className="text-white/90">{activeState.path}</span>
@@ -277,7 +277,7 @@ export default function ApiPlayground() {
 
               {/* Response Code Output Section */}
               <div className="space-y-1.5">
-                <div className="text-[9px] uppercase tracking-wider text-white/40 font-mono">Response</div>
+                <div className="text-[9px] uppercase tracking-wider text-white/40 ">Response</div>
                 
                 <AnimatePresence mode="wait">
                   {isExecuting ? (
@@ -316,7 +316,7 @@ export default function ApiPlayground() {
             </div>
 
             {/* Hover tooltip hint */}
-            <div className="mt-3 pt-2 border-t border-white/[0.04] text-[8.5px] uppercase tracking-widest text-white/25 text-left font-mono">
+            <div className="mt-3 pt-2 border-t border-white/[0.04] text-[8.5px] uppercase tracking-widest text-white/25 text-left ">
               Click the cards below to test different routes
             </div>
           </div>
@@ -342,7 +342,7 @@ export default function ApiPlayground() {
                 <div className="absolute top-0 right-0 w-16 h-16 bg-[#f4cf8a]/5 rounded-full blur-xl pointer-events-none" />
               )}
               
-              <div className="text-[8.5px] text-white/40 font-mono uppercase tracking-[0.2em] mb-1 group-hover:text-white/60 transition duration-300">
+              <div className="text-[8.5px] text-white/40  uppercase tracking-[0.2em] mb-1 group-hover:text-white/60 transition duration-300">
                 {state.category}
               </div>
               
@@ -350,7 +350,7 @@ export default function ApiPlayground() {
                 <span className="font-medium text-white text-xs md:text-sm font-display">
                   {state.title}
                 </span>
-                <span className={`text-[8.5px] font-mono shrink-0 transition-opacity duration-300 ${isActive ? "opacity-100 text-[#f4cf8a]" : "opacity-0 group-hover:opacity-40"}`}>
+                <span className={`text-[8.5px]  shrink-0 transition-opacity duration-300 ${isActive ? "opacity-100 text-[#f4cf8a]" : "opacity-0 group-hover:opacity-40"}`}>
                   →
                 </span>
               </div>
@@ -371,7 +371,7 @@ export default function ApiPlayground() {
                 onClick={() => handleStateChange(actualIdx)}
                 className="group text-left border-none bg-transparent hover:opacity-90 transition p-0 cursor-pointer space-y-0.5 block w-full outline-none focus:outline-none"
               >
-                <div className="text-[8.5px] text-white/40 font-mono uppercase tracking-[0.2em] transition duration-300 flex items-center gap-1">
+                <div className="text-[8.5px] text-white/40  uppercase tracking-[0.2em] transition duration-300 flex items-center gap-1">
                   {state.category}
                   {isActive && <span className="w-1 h-1 rounded-full bg-[#f4cf8a]" />}
                 </div>
@@ -383,7 +383,7 @@ export default function ApiPlayground() {
                   {isActive && (
                     <motion.span 
                       layoutId="activeDot"
-                      className="text-[8.5px] font-mono text-[#f4cf8a]"
+                      className="text-[8.5px]  text-[#f4cf8a]"
                     >
                       •
                     </motion.span>

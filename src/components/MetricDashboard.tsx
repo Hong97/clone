@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { Terminal, Shield, Zap, Receipt, Search, ArrowRight, UserCheck, Cpu, HardDrive } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -74,17 +74,17 @@ export default function MetricDashboard({ activeKey, onClose }: MetricDashboardP
             </div>
             
             <div className="grid gap-4 sm:grid-cols-3">
-              <div className="rounded-xl border border-white/5 bg-black/40 p-4 font-mono">
+              <div className="rounded-xl border border-white/5 bg-black/40 p-4 ">
                 <div className="text-[10px] tracking-[0.2em] text-white/40 mb-1">Global Query Response</div>
                 <div className="text-2xl font-semibold text-emerald-400">99.85%</div>
                 <div className="text-[9px] text-white/30 mt-1">Uptime benchmark active</div>
               </div>
-              <div className="rounded-xl border border-white/5 bg-black/40 p-4 font-mono">
+              <div className="rounded-xl border border-white/5 bg-black/40 p-4 ">
                 <div className="text-[10px] tracking-[0.2em] text-white/40 mb-1">Inference Latency</div>
                 <div className="text-2xl font-semibold text-emerald-400">142ms</div>
                 <div className="text-[9px] text-white/30 mt-1">Grounding integration cycle</div>
               </div>
-              <div className="rounded-xl border border-white/5 bg-black/40 p-4 font-mono">
+              <div className="rounded-xl border border-white/5 bg-black/40 p-4 ">
                 <div className="text-[10px] tracking-[0.2em] text-white/40 mb-1">Secured Node Allocations</div>
                 <div className="text-2xl font-semibold text-white">128 / 128</div>
                 <div className="text-[9px] text-[#f4cf8a]/60 mt-1">Multi-region clustering</div>
@@ -95,10 +95,10 @@ export default function MetricDashboard({ activeKey, onClose }: MetricDashboardP
             <NeuralGroundingNetwork />
 
             <div className="rounded-xl border border-white/5 bg-black/30 p-4">
-              <div className="flex items-center gap-2 mb-3 text-xs tracking-[0.2em] text-white/50 font-mono">
+              <div className="flex items-center gap-2 mb-3 text-xs tracking-[0.2em] text-white/50 ">
                 <Terminal size={12} /> Model Grounding Stream Log
               </div>
-              <div className="space-y-2 font-mono text-[11px] text-white/45 h-[100px] overflow-y-auto bg-black/40 p-3 rounded-lg border border-white/5">
+              <div className="space-y-2  text-[11px] text-white/45 h-[100px] overflow-y-auto bg-black/40 p-3 rounded-lg border border-white/5">
                 <div>[06:01:10] CONNECTED: Bound with Gemini Model (gemini-3.5-flash)</div>
                 <div>[06:01:12] SYSTEM: Initialized systemInstruction parameters with 0 flags</div>
                 <div>[06:01:15] PIPELINE: Hydrated dynamic Google Search grounding cache</div>
@@ -120,17 +120,17 @@ export default function MetricDashboard({ activeKey, onClose }: MetricDashboardP
             <div className="grid gap-6 md:grid-cols-12">
               {/* Trigger Settle form */}
               <form onSubmit={handleSettle} className="md:col-span-5 space-y-4 rounded-xl border border-white/5 bg-black/30 p-4">
-                <span className="text-[10px] tracking-[0.25em] text-white/35 font-mono block">Queue Instruction</span>
+                <span className="text-[10px] tracking-[0.25em] text-white/35  block">Queue Instruction</span>
                 
                 <div>
-                  <label className="text-[10px] tracking-[0.2em] text-white/40 mb-1 block font-mono">Value Amount</label>
+                  <label className="text-[10px] tracking-[0.2em] text-white/40 mb-1 block ">Value Amount</label>
                   <div className="flex rounded-lg border border-white/5 bg-black/40 px-3 py-1.5 focus-within:border-white/15">
-                    <span className="text-xs font-mono text-white/40 mr-2">$</span>
+                    <span className="text-xs  text-white/40 mr-2">$</span>
                     <input 
                       type="number" 
                       value={payAmount} 
                       onChange={(e) => setPayAmount(e.target.value)} 
-                      className="bg-transparent text-xs text-white outline-none w-full font-mono" 
+                      className="bg-transparent text-xs text-white outline-none w-full " 
                       placeholder="Amount"
                     />
                   </div>
@@ -138,11 +138,11 @@ export default function MetricDashboard({ activeKey, onClose }: MetricDashboardP
 
                 <div className="grid grid-cols-2 gap-3">
                   <div>
-                    <label className="text-[10px] tracking-[0.2em] text-white/40 mb-1 block font-mono">Settlement Token</label>
+                    <label className="text-[10px] tracking-[0.2em] text-white/40 mb-1 block ">Settlement Token</label>
                     <select 
                       value={payAsset} 
                       onChange={(e) => setPayAsset(e.target.value)}
-                      className="w-full bg-black/40 border border-white/5 rounded-lg text-xs text-white font-mono p-2 focus:border-white/15 outline-none"
+                      className="w-full bg-black/40 border border-white/5 rounded-lg text-xs text-white  p-2 focus:border-white/15 outline-none"
                     >
                       <option value="USDC">USDC (USD)</option>
                       <option value="USDT">USDT (Tether)</option>
@@ -150,20 +150,20 @@ export default function MetricDashboard({ activeKey, onClose }: MetricDashboardP
                     </select>
                   </div>
                   <div>
-                    <label className="text-[10px] tracking-[0.2em] text-white/40 mb-1 block font-mono">Gas Matrix Mode</label>
-                    <div className="w-full bg-black/20 border border-white/5 rounded-lg text-xs text-white/50 font-mono p-2 text-center font-semibold">
+                    <label className="text-[10px] tracking-[0.2em] text-white/40 mb-1 block ">Gas Matrix Mode</label>
+                    <div className="w-full bg-black/20 border border-white/5 rounded-lg text-xs text-white/50  p-2 text-center font-semibold">
                       Auto (Ultra Low)
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <label className="text-[10px] tracking-[0.2em] text-white/40 mb-1 block font-mono">Destination Address</label>
+                  <label className="text-[10px] tracking-[0.2em] text-white/40 mb-1 block ">Destination Address</label>
                   <input 
                     type="text" 
                     value={payDest} 
                     onChange={(e) => setPayDest(e.target.value)} 
-                    className="w-full bg-black/40 border border-white/5 rounded-lg text-xs text-white font-mono p-2 focus:border-white/15 outline-none" 
+                    className="w-full bg-black/40 border border-white/5 rounded-lg text-xs text-white  p-2 focus:border-white/15 outline-none" 
                     placeholder="Address 0x..."
                   />
                 </div>
@@ -178,10 +178,10 @@ export default function MetricDashboard({ activeKey, onClose }: MetricDashboardP
 
               {/* Ledger ledger events */}
               <div className="md:col-span-7 rounded-xl border border-white/5 bg-black/30 p-4">
-                <span className="text-[10px] tracking-[0.25em] text-white/35 font-mono block mb-3">Live Ledger Settlement Feed</span>
+                <span className="text-[10px] tracking-[0.25em] text-white/35  block mb-3">Live Ledger Settlement Feed</span>
                 <div className="space-y-3 max-h-[220px] overflow-y-auto pr-1">
                   {payments.map(tx => (
-                    <div key={tx.id} className="flex items-center justify-between rounded-lg bg-black/40 border border-white/5 p-3 text-xs font-mono">
+                    <div key={tx.id} className="flex items-center justify-between rounded-lg bg-black/40 border border-white/5 p-3 text-xs ">
                       <div>
                         <div className="font-semibold text-white">{tx.id}</div>
                         <div className="text-[10px] text-white/35">to {tx.destination}</div>
@@ -232,7 +232,7 @@ export default function MetricDashboard({ activeKey, onClose }: MetricDashboardP
                       <span>Lock</span> <ArrowRight size={11} />
                     </button>
                   </form>
-                  <div className="text-[9px] tracking-[0.15em] text-white/30 font-mono">Institutional invitations processed daily</div>
+                  <div className="text-[9px] tracking-[0.15em] text-white/30 ">Institutional invitations processed daily</div>
                 </>
               ) : (
                 <motion.div 
@@ -245,12 +245,12 @@ export default function MetricDashboard({ activeKey, onClose }: MetricDashboardP
                   </div>
                   <div>
                     <h5 className="font-semibold text-white font-display">Reservation Verified</h5>
-                    <p className="text-xs text-white/45 mt-1 font-mono">Encrypted Access Pass coordinates generated</p>
+                    <p className="text-xs text-white/45 mt-1 ">Encrypted Access Pass coordinates generated</p>
                   </div>
-                  <div className="inline-block bg-black border border-white/5 px-6 py-2.5 rounded-lg font-mono text-[#f2d9a1] font-semibold text-lg tracking-[0.25em]">
+                  <div className="inline-block bg-black border border-white/5 px-6 py-2.5 rounded-lg  text-[#f2d9a1] font-semibold text-lg tracking-[0.25em]">
                     {passNumber}
                   </div>
-                  <p className="text-[11px] text-white/30 font-mono">
+                  <p className="text-[11px] text-white/30 ">
                     A confirmation telemetry token was dispatched to <span className="text-white/50">{email}</span>. Use this card at the beta gateway portal.
                   </p>
                 </motion.div>
@@ -269,7 +269,7 @@ export default function MetricDashboard({ activeKey, onClose }: MetricDashboardP
 
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="rounded-xl border border-white/5 bg-black/40 p-4 space-y-2">
-                <div className="text-[10px] tracking-[0.2em] text-white/40 font-mono">Standard Encryption</div>
+                <div className="text-[10px] tracking-[0.2em] text-white/40 ">Standard Encryption</div>
                 <h5 className="font-semibold text-white text-sm pb-1 border-b border-white/[0.03] font-display">Triple AES-256-GCM Envelope</h5>
                 <p className="text-xs leading-relaxed text-white/45">
                   All active payload data, wallet keys, and telemetry streams are encrypted at rest and in transit utilizing envelope cryptographic models backed by HSM (Hardware Security Modules).
@@ -277,7 +277,7 @@ export default function MetricDashboard({ activeKey, onClose }: MetricDashboardP
               </div>
 
               <div className="rounded-xl border border-white/5 bg-black/40 p-4 space-y-2">
-                <div className="text-[10px] tracking-[0.2em] text-white/40 font-mono">Compliance Matrices</div>
+                <div className="text-[10px] tracking-[0.2em] text-white/40 ">Compliance Matrices</div>
                 <h5 className="font-semibold text-white text-sm pb-1 border-b border-white/[0.03] font-display">SOC-2 Type II Certified</h5>
                 <p className="text-xs leading-relaxed text-white/45">
                   Xenith workflows operates under audited SOC-2 Security Trust principles, enforcing absolute node isolation, non-custodial wallets, and mandatory private AI sanitization checks.
@@ -288,7 +288,7 @@ export default function MetricDashboard({ activeKey, onClose }: MetricDashboardP
             {/* ZK Prover Interactive Widget */}
             <ZkProofSimulator />
 
-            <div className="rounded-xl border border-white/5 bg-black/30 p-4 font-mono text-[11px] space-y-3">
+            <div className="rounded-xl border border-white/5 bg-black/30 p-4  text-[11px] space-y-3">
               <div className="text-xs tracking-[0.2em] text-[#f2d9a1] font-semibold">Active Encryption Telemetry Node</div>
               <div className="grid gap-2 sm:grid-cols-2 text-white/50">
                 <div className="flex items-center gap-2">
@@ -329,12 +329,12 @@ export default function MetricDashboard({ activeKey, onClose }: MetricDashboardP
       
       {/* Header close */}
       <div className="flex items-center justify-between border-b border-white/5 pb-4 mb-5">
-        <div className="text-[10px] tracking-[0.3em] text-white/40 font-mono">
+        <div className="text-[10px] tracking-[0.3em] text-white/40 ">
           Interactive Operational Telemetry Node
         </div>
         <button 
           onClick={onClose}
-          className="text-white/45 hover:text-white text-xs font-mono border border-white/10 hover:border-white/35 rounded-full px-3 py-1 cursor-pointer transition"
+          className="text-white/45 hover:text-white text-xs  border border-white/10 hover:border-white/35 rounded-full px-3 py-1 cursor-pointer transition"
         >
           Close Diagnostics
         </button>
@@ -358,7 +358,7 @@ function NeuralGroundingNetwork() {
   ];
 
   return (
-    <div className="rounded-xl border border-white/5 bg-black/40 p-4 font-mono text-[11px] space-y-4">
+    <div className="rounded-xl border border-white/5 bg-black/40 p-4  text-[11px] space-y-4">
       <div className="flex items-center justify-between">
         <span className="text-[#f4cf8a] font-semibold tracking-wider">[ Distributed AI Grounding Map ]</span>
         <span className="text-white/30 text-[9px]">Node link verification</span>
@@ -467,7 +467,7 @@ function ZkProofSimulator() {
   };
 
   return (
-    <div className="rounded-xl border border-white/5 bg-black/40 p-4 space-y-3.5 font-mono text-[11px]">
+    <div className="rounded-xl border border-white/5 bg-black/40 p-4 space-y-3.5  text-[11px]">
       <div className="flex items-center justify-between">
         <span className="text-[#f4cf8a] font-bold tracking-wider">[ Non-Custodial Security Cryptography ]</span>
         <span className="text-white/40 text-[9px]">zk-SNARK proof generator</span>
@@ -481,7 +481,7 @@ function ZkProofSimulator() {
         <input
           value={inputVal}
           onChange={(e) => setInputVal(e.target.value)}
-          className="bg-black/60 border border-white/5 px-3 py-2 text-xs text-white outline-none rounded-lg flex-1 font-mono focus:border-white/15"
+          className="bg-black/60 border border-white/5 px-3 py-2 text-xs text-white outline-none rounded-lg flex-1  focus:border-white/15"
           placeholder="Value transaction hash to prove"
         />
         <button

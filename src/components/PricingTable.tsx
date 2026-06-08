@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { 
   Check, 
   HelpCircle, 
@@ -113,7 +113,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
         <div className="inline-flex items-center gap-1 rounded-full bg-white/[0.02] p-1 border border-white/[0.05]">
           <button
             onClick={() => setBillingCycle("monthly")}
-            className={`rounded-full px-4 py-1.5 text-[10px] font-mono uppercase tracking-wider transition duration-250 cursor-pointer ${
+            className={`rounded-full px-4 py-1.5 text-[10px]  uppercase tracking-wider transition duration-250 cursor-pointer ${
               billingCycle === "monthly" 
                 ? "bg-[#f4cf8a] text-black font-semibold shadow-md" 
                 : "text-white/60 hover:text-white"
@@ -123,7 +123,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
           </button>
           <button
             onClick={() => setBillingCycle("annual")}
-            className={`rounded-full px-4 py-1.5 text-[10px] font-mono uppercase tracking-wider transition duration-250 cursor-pointer flex items-center gap-1.5 ${
+            className={`rounded-full px-4 py-1.5 text-[10px]  uppercase tracking-wider transition duration-250 cursor-pointer flex items-center gap-1.5 ${
               billingCycle === "annual" 
                 ? "bg-[#f4cf8a] text-black font-semibold shadow-md" 
                 : "text-white/60 hover:text-white"
@@ -139,7 +139,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
             </span>
           </button>
         </div>
-        <p className="text-[10px] uppercase tracking-[0.25em] text-white/40 font-mono">
+        <p className="text-[10px] uppercase tracking-[0.25em] text-white/40 ">
           Save up to $360 per year with sovereign multi-month accounts
         </p>
       </div>
@@ -168,7 +168,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
               }`}
             >
               {plan.isPopular && (
-                <div className="absolute top-0 right-6 -translate-y-1/2 rounded-full bg-gradient-to-r from-[#ffd17d] to-[#e4a84b] text-black font-semibold font-mono text-[9px] uppercase tracking-widest px-3 py-1 flex items-center gap-1 shadow-sm font-sans">
+                <div className="absolute top-0 right-6 -translate-y-1/2 rounded-full bg-gradient-to-r from-[#ffd17d] to-[#e4a84b] text-black font-semibold  text-[9px] uppercase tracking-widest px-3 py-1 flex items-center gap-1 shadow-sm font-sans">
                   <Sparkles size={10} />
                   <span>Selected Member Tier</span>
                 </div>
@@ -191,7 +191,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
                       <span className="text-2xl sm:text-3.5xl font-light tracking-tight text-white font-display">
                         RM {billingPrice}
                       </span>
-                      <span className="text-[10px] uppercase font-mono tracking-widest text-[#f4cf8a]/70">
+                      <span className="text-[10px] uppercase  tracking-widest text-[#f4cf8a]/70">
                         / {billingCycle === "monthly" ? "mo" : "mo, billed annually"}
                       </span>
                     </>
@@ -231,7 +231,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
       <div className="flex justify-center pt-2">
         <button
           onClick={() => setShowAllPlans(!showAllPlans)}
-          className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.01] hover:bg-white/[0.04] hover:border-white/20 transition-all px-8 py-3 text-[10px] font-mono uppercase tracking-[0.2em] text-[#f4cf8a] hover:text-[#ffd17d] cursor-pointer shadow-lg"
+          className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.01] hover:bg-white/[0.04] hover:border-white/20 transition-all px-8 py-3 text-[10px]  uppercase tracking-[0.2em] text-[#f4cf8a] hover:text-[#ffd17d] cursor-pointer shadow-lg"
         >
           <span>{showAllPlans ? "Hide Extra Plans" : "See All Plans"}</span>
           <ArrowRight size={11} className={`transition-transform duration-300 ${showAllPlans ? "rotate-90" : ""}`} />
@@ -254,7 +254,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
               <div className="flex items-center justify-between border-b border-white/[0.05] pb-4">
                 <div className="flex items-center gap-2">
                   <Inbox size={14} className="text-[#f4cf8a]" />
-                  <span className="text-xs uppercase tracking-[0.25em] font-mono text-white/90">Enrollment Portal</span>
+                  <span className="text-xs uppercase tracking-[0.25em]  text-white/90">Enrollment Portal</span>
                 </div>
                 <button 
                   onClick={() => setEnrollingPlanName(null)}
@@ -266,32 +266,32 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
 
               <div className="space-y-4">
                 <div className="text-center">
-                  <div className="text-[10px] uppercase tracking-[0.2em] text-[#f4cf8a]/60 font-mono">SELECTED PLAN</div>
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-[#f4cf8a]/60 ">SELECTED PLAN</div>
                   <h4 className="text-xl font-medium text-white font-display mt-1">{enrollingPlanName}</h4>
-                  <p className="text-[10px] uppercase font-mono text-white/40 tracking-wider">
+                  <p className="text-[10px] uppercase  text-white/40 tracking-wider">
                     {billingCycle === "annual" ? "ANNUAL SETTLEMENT COMPLIANT" : "MONTH-TO-MONTH ROUTING"}
                   </p>
                 </div>
 
                 <form onSubmit={submitEnrollment} className="space-y-4">
                   <div>
-                    <label className="block text-[8px] uppercase tracking-widest text-white/40 font-mono mb-1.5">Company or Your Name</label>
+                    <label className="block text-[8px] uppercase tracking-widest text-white/40  mb-1.5">Company or Your Name</label>
                     <input 
                       required
                       type="text" 
                       placeholder="e.g. Jane Doe"
-                      className="w-full bg-black/60 border border-white/5 focus:border-[#f4cf8a]/40 rounded-xl px-4 py-3 placeholder:text-white/20 text-xs outline-none text-white font-mono transition"
+                      className="w-full bg-black/60 border border-white/5 focus:border-[#f4cf8a]/40 rounded-xl px-4 py-3 placeholder:text-white/20 text-xs outline-none text-white  transition"
                       value={formInputs.companyName}
                       onChange={e => setFormInputs({...formInputs, companyName: e.target.value})}
                     />
                   </div>
 
                   <div>
-                    <label className="block text-[8px] uppercase tracking-widest text-white/40 font-mono mb-1.5">Ethereum Address (Simulated)</label>
+                    <label className="block text-[8px] uppercase tracking-widest text-white/40  mb-1.5">Ethereum Address (Simulated)</label>
                     <input 
                       required
                       type="text" 
-                      className="w-full bg-black/60 border border-white/5 focus:border-[#f4cf8a]/40 rounded-xl px-4 py-3 text-xs outline-none text-white font-mono transition"
+                      className="w-full bg-black/60 border border-white/5 focus:border-[#f4cf8a]/40 rounded-xl px-4 py-3 text-xs outline-none text-white  transition"
                       value={formInputs.ledgerAddr}
                       onChange={e => setFormInputs({...formInputs, ledgerAddr: e.target.value})}
                     />

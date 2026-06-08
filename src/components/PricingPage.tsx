@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { 
   Check, 
   HelpCircle, 
@@ -273,14 +273,14 @@ export default function PricingPage({
         
         {/* HERO HEADER */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <div className="mb-6 text-[10px] md:text-xs uppercase tracking-[0.35em] text-[#f4cf8a]/65 font-mono">
+          <div className="mb-6 text-[10px] md:text-xs uppercase tracking-[0.35em] text-[#f4cf8a]/65 ">
             [ Pricing ]
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal tracking-[-0.04em] leading-[1.08] mb-6 font-display">
             Alpha Node Pricing:<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffd17d] to-[#e4a84b]">Unchain Your Capital</span>
           </h1>
-          <p className="text-xs uppercase tracking-wider text-[#f4cf8a] max-w-xl mx-auto leading-relaxed font-mono font-medium">
+          <p className="text-xs uppercase tracking-wider text-[#f4cf8a] max-w-xl mx-auto leading-relaxed  font-medium">
             Zero Custody Risk. Pay SAI Gas Fee. Generate Non-Symmetric Returns.
           </p>
 
@@ -289,7 +289,7 @@ export default function PricingPage({
             <div className="inline-flex items-center gap-1 rounded-full bg-white/[0.02] p-1 border border-white/[0.05]">
               <button
                 onClick={() => setBillingCycle("monthly")}
-                className={`rounded-full px-4 py-1.5 text-[10px] font-mono uppercase tracking-wider transition duration-250 cursor-pointer ${
+                className={`rounded-full px-4 py-1.5 text-[10px]  uppercase tracking-wider transition duration-250 cursor-pointer ${
                   billingCycle === "monthly" 
                     ? "bg-[#f4cf8a] text-black font-semibold shadow-md" 
                     : "text-white/60 hover:text-white"
@@ -299,7 +299,7 @@ export default function PricingPage({
               </button>
               <button
                 onClick={() => setBillingCycle("annual")}
-                className={`rounded-full px-4 py-1.5 text-[10px] font-mono uppercase tracking-wider transition duration-250 cursor-pointer flex items-center gap-1.5 ${
+                className={`rounded-full px-4 py-1.5 text-[10px]  uppercase tracking-wider transition duration-250 cursor-pointer flex items-center gap-1.5 ${
                   billingCycle === "annual" 
                     ? "bg-[#f4cf8a] text-black font-semibold shadow-md" 
                     : "text-white/60 hover:text-white"
@@ -315,7 +315,7 @@ export default function PricingPage({
                 </span>
               </button>
             </div>
-            <p className="text-[10px] uppercase tracking-[0.25em] text-white/40 font-mono">
+            <p className="text-[10px] uppercase tracking-[0.25em] text-white/40 ">
               Save up to $360 per year with sovereign multi-month accounts
             </p>
           </div>
@@ -347,7 +347,7 @@ export default function PricingPage({
               >
                 {plan.isPopular && (
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <span className="bg-[#e5c185] text-black font-mono text-[8px] font-bold tracking-[0.25em] px-3.5 py-1 rounded-full shadow-sm">
+                    <span className="bg-[#e5c185] text-black  text-[8px] font-bold tracking-[0.25em] px-3.5 py-1 rounded-full shadow-sm">
                       Most Popular
                     </span>
                   </div>
@@ -356,7 +356,7 @@ export default function PricingPage({
                 <div className="space-y-6">
                   {/* Top Header */}
                   <div>
-                    <span className="text-xs font-mono tracking-widest text-[#f4cf8a]/60 block mb-1 min-h-[40px]">
+                    <span className="text-xs  tracking-widest text-[#f4cf8a]/60 block mb-1 min-h-[40px]">
                       {plan.name}
                     </span>
                     <p className="text-xs text-white/40 font-sans leading-relaxed min-h-[48px]">
@@ -375,7 +375,7 @@ export default function PricingPage({
                         <span className="text-3xl md:text-4xl font-light tracking-tight text-white font-display">
                           RM {price}
                         </span>
-                        <span className="text-[9px] font-mono tracking-widest text-white/35 ml-1">
+                        <span className="text-[9px]  tracking-widest text-white/35 ml-1">
                           / mo
                         </span>
                       </>
@@ -384,7 +384,7 @@ export default function PricingPage({
                         <span className="text-3xl md:text-4xl font-light tracking-tight text-white font-display">
                           RM 0
                         </span>
-                        <span className="text-[9px] font-mono tracking-widest text-white/35 ml-1">
+                        <span className="text-[9px]  tracking-widest text-white/35 ml-1">
                           / Trial
                         </span>
                       </>
@@ -424,7 +424,7 @@ export default function PricingPage({
         <div className="flex justify-center mb-10 sm:mb-14 pt-2">
           <button
             onClick={() => setShowAllPlans(!showAllPlans)}
-            className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.01] hover:bg-white/[0.04] hover:border-white/20 transition-all px-8 py-3 text-[10px] font-mono tracking-[0.2em] text-[#f4cf8a] hover:text-[#ffd17d] cursor-pointer shadow-lg"
+            className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.01] hover:bg-white/[0.04] hover:border-white/20 transition-all px-8 py-3 text-[10px]  tracking-[0.2em] text-[#f4cf8a] hover:text-[#ffd17d] cursor-pointer shadow-lg"
           >
             <span>{showAllPlans ? "Hide Extra Plans" : "See All Plans"}</span>
             <ArrowRight size={11} className={`transition-transform duration-300 ${showAllPlans ? "rotate-90" : ""}`} />
@@ -434,7 +434,7 @@ export default function PricingPage({
         {/* COMPARISON TABLE */}
         <div className="border-t border-white/[0.05] pt-12 sm:pt-16 mb-12 sm:mb-16">
           <div className="mb-10">
-            <div className="text-[10px] font-mono tracking-[0.35em] text-[#f4cf8a]/65 mb-2">
+            <div className="text-[10px]  tracking-[0.35em] text-[#f4cf8a]/65 mb-2">
               [ Compare ]
             </div>
             <h2 className="text-xl md:text-2xl font-light font-display text-white">
@@ -450,7 +450,7 @@ export default function PricingPage({
                   key={tab}
                   type="button"
                   onClick={() => setMobileCompareTab(tab)}
-                  className={`flex-1 text-center py-2 text-[10px] font-mono uppercase tracking-wider rounded-md transition-all cursor-pointer ${
+                  className={`flex-1 text-center py-2 text-[10px]  uppercase tracking-wider rounded-md transition-all cursor-pointer ${
                     mobileCompareTab === tab
                       ? "bg-[#f4cf8a]/10 text-[#f4cf8a] border border-[#f4cf8a]/15 font-semibold"
                       : "text-white/40 hover:text-white/70"
@@ -463,7 +463,7 @@ export default function PricingPage({
 
             <div className="border border-white/[0.04] bg-[#0c0a0a]/35 rounded-xl p-5 space-y-4">
               <div className="flex justify-between items-center py-2 border-b border-white/[0.03]">
-                <span className="text-[10px] uppercase font-mono tracking-wider text-white/40">Target</span>
+                <span className="text-[10px] uppercase  tracking-wider text-white/40">Target</span>
                 <span className="text-xs text-white font-medium text-right font-sans">
                   {mobileCompareTab === "basic" && "Malaysia Retail"}
                   {mobileCompareTab === "plus" && "Under RM 30k"}
@@ -472,7 +472,7 @@ export default function PricingPage({
               </div>
 
               <div className="flex justify-between items-center py-2 border-b border-white/[0.03]">
-                <span className="text-[10px] uppercase font-mono tracking-wider text-white/40">Quota</span>
+                <span className="text-[10px] uppercase  tracking-wider text-white/40">Quota</span>
                 <span className="text-xs text-white font-medium text-right font-sans">
                   {mobileCompareTab === "basic" && "RM 500 trial limit"}
                   {mobileCompareTab === "plus" && "Daily asset uploads"}
@@ -481,7 +481,7 @@ export default function PricingPage({
               </div>
 
               <div className="flex justify-between items-center py-2 border-b border-white/[0.03]">
-                <span className="text-[10px] uppercase font-mono tracking-wider text-white/40">Accuracy</span>
+                <span className="text-[10px] uppercase  tracking-wider text-white/40">Accuracy</span>
                 <span className="text-xs font-sans font-semibold text-right text-[#e5c185]">
                   {mobileCompareTab === "basic" && "Standard"}
                   {mobileCompareTab === "plus" && "Superior Perfect"}
@@ -490,7 +490,7 @@ export default function PricingPage({
               </div>
 
               <div className="flex justify-between items-center py-2 border-b border-white/[0.03]">
-                <span className="text-[10px] uppercase font-mono tracking-wider text-white/40">Dual Backup</span>
+                <span className="text-[10px] uppercase  tracking-wider text-white/40">Dual Backup</span>
                 <span className="text-xs font-sans font-medium text-right text-white/60">
                   {mobileCompareTab === "basic" && "—"}
                   {mobileCompareTab === "plus" && "—"}
@@ -499,7 +499,7 @@ export default function PricingPage({
               </div>
 
               <div className="flex justify-between items-center py-2 border-b border-white/[0.03]">
-                <span className="text-[10px] uppercase font-mono tracking-wider text-white/40">Savings</span>
+                <span className="text-[10px] uppercase  tracking-wider text-white/40">Savings</span>
                 <span className="text-xs font-sans font-medium text-[#e5c185] text-right">
                   {mobileCompareTab === "basic" && "Trial check"}
                   {mobileCompareTab === "plus" && "Deep savings"}
@@ -508,7 +508,7 @@ export default function PricingPage({
               </div>
 
               <div className="flex justify-between items-center py-2 border-b border-white/[0.03]">
-                <span className="text-[10px] uppercase font-mono tracking-wider text-white/40">Audit Logs</span>
+                <span className="text-[10px] uppercase  tracking-wider text-white/40">Audit Logs</span>
                 <span className="text-xs font-sans font-medium text-right text-white/60">
                   {mobileCompareTab === "basic" && "7 Days"}
                   {mobileCompareTab === "plus" && "90 Days"}
@@ -517,7 +517,7 @@ export default function PricingPage({
               </div>
 
               <div className="flex justify-between items-center py-2 border-b border-white/[0.03]">
-                <span className="text-[10px] uppercase font-mono tracking-wider text-white/40">AI Parser</span>
+                <span className="text-[10px] uppercase  tracking-wider text-white/40">AI Parser</span>
                 <span className="text-xs font-sans font-medium text-right">
                   {mobileCompareTab === "basic" && <span className="text-white/30">Manual</span>}
                   {mobileCompareTab === "plus" && <span className="text-[#e5c185] font-semibold">Automatic ✓</span>}
@@ -526,7 +526,7 @@ export default function PricingPage({
               </div>
 
               <div className="flex justify-between items-center py-1">
-                <span className="text-[10px] uppercase font-mono tracking-wider text-white/40">Support</span>
+                <span className="text-[10px] uppercase  tracking-wider text-white/40">Support</span>
                 <span className="text-xs font-sans font-medium text-right text-white/80">
                   {mobileCompareTab === "basic" && "Community"}
                   {mobileCompareTab === "plus" && "Priority Desk"}
@@ -540,7 +540,7 @@ export default function PricingPage({
           <div className="hidden sm:block overflow-x-auto">
             <table className="w-full text-left border-collapse min-w-[700px]">
               <thead>
-                <tr className="border-b border-white/[0.06] text-[9px] tracking-widest font-mono text-white/40">
+                <tr className="border-b border-white/[0.06] text-[9px] tracking-widest  text-white/40">
                   <th className="py-4 font-normal">Feature & Alignment</th>
                   <th className="py-4 font-normal">Basic Node</th>
                   <th className="py-4 font-normal">Plus Node</th>
@@ -619,7 +619,7 @@ export default function PricingPage({
         {/* FAQ SECTION */}
         <div className="border-t border-white/[0.05] pt-12 sm:pt-16 mb-6 sm:mb-8">
           <div className="mb-10">
-            <div className="text-[10px] font-mono tracking-[0.35em] text-[#f4cf8a]/65 mb-2">
+            <div className="text-[10px]  tracking-[0.35em] text-[#f4cf8a]/65 mb-2">
               [ FAQ ]
             </div>
           </div>
@@ -686,8 +686,8 @@ export default function PricingPage({
       </div>
 
       {/* Footer Navigation */}
-      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-[0.15em] text-white/40 font-mono z-10 relative">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 font-mono">
+      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-[0.15em] text-white/40  z-10 relative">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 ">
           <div className="flex items-center gap-2.5 select-none pointer-events-none">
             <XenithLogo size={20} className="opacity-60" />
             <span className="text-[10px] tracking-[0.3em] text-white/50">Xenith Labs © 2026</span>
@@ -718,7 +718,7 @@ export default function PricingPage({
               <div className="flex items-center justify-between border-b border-white/[0.05] pb-4">
                 <div className="flex items-center gap-2">
                   <Inbox size={14} className="text-[#f4cf8a]" />
-                  <span className="text-xs tracking-[0.25em] font-mono text-white/90 font-sans">Enrollment Portal</span>
+                  <span className="text-xs tracking-[0.25em]  text-white/90 font-sans">Enrollment Portal</span>
                 </div>
                 <button 
                   onClick={() => setEnrollingPlanName(null)}
@@ -730,32 +730,32 @@ export default function PricingPage({
 
               <div className="space-y-4">
                 <div className="text-center">
-                  <div className="text-[10px] tracking-[0.2em] text-[#f4cf8a]/60 font-mono font-sans font-semibold">Selected Plan</div>
+                  <div className="text-[10px] tracking-[0.2em] text-[#f4cf8a]/60  font-sans font-semibold">Selected Plan</div>
                   <h4 className="text-xl font-medium text-white font-display mt-1">{enrollingPlanName}</h4>
-                  <p className="text-[10px] font-mono text-white/40 tracking-wider">
+                  <p className="text-[10px]  text-white/40 tracking-wider">
                     {billingCycle === "annual" ? "Annual Settlement Compliant" : "Month-to-Month Routing"}
                   </p>
                 </div>
 
                 <form onSubmit={submitEnrollment} className="space-y-4 font-sans">
                   <div>
-                    <label className="block text-[8px] tracking-widest text-white/40 font-mono mb-1.5 font-semibold">Company or Your Name</label>
+                    <label className="block text-[8px] tracking-widest text-white/40  mb-1.5 font-semibold">Company or Your Name</label>
                     <input 
                       required
                       type="text" 
                       placeholder="e.g. Jane Doe"
-                      className="w-full bg-black/60 border border-white/5 focus:border-[#f4cf8a]/40 rounded-xl px-4 py-3 placeholder:text-white/20 text-xs outline-none text-white font-mono transition"
+                      className="w-full bg-black/60 border border-white/5 focus:border-[#f4cf8a]/40 rounded-xl px-4 py-3 placeholder:text-white/20 text-xs outline-none text-white  transition"
                       value={formInputs.companyName}
                       onChange={e => setFormInputs({...formInputs, companyName: e.target.value})}
                     />
                   </div>
 
                   <div>
-                    <label className="block text-[8px] tracking-widest text-white/40 font-mono mb-1.5 font-semibold">Ethereum Address (Simulated)</label>
+                    <label className="block text-[8px] tracking-widest text-white/40  mb-1.5 font-semibold">Ethereum Address (Simulated)</label>
                     <input 
                       required
                       type="text" 
-                      className="w-full bg-black/60 border border-white/5 focus:border-[#f4cf8a]/40 rounded-xl px-4 py-3 text-xs outline-none text-white font-mono transition"
+                      className="w-full bg-black/60 border border-white/5 focus:border-[#f4cf8a]/40 rounded-xl px-4 py-3 text-xs outline-none text-white  transition"
                       value={formInputs.ledgerAddr}
                       onChange={e => setFormInputs({...formInputs, ledgerAddr: e.target.value})}
                     />

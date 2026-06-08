@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { 
   ArrowUpRight,
   ChevronRight,
@@ -283,7 +283,7 @@ export default function CompanyPage({
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
           {/* Left Column: Mission Content */}
           <div className="lg:col-span-7 flex flex-col items-start pt-2">
-            <span className="text-[11px] tracking-[0.28em] text-[#f4cf8a]/90 font-mono block mb-5 uppercase">
+            <span className="text-[11px] tracking-[0.28em] text-[#f4cf8a]/90  block mb-5 uppercase">
               [ Our Mission ]
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-light text-white leading-[1.02] tracking-[-0.035em] mb-7 max-w-2xl">
@@ -373,7 +373,7 @@ export default function CompanyPage({
         {/* SECTION C: Infrastructure / Hubs with Left Label Columns */}
         <section className="border-t border-white/[0.05] pt-12 sm:pt-16 md:pt-24 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-4 space-y-4">
-            <span className="text-[11px] tracking-[0.28em] text-[#f4cf8a]/80 font-mono block uppercase">
+            <span className="text-[11px] tracking-[0.28em] text-[#f4cf8a]/80  block uppercase">
               [ Offices ]
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-light text-white tracking-[-0.03em] leading-tight">
@@ -385,13 +385,13 @@ export default function CompanyPage({
             <div className="pt-2 flex gap-3">
               <button 
                 onClick={onTryXenith}
-                className="rounded-full bg-gradient-to-r from-[#ffd17d] to-[#e4a84b] text-black text-[10px] px-5 py-2 font-mono font-medium tracking-wider hover:opacity-95 transition shadow"
+                className="rounded-full bg-gradient-to-r from-[#ffd17d] to-[#e4a84b] text-black text-[10px] px-5 py-2  font-medium tracking-wider hover:opacity-95 transition shadow"
               >
                 Open Roles
               </button>
               <button 
                 onClick={onTryXenith}
-                className="rounded-full border border-[#f4cf8a]/30 bg-[#f4cf8a]/5 text-[#f4cf8a] text-[10px] px-5 py-2 font-mono tracking-wider hover:border-[#f4cf8a]/50 transition"
+                className="rounded-full border border-[#f4cf8a]/30 bg-[#f4cf8a]/5 text-[#f4cf8a] text-[10px] px-5 py-2  tracking-wider hover:border-[#f4cf8a]/50 transition"
               >
                 Careers
               </button>
@@ -402,7 +402,7 @@ export default function CompanyPage({
             {offices.map((office, idx) => (
               <div 
                 key={idx}
-                className="rounded-xl border border-[#f4cf8a]/10 bg-[#f4cf8a]/[0.02] p-4.5 text-center text-xs font-mono font-medium tracking-wide text-[#f4cf8a]"
+                className="rounded-xl border border-[#f4cf8a]/10 bg-[#f4cf8a]/[0.02] p-4.5 text-center text-xs  font-medium tracking-wide text-[#f4cf8a]"
               >
                 {office}
               </div>
@@ -413,7 +413,7 @@ export default function CompanyPage({
         {/* SECTION D: Our Path of Progress - Fully interactive Horizontal Timeline */}
         <section className="border-t border-white/[0.05] pt-12 sm:pt-16 md:pt-24 text-center">
           <div className="max-w-2xl mx-auto space-y-4 mb-10 sm:mb-16 md:mb-20 block">
-            <span className="text-[11px] tracking-[0.28em] text-[#f4cf8a]/90 font-mono block mb-3 uppercase">
+            <span className="text-[11px] tracking-[0.28em] text-[#f4cf8a]/90  block mb-3 uppercase">
               [ Timeline ]
             </span>
             <h2 className="text-3xl sm:text-4xl font-display font-light text-white tracking-[-0.03em] leading-tight">
@@ -460,7 +460,7 @@ export default function CompanyPage({
 
                     {/* Simple Year Label above each dot */}
                     <span 
-                      className={`absolute top-6 text-[9px] font-mono tracking-widest transition-all duration-300
+                      className={`absolute top-6 text-[9px]  tracking-widest transition-all duration-300
                         ${isActive ? "text-[#f4cf8a] font-medium" : "text-white/40 group-hover:text-white/60"}
                       `}
                     >
@@ -483,7 +483,7 @@ export default function CompanyPage({
                 transition={{ duration: 0.3 }}
                 className="space-y-3"
               >
-                <div className="text-[10px] font-mono tracking-[0.25em] text-[#f4cf8a]/85 uppercase">
+                <div className="text-[10px]  tracking-[0.25em] text-[#f4cf8a]/85 uppercase">
                   {milestones[activeMilestoneInxt].date}
                 </div>
                 <h3 className="text-xl font-display font-medium text-white tracking-tight">
@@ -528,7 +528,7 @@ export default function CompanyPage({
 
                 <div className="space-y-1 flex-1 flex flex-col justify-between">
                   <div>
-                    <span className="text-[9px] font-mono tracking-widest text-white/40">
+                    <span className="text-[9px]  tracking-widest text-white/40">
                       {post.date}
                     </span>
                     <h4 className="text-xs sm:text-sm font-medium text-white group-hover:text-[#f4cf8a] transition duration-200 mt-1 lines-clamp-2">
@@ -544,7 +544,7 @@ export default function CompanyPage({
         {/* SECTION F: Complex Contact section - aligned to a premium standard */}
         <section id="footer-contact" className="border-t border-white/[0.05] pt-12 sm:pt-16 md:pt-24 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
           <div className="lg:col-span-5 space-y-4">
-            <span className="text-[11px] tracking-[0.28em] text-[#f4cf8a]/90 font-mono block uppercase">
+            <span className="text-[11px] tracking-[0.28em] text-[#f4cf8a]/90  block uppercase">
               [ Get In Touch ]
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-light text-white tracking-[-0.03em] leading-tight">
@@ -555,7 +555,7 @@ export default function CompanyPage({
             </p>
           </div>
 
-          <div className="lg:col-span-7 space-y-4 font-mono text-xs text-white/45 max-w-2xl w-full">
+          <div className="lg:col-span-7 space-y-4  text-xs text-white/45 max-w-2xl w-full">
             <div className="border border-[#f4cf8a]/10 rounded-2xl bg-[#f4cf8a]/[0.01] divide-y divide-[#f4cf8a]/5 overflow-hidden">
               <div className="flex items-center justify-between p-5 hover:bg-[#f4cf8a]/[0.02] transition-colors duration-300">
                 <span className="text-[#f4cf8a]/70 tracking-wider uppercase font-medium">Systems Integration</span>
@@ -598,7 +598,7 @@ export default function CompanyPage({
 
             {/* Column 1: Products */}
             <div className="space-y-4">
-              <span className="text-[10px] tracking-wider text-white font-mono uppercase block">Products</span>
+              <span className="text-[10px] tracking-wider text-white  uppercase block">Products</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a onClick={onNavigateProduct} className="hover:text-white transition cursor-pointer">Xenith Core</a></li>
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">Sovereign Engine</a></li>
@@ -609,7 +609,7 @@ export default function CompanyPage({
 
             {/* Column 2: Developers */}
             <div className="space-y-4">
-              <span className="text-[10px] tracking-wider text-white font-mono uppercase block">Developers</span>
+              <span className="text-[10px] tracking-wider text-white  uppercase block">Developers</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">API Keys</a></li>
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">Websocket SDK</a></li>
@@ -620,7 +620,7 @@ export default function CompanyPage({
 
             {/* Column 3: Company */}
             <div className="space-y-4">
-              <span className="text-[10px] tracking-wider text-white font-mono uppercase block">Company</span>
+              <span className="text-[10px] tracking-wider text-white  uppercase block">Company</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a onClick={onBackToHome} className="hover:text-white transition cursor-pointer font-medium text-white/90">About Us</a></li>
                 <li><a onClick={onTryXenith} className="hover:text-white transition cursor-pointer">Open Roles</a></li>
@@ -632,7 +632,7 @@ export default function CompanyPage({
 
             {/* Column 4: Trust / Security */}
             <div className="space-y-4">
-              <span className="text-[10px] tracking-wider text-white font-mono uppercase block">Trust</span>
+              <span className="text-[10px] tracking-wider text-white  uppercase block">Trust</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">Safety Portal</a></li>
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">Privacy Portal</a></li>
@@ -643,7 +643,7 @@ export default function CompanyPage({
 
             {/* Column 5: Social / Brand */}
             <div className="space-y-4 col-span-2 lg:col-span-1">
-              <span className="text-[10px] tracking-wider text-white font-mono uppercase block">Social</span>
+              <span className="text-[10px] tracking-wider text-white  uppercase block">Social</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a href="https://x.com" target="_blank" rel="noreferrer" className="hover:text-white transition cursor-pointer">@xenith</a></li>
                 <li><a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white transition cursor-pointer">GitHub</a></li>
@@ -654,7 +654,7 @@ export default function CompanyPage({
           </div>
 
           {/* Bottom Copyright bar */}
-          <div className="flex flex-col sm:flex-row items-center justify-between text-[10px] font-mono tracking-wider text-[#808080]/50 gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between text-[10px]  tracking-wider text-[#808080]/50 gap-4">
             <div className="flex items-center gap-2">
               <span>Xenith Labs © 2026</span>
               <span className="text-white/10">•</span>

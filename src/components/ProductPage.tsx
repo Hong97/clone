@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import { 
   Sparkles, 
   Code2, 
@@ -169,7 +169,7 @@ export default function ProductPage({
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 py-20 lg:py-28">
         
         {/* Hero Section Label */}
-        <div className="mb-6 text-[10px] md:text-xs uppercase tracking-[0.35em] text-[#f4cf8a]/65 font-mono">
+        <div className="mb-6 text-[10px] md:text-xs uppercase tracking-[0.35em] text-[#f4cf8a]/65 ">
           [ Product ]
         </div>
 
@@ -195,7 +195,7 @@ export default function ProductPage({
             <div className="lg:col-span-6 space-y-6">
               
               {/* Category Pill Tag */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-[0.25em] text-white/75 font-mono backdrop-blur">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-[0.25em] text-white/75  backdrop-blur">
                 <Sparkles size={11} className="text-[#e5c185]" />
                 Xenith Assistant
               </div>
@@ -241,7 +241,7 @@ export default function ProductPage({
                       <div className="w-2.5 h-2.5 rounded-full bg-red-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-green-500/30" />
-                      <span className="text-[9px] font-mono uppercase tracking-widest text-white/30 ml-2">Xenith Chat v1.4</span>
+                      <span className="text-[9px]  uppercase tracking-widest text-white/30 ml-2">Xenith Chat v1.4</span>
                     </div>
 
                     {/* Chat Bubble Simulation */}
@@ -291,11 +291,11 @@ export default function ProductPage({
                       <div className="w-2.5 h-2.5 rounded-full bg-red-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-green-500/30" />
-                      <span className="text-[9px] font-mono uppercase tracking-widest text-white/30 ml-2">curl_sandbox.sh</span>
+                      <span className="text-[9px]  uppercase tracking-widest text-white/30 ml-2">curl_sandbox.sh</span>
                     </div>
 
                     {/* Developer Code Simulation lines */}
-                    <div className="space-y-3 font-mono text-[10px] sm:text-xs text-white/40 pt-2 leading-relaxed">
+                    <div className="space-y-3  text-[10px] sm:text-xs text-white/40 pt-2 leading-relaxed">
                       <div>
                         <span className="text-[#e5c185]">const</span> <span className="text-white/80">xenith</span> = <span className="text-[#e5c185]">new</span> <span className="text-teal-400">XenithClient</span>(<span className="text-white/60">{"{"}</span>
                       </div>
@@ -323,7 +323,7 @@ export default function ProductPage({
                   {/* status tag */}
                   <div className="pt-2 flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#f4cf8a] animate-ping" />
-                    <span className="text-[9px] font-mono uppercase text-[#f4cf8a]/80 tracking-widest">Safe sandbox active (200 OK)</span>
+                    <span className="text-[9px]  uppercase text-[#f4cf8a]/80 tracking-widest">Safe sandbox active (200 OK)</span>
                   </div>
                 </div>
               </div>
@@ -333,7 +333,7 @@ export default function ProductPage({
             <div className="lg:col-span-6 space-y-6">
               
               {/* Category Pill Tag */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-[0.25em] text-white/75 font-mono backdrop-blur">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-[0.25em] text-white/75  backdrop-blur">
                 <Code2 size={11} className="text-[#e5c185]" />
                 Xenith Developer API
               </div>
@@ -373,7 +373,7 @@ export default function ProductPage({
             <div className="lg:col-span-6 space-y-6">
               
               {/* Category Pill Tag */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-[0.25em] text-white/75 font-mono backdrop-blur">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-[0.25em] text-white/75  backdrop-blur">
                 <FileText size={11} className="text-[#e5c185]" />
                 Xenith Guides
               </div>
@@ -420,12 +420,12 @@ export default function ProductPage({
                       <div className="w-2.5 h-2.5 rounded-full bg-red-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-green-500/30" />
-                      <span className="text-[9px] font-mono uppercase tracking-widest text-white/30 ml-2">sample_workbook.json</span>
+                      <span className="text-[9px]  uppercase tracking-widest text-white/30 ml-2">sample_workbook.json</span>
                     </div>
 
                     {/* Documentation Simulation design */}
                     <div className="space-y-3 pt-3">
-                      <div className="flex justify-between items-center text-[10px] font-mono border-b border-white/[0.03] pb-1.5">
+                      <div className="flex justify-between items-center text-[10px]  border-b border-white/[0.03] pb-1.5">
                         <span className="text-white/60">GET /v1/simulation/balance</span>
                         <span className="text-[#e5c185] px-1.5 py-0.5 rounded bg-[#e5c185]/10 text-[8px]">SANDBOX</span>
                       </div>
@@ -436,7 +436,7 @@ export default function ProductPage({
                         <div className="h-1.5 bg-white/5 rounded w-10/12" />
                       </div>
 
-                      <div className="p-2.5 rounded bg-black/30 border border-white/5 font-mono text-[9px] text-teal-300">
+                      <div className="p-2.5 rounded bg-black/30 border border-white/5  text-[9px] text-teal-300">
                         "{`status`}": "{`demo_account_active`}",
                         <br />
                         "{`mock_balance`}": 5000.00
@@ -455,7 +455,7 @@ export default function ProductPage({
         {/* USE CASES SECTION - Matches grid structure */}
         <div className="border-t border-white/[0.08] pt-12 sm:pt-16 md:pt-24 pb-12 sm:pb-16 md:pb-24 relative">
           
-          <div className="mb-12 text-[10px] md:text-xs uppercase tracking-[0.35em] text-[#f4cf8a]/65 font-mono">
+          <div className="mb-12 text-[10px] md:text-xs uppercase tracking-[0.35em] text-[#f4cf8a]/65 ">
             [ Use Cases ]
           </div>
 
@@ -528,7 +528,7 @@ export default function ProductPage({
       </div>
 
       {/* Elegant Footer Details */}
-      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-[0.15em] text-white/40 font-mono z-10 relative">
+      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-[0.15em] text-white/40  z-10 relative">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2.5 select-none pointer-events-none">
             <XenithLogo size={20} className="opacity-60" />
