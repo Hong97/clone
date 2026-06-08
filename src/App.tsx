@@ -339,7 +339,7 @@ const stream = await xenith.intelligence.streamSentiment({
 
 
       {/* Header element */}
-      <header className="relative z-20 border-b border-white/[0.04] bg-black/10 backdrop-blur-md text-xs tracking-[0.28em] text-white/45">
+      <header className="relative z-20 border-b border-white/[0.04] bg-black/10 backdrop-blur-md text-xs tracking-wide text-white/45">
         <div className="flex items-center justify-between px-8 py-5">
           <div className="flex items-center gap-9">
             <div 
@@ -387,7 +387,7 @@ const stream = await xenith.intelligence.streamSentiment({
               transition={{ duration: 0.25, ease: "easeInOut" }}
               className="border-t border-white/[0.04] bg-[#060505]/98 backdrop-blur-lg lg:hidden overflow-hidden"
             >
-              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-[0.25em]">
+              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-wide">
                 <a 
                   className={`${currentPage === "product" ? "text-white border-l-2 border-[#f4cf8a] pl-3 font-medium" : "text-white/60 hover:text-white pl-3"} py-2.5 cursor-pointer transition`} 
                   onClick={() => {
@@ -463,7 +463,7 @@ const stream = await xenith.intelligence.streamSentiment({
             </div>
 
             {/* Title & Description above the Search Bar */}
-            <div className="mb-4 max-w-2xl text-[9px] sm:text-[9.5px] tracking-[0.28em] text-[#f4cf8a]/90  text-center leading-relaxed">
+            <div className="mb-4 max-w-2xl text-[9px] sm:text-[9.5px] tracking-wide text-[#f4cf8a]/90  text-center leading-relaxed">
               Unchain Your Exchange Capital. AI Executes Arbitrage Across<br />Global Liquidity Pools.
             </div>
 
@@ -545,7 +545,7 @@ const stream = await xenith.intelligence.streamSentiment({
         {/* Products section */}
         <section ref={productsRef} id="products" className="border-t border-white/[0.08] px-8 py-16 relative bg-black/10">
           <div className="mx-auto max-w-7xl">
-            <div className="mb-3 text-xs tracking-[0.35em] text-[#f4cf8a]/65 ">[ Products ]</div>
+            <div className="mb-3 text-xs tracking-wide text-[#f4cf8a]/65 ">[ Products ]</div>
             <h2 className="mb-7 max-w-3xl text-3xl sm:text-4xl font-light tracking-[-0.04em] text-white font-display leading-tight">
               Smart, simple financial tools built for everyone.
             </h2>
@@ -586,7 +586,7 @@ const stream = await xenith.intelligence.streamSentiment({
         {/* Intro Tech Section */}
         <section ref={techRef} className="border-t border-white/[0.08] px-8 py-16 relative bg-black/5">
           <div className="mx-auto max-w-7xl">
-            <div className="mb-3 text-xs tracking-[0.35em] text-[#f4cf8a]/65 ">[ Core Technology ]</div>
+            <div className="mb-3 text-xs tracking-wide text-[#f4cf8a]/65 ">[ Core Technology ]</div>
             <h2 className="mb-7 max-w-3xl text-3xl sm:text-4xl font-light tracking-[-0.04em] text-white font-display leading-tight">
               Security without custody
             </h2>
@@ -605,7 +605,7 @@ const stream = await xenith.intelligence.streamSentiment({
         <section ref={pricingRef} className="border-t border-white/[0.08] px-8 py-20 relative bg-[#090707]/30">
           <div className="mx-auto max-w-7xl">
             <div className="mb-12 text-center space-y-3">
-              <div className="text-xs tracking-[0.35em] text-[#f4cf8a]/65 ">[ Member Pricing ]</div>
+              <div className="text-xs tracking-wide text-[#f4cf8a]/65 ">[ Member Pricing ]</div>
               <h2 className="text-3xl font-light tracking-tight text-white md:text-4xl font-display leading-tight">
                 Alpha Node Pricing: Unchain Your Capital
               </h2>
@@ -620,10 +620,10 @@ const stream = await xenith.intelligence.streamSentiment({
       </main>
 
       {/* Footer element */}
-      <footer className="border-t border-white/5 py-12 px-8 text-center text-[10px] tracking-[0.3em] text-white/30  relative z-10 bg-[#050505]">
+      <footer className="border-t border-white/5 py-12 px-8 text-center text-[10px] tracking-wide text-white/30  relative z-10 bg-[#050505]">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>© 2026 Xenith Finance Operating Layer. All rights secured.</div>
-          <div className="flex flex-wrap items-center justify-center gap-6 text-[9px] uppercase font-sans font-semibold tracking-[0.2em] text-white/45">
+          <div className="flex flex-wrap items-center justify-center gap-6 text-[9px] uppercase font-sans font-semibold tracking-wide text-white/45">
             <a onClick={handleScrollToCompany} className="hover:text-white transition cursor-pointer">Company</a>
             <a onClick={handleScrollToTech} className="hover:text-white transition cursor-pointer">Technology</a>
             <a onClick={handleScrollToPricing} className="hover:text-white transition cursor-pointer">Pricing</a>
@@ -649,7 +649,7 @@ const stream = await xenith.intelligence.streamSentiment({
               <div className="flex items-center justify-between border-b border-white/5 pb-4 mb-5">
                 <div className="flex items-center gap-2">
                   <Terminal size={14} className="text-[#f2d9a1]" />
-                  <span className="text-xs tracking-[0.25em]  text-white">Xenith Integration Blueprint</span>
+                  <span className="text-xs tracking-wide  text-white">Xenith Integration Blueprint</span>
                 </div>
                 <button 
                   onClick={() => setShowDocsModal(false)}
@@ -748,7 +748,7 @@ function ProductCard({ title, text, icon, button, onClick }: ProductCardProps) {
 
       <button 
         onClick={onClick}
-        className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-[10px] tracking-[0.2em] text-white/60 transition group-hover:border-white/25 group-hover:text-white cursor-pointer w-fit"
+        className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-[10px] tracking-wide text-white/60 transition group-hover:border-white/25 group-hover:text-white cursor-pointer w-fit"
       >
         <span>{button}</span> <ChevronRight size={11} />
       </button>
@@ -775,7 +775,7 @@ function MetricButton({ label, value, isSelected, onClick }: MetricButtonProps) 
           : "border-white/5 bg-black/20 hover:border-white/15"
       }`}
     >
-      <div className="mb-2.5 text-[9px] tracking-[0.25em] text-white/40 ">{label}</div>
+      <div className="mb-2.5 text-[9px] tracking-wide text-white/40 ">{label}</div>
       <div className="flex items-center justify-between">
         <span className={`text-base font-medium transition ${isSelected ? "text-[#f4cf8a]" : "text-white/80"}`}>
           {value}

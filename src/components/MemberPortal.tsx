@@ -194,7 +194,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
         <header className="flex items-center justify-between border-b border-white/[0.04] pb-6 mb-8">
           <div className="flex items-center gap-3 select-none">
             <XenithLogo size={24} className="opacity-95" />
-            <span className="text-sm font-semibold tracking-[0.35em] text-white font-display">Xenith</span>
+            <span className="text-sm font-semibold tracking-wide text-white font-display">Xenith</span>
           </div>
 
           <div className="flex items-center gap-4">
@@ -202,7 +202,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
               <div className="flex items-center gap-3">
                 <button 
                   onClick={handleSignOut}
-                  className="rounded-lg border border-white/[0.08] hover:border-white/20 bg-transparent hover:bg-white/[0.03] text-white px-5 py-2 text-[10px] tracking-[0.16em] transition-all duration-300 "
+                  className="rounded-lg border border-white/[0.08] hover:border-white/20 bg-transparent hover:bg-white/[0.03] text-white px-5 py-2 text-[10px] tracking-wide transition-all duration-300 "
                 >
                   Sign Out
                 </button>
@@ -211,14 +211,14 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                     onLaunchAi("Show me diagnostic stats about my current black member security parameters.");
                     showToast("Triggering secure parameter overview...");
                   }}
-                  className="rounded-lg border border-white/[0.08] hover:border-white/20 bg-transparent hover:bg-white/[0.03] text-white/90 hover:text-white px-5 py-2 text-[10px] tracking-[0.16em] transition-all duration-300  flex items-center gap-2 cursor-pointer"
+                  className="rounded-lg border border-white/[0.08] hover:border-white/20 bg-transparent hover:bg-white/[0.03] text-white/90 hover:text-white px-5 py-2 text-[10px] tracking-wide transition-all duration-300  flex items-center gap-2 cursor-pointer"
                 >
                   <User size={12} className="text-[#f4cf8a]" />
                   <span>Profile</span>
                 </div>
               </div>
             ) : (
-              <span className="text-[10px] tracking-[0.25em] text-white/40 ">
+              <span className="text-[10px] tracking-wide text-white/40 ">
                 Unauthorized Client Session
               </span>
             )}
@@ -248,7 +248,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#f4cf8a]/3 rounded-full blur-2xl pointer-events-none" />
                 
-                <h3 className="text-xs tracking-[0.25em] text-[#f4cf8a] text-center mb-6 font-display font-medium">
+                <h3 className="text-xs tracking-wide text-[#f4cf8a] text-center mb-6 font-display font-medium">
                   Secure Portal Login
                 </h3>
 
@@ -307,7 +307,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                   <button 
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full rounded-xl bg-gradient-to-r from-[#eac57d] via-[#f4cf8a] to-[#ecd4a5] hover:opacity-90 active:opacity-100 text-black text-xs font-semibold py-3.5 mt-2 transition duration-200 shadow-md shadow-[#f4cf8a]/10 disabled:opacity-50 cursor-pointer flex items-center justify-center gap-2 tracking-[0.25em]"
+                    className="w-full rounded-xl bg-gradient-to-r from-[#eac57d] via-[#f4cf8a] to-[#ecd4a5] hover:opacity-90 active:opacity-100 text-black text-xs font-semibold py-3.5 mt-2 transition duration-200 shadow-md shadow-[#f4cf8a]/10 disabled:opacity-50 cursor-pointer flex items-center justify-center gap-2 tracking-wide"
                   >
                     {isSubmitting ? (
                       <>
@@ -323,14 +323,14 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                 {/* Separator block */}
                 <div className="relative my-5 text-center">
                   <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-white/[0.05]" /></div>
-                  <span className="relative bg-[#0c0909] px-3 text-[10px]  text-white/20 tracking-widest">or</span>
+                  <span className="relative bg-[#0c0909] px-3 text-[10px]  text-white/20 tracking-wide">or</span>
                 </div>
 
                 {/* Ledger Key Card wallet option */}
                 <button 
                   onClick={handleWalletLogin}
                   disabled={walletConnecting}
-                  className="w-full rounded-xl border border-white/10 bg-[#070505] hover:bg-white/[0.02] hover:border-white/20 text-white/70 hover:text-white text-xs  tracking-[0.2em] py-3.5 transition duration-200 cursor-pointer flex items-center justify-center gap-2.5"
+                  className="w-full rounded-xl border border-white/10 bg-[#070505] hover:bg-white/[0.02] hover:border-white/20 text-white/70 hover:text-white text-xs  tracking-wide py-3.5 transition duration-200 cursor-pointer flex items-center justify-center gap-2.5"
                 >
                   {walletConnecting ? (
                     <>
@@ -378,7 +378,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                 {/* 2. BLACK MEMBER TIER (CENTER VALUE CARD GRID) */}
                 <div className="rounded-2xl border border-white/[0.04] bg-[#0c0a0a]/40 p-6 shadow-xl relative overflow-hidden flex flex-col items-center">
                   <div className="text-center space-y-1 mb-6">
-                    <h3 className="text-sm font-semibold tracking-[0.25em] text-[#f4cf8a] font-display select-none font-sans uppercase">
+                    <h3 className="text-sm font-semibold tracking-wide text-[#f4cf8a] font-display select-none font-sans uppercase">
                       {getTierDisplayTitle()}
                     </h3>
                     <p className="text-[11px] text-white/50 tracking-normal font-sans">
@@ -399,7 +399,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                           : "border-white/[0.04] bg-transparent hover:bg-white/[0.01]"
                       }`}
                     >
-                      <span className={`text-[10px] tracking-[0.15em] font-bold font-sans ${activeTier === "FREE" ? "text-white" : "text-white/60"}`}>FREE</span>
+                      <span className={`text-[10px] tracking-wide font-bold font-sans ${activeTier === "FREE" ? "text-white" : "text-white/60"}`}>FREE</span>
                       <span className="text-[9px] tracking-wide text-white/40 font-sans">Basic Access</span>
                     </div>
 
@@ -420,7 +420,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                         <Star size={8} className="fill-[#f4cf8a]" />
                       </div>
                       
-                      <span className={`text-[10px] tracking-[0.15em] font-bold font-sans ${activeTier === "PLUS" ? "text-white" : "text-white/60"}`}>PLUS</span>
+                      <span className={`text-[10px] tracking-wide font-bold font-sans ${activeTier === "PLUS" ? "text-white" : "text-white/60"}`}>PLUS</span>
                       <span className="text-[9px] tracking-wide text-white/40 font-sans">Black Member</span>
                     </div>
 
@@ -436,7 +436,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                           : "border-white/[0.04] bg-transparent hover:bg-white/[0.01]"
                       }`}
                     >
-                      <span className={`text-[10px] tracking-[0.15em] font-bold font-sans ${activeTier === "PRO" ? "text-white" : "text-white/60"}`}>PRO</span>
+                      <span className={`text-[10px] tracking-wide font-bold font-sans ${activeTier === "PRO" ? "text-white" : "text-white/60"}`}>PRO</span>
                       <span className="text-[9px] tracking-wide text-white/40 font-sans">Premium Access</span>
                     </div>
                   </div>
@@ -445,7 +445,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                 {/* 3. XAI TOKEN CARD */}
                 <div className="rounded-xl border border-white/[0.04] bg-[#0c0a0a]/40 p-6 flex items-center justify-between shadow-lg relative overflow-hidden select-none">
                   <div>
-                    <div className="text-[10px] tracking-[0.25em] text-[#f4cf8a]  font-medium mb-2.5">XAI Token</div>
+                    <div className="text-[10px] tracking-wide text-[#f4cf8a]  font-medium mb-2.5">XAI Token</div>
                     <div className="flex items-baseline gap-1.5">
                       <span className="text-3xl font-light tracking-wide text-white font-sans">{saiBalance.toLocaleString()}</span>
                       <span className="text-xs text-white/60 ">XAI</span>
@@ -463,7 +463,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                       }}
                       className="w-16 h-16 rounded-full border border-[#f4cf8a]/45 bg-black/80 flex items-center justify-center shadow-[0_0_20px_rgba(244,207,138,0.15)] hover:shadow-[0_0_30px_rgba(244,207,138,0.3)] transition-all cursor-pointer group"
                     >
-                      <span className="text-[10px] font-bold  tracking-[0.25em] text-[#f4cf8a] group-hover:scale-105 transition duration-300 pl-[0.1em]">XAI</span>
+                      <span className="text-[10px] font-bold  tracking-wide text-[#f4cf8a] group-hover:scale-105 transition duration-300 pl-[0.1em]">XAI</span>
                     </div>
                   </div>
                 </div>
@@ -590,7 +590,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                 {/* 5. LINKED ASSET VALUE (VIA API) */}
                 <div className="rounded-xl border border-white/[0.04] bg-[#0c0a0a]/40 p-6 flex flex-col md:flex-row items-start md:items-center justify-between shadow-lg gap-6 select-none font-sans">
                   <div>
-                    <div className="text-[10px] tracking-[0.25em] text-[#f4cf8a]  font-medium mb-2.5">
+                    <div className="text-[10px] tracking-wide text-[#f4cf8a]  font-medium mb-2.5">
                       Linked Asset Value (Via API)
                     </div>
                     {isApiLinked ? (
@@ -668,7 +668,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
 
                     <button
                       onClick={() => setShowConfigPanel(!showConfigPanel)}
-                      className={`px-4 py-2.5 text-[10px] font-bold tracking-widest  rounded-lg transition duration-200 cursor-pointer shrink-0 w-full sm:w-auto border select-none ${
+                      className={`px-4 py-2.5 text-[10px] font-bold tracking-wide  rounded-lg transition duration-200 cursor-pointer shrink-0 w-full sm:w-auto border select-none ${
                         showConfigPanel
                           ? "bg-[#f4cf8a] text-black hover:bg-[#ebd09d] border-[#f4cf8a]"
                           : "border-[#f4cf8a]/20 hover:border-[#f4cf8a]/45 text-[#f4cf8a] hover:bg-white/[0.02]"
@@ -696,7 +696,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                       <div className="flex items-center justify-between border-b border-white/[0.05] pb-2.5">
                         <div className="flex items-center gap-2">
                           <span className={`w-2 h-2 rounded-full ${isApiLinked ? "bg-emerald-500 animate-pulse" : "bg-amber-500"}`} />
-                          <h4 className="text-[10px] font-bold tracking-[0.25em] text-white ">
+                          <h4 className="text-[10px] font-bold tracking-wide text-white ">
                             Trading Platform Engine Terminal (API Emulator)
                           </h4>
                         </div>
@@ -716,7 +716,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                         {/* Platform Configuration (Controls Exchange Numbers) */}
                         <div className="space-y-4 font-sans">
                           <div>
-                            <label className="text-[9px] tracking-widest text-[#f4cf8a] block mb-1.5  font-medium">Select Exchange Terminal</label>
+                            <label className="text-[9px] tracking-wide text-[#f4cf8a] block mb-1.5  font-medium">Select Exchange Terminal</label>
                             <select 
                               value={linkingExchange}
                               onChange={(e) => {
@@ -733,7 +733,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                           </div>
 
                           <div>
-                            <label className="text-[9px] tracking-widest text-[#f4cf8a] block mb-1.5  font-medium">
+                            <label className="text-[9px] tracking-wide text-[#f4cf8a] block mb-1.5  font-medium">
                               Exchange Asset Balance (Control Amount)
                             </label>
                             <div className="relative rounded-lg bg-black border border-white/10 focus-within:border-[#f4cf8a]/40 flex items-center">
@@ -798,7 +798,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                         {/* Security Handshake Options */}
                         <div className="space-y-3.5 p-4 rounded-lg bg-black/60 border border-white/[0.04] flex flex-col justify-between font-sans">
                           <div>
-                            <div className="text-[9px] tracking-widest text-[#f4cf8a]  font-semibold flex items-center gap-1.5 mb-2.5">
+                            <div className="text-[9px] tracking-wide text-[#f4cf8a]  font-semibold flex items-center gap-1.5 mb-2.5">
                               <ShieldCheck size={12} /> Crypto Authentication Keys
                             </div>
 
@@ -905,7 +905,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                 <div className="rounded-xl border border-white/[0.04] bg-[#0c0a0a]/40 p-6 flex flex-col sm:flex-row items-center justify-between shadow-lg gap-6 select-none">
                   <div className="flex-1 space-y-4">
                     <div className="space-y-2">
-                      <h4 className="text-[10px] tracking-[0.25em] text-[#f4cf8a] font-display font-semibold">
+                      <h4 className="text-[10px] tracking-wide text-[#f4cf8a] font-display font-semibold">
                         About Xenith
                       </h4>
                       <p className="text-xs leading-relaxed text-white/55 font-sans pt-1">
@@ -918,7 +918,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                         onLaunchAi("Detail the long-term technical roadmap of the SAI Token value network.");
                         onClose();
                       }}
-                      className="rounded-full border border-[#f4cf8a]/40 hover:border-[#ffd17d] hover:bg-white/[0.03] text-[9px] tracking-[0.2em]  text-[#f4cf8a] hover:text-white px-5 py-2 transition-all cursor-pointer"
+                      className="rounded-full border border-[#f4cf8a]/40 hover:border-[#ffd17d] hover:bg-white/[0.03] text-[9px] tracking-wide  text-[#f4cf8a] hover:text-white px-5 py-2 transition-all cursor-pointer"
                     >
                       Learn More
                     </button>
@@ -934,7 +934,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
                       <div className="absolute inset-0 rounded-full border border-[#f4cf8a]/20 animate-pulse scale-95" />
                     </div>
 
-                    <span className="text-[10px] font-bold  tracking-[0.3em] text-white/70">
+                    <span className="text-[10px] font-bold  tracking-wide text-white/70">
                       X-Ai Framework
                     </span>
                   </div>
@@ -947,7 +947,7 @@ export default function MemberPortal({ isOpen, onClose, onLaunchAi }: MemberPort
         </div>
 
         {/* Global Footer Credits */}
-        <footer className="border-t border-white/[0.04] mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between text-[10px] tracking-[0.25em] text-white/30  gap-4 w-full select-none">
+        <footer className="border-t border-white/[0.04] mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between text-[10px] tracking-wide text-white/30  gap-4 w-full select-none">
           <div>
             © 2025 Xenith. All rights reserved.
           </div>

@@ -216,7 +216,7 @@ export default function CompanyPage({
               transition={{ duration: 0.25, ease: "easeInOut" }}
               className="border-t border-white/[0.04] bg-[#050505]/98 backdrop-blur-lg lg:hidden overflow-hidden"
             >
-              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-[0.25em]">
+              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-wide">
                 <a 
                   className="text-white/60 hover:text-white pl-3 py-2.5 cursor-pointer transition" 
                   onClick={() => {
@@ -460,7 +460,7 @@ export default function CompanyPage({
 
                     {/* Simple Year Label above each dot */}
                     <span 
-                      className={`absolute top-6 text-[9px]  tracking-widest transition-all duration-300
+                      className={`absolute top-6 text-[9px]  tracking-wide transition-all duration-300
                         ${isActive ? "text-[#f4cf8a] font-medium" : "text-white/40 group-hover:text-white/60"}
                       `}
                     >
@@ -483,7 +483,7 @@ export default function CompanyPage({
                 transition={{ duration: 0.3 }}
                 className="space-y-3"
               >
-                <div className="text-[10px]  tracking-[0.25em] text-[#f4cf8a]/85 uppercase">
+                <div className="text-[10px]  tracking-wide text-[#f4cf8a]/85 uppercase">
                   {milestones[activeMilestoneInxt].date}
                 </div>
                 <h3 className="text-xl font-display font-medium text-white tracking-tight">
@@ -528,7 +528,7 @@ export default function CompanyPage({
 
                 <div className="space-y-1 flex-1 flex flex-col justify-between">
                   <div>
-                    <span className="text-[9px]  tracking-widest text-white/40">
+                    <span className="text-[9px]  tracking-wide text-white/40">
                       {post.date}
                     </span>
                     <h4 className="text-xs sm:text-sm font-medium text-white group-hover:text-[#f4cf8a] transition duration-200 mt-1 lines-clamp-2">
@@ -589,7 +589,7 @@ export default function CompanyPage({
             <div className="col-span-2 space-y-4">
               <div className="flex items-center gap-2.5 select-none pointer-events-none">
                 <XenithLogo size={24} className="opacity-90" />
-                <span className="text-sm font-semibold tracking-[0.3em] text-white">Xenith</span>
+                <span className="text-sm font-semibold tracking-wide text-white">Xenith</span>
               </div>
               <p className="text-[10px] sm:text-xs leading-relaxed text-[#f4cf8a]/80 font-sans font-light max-w-xs">
                 Sovereign digital finance interfaces. We build advanced model interfaces, smart sandboxes, and safe playground endpoints.

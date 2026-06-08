@@ -207,7 +207,7 @@ export default function ApiPlayground() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
         {/* Left Side: Typography and Info Content */}
         <div className="lg:col-span-5 space-y-4">
-          <div className="text-xs uppercase tracking-[0.35em] text-[#f4cf8a]/65 ">
+          <div className="text-xs uppercase tracking-wide text-[#f4cf8a]/65 ">
             [ API ]
           </div>
           
@@ -220,10 +220,10 @@ export default function ApiPlayground() {
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <button className="rounded-full bg-white text-black px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] hover:bg-[#f2d9a1] transition-all duration-300">
+            <button className="rounded-full bg-white text-black px-5 py-2.5 text-xs font-semibold uppercase tracking-wide hover:bg-[#f2d9a1] transition-all duration-300">
               CONNECT YOUR EXCHANGE API
             </button>
-            <button className="rounded-full border border-white/10 text-white px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] hover:bg-white/[0.05] transition-all duration-300">
+            <button className="rounded-full border border-white/10 text-white px-5 py-2.5 text-xs font-semibold uppercase tracking-wide hover:bg-white/[0.05] transition-all duration-300">
               ALPHA NODE PRICING
             </button>
           </div>
@@ -238,11 +238,11 @@ export default function ApiPlayground() {
 
             {/* Console Toolbar Header */}
             <div className="flex items-center justify-between border-b border-white/[0.05] pb-2 mb-4">
-              <span className="text-[10px] uppercase tracking-[0.15em] text-white/40  font-medium flex items-center gap-2">
+              <span className="text-[10px] uppercase tracking-wide text-white/40  font-medium flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                 Console Preview
               </span>
-              <span className="text-[10px] uppercase tracking-[0.15em] text-[#f4cf8a] font-semibold ">
+              <span className="text-[10px] uppercase tracking-wide text-[#f4cf8a] font-semibold ">
                 Live Sandbox
               </span>
             </div>
@@ -316,7 +316,7 @@ export default function ApiPlayground() {
             </div>
 
             {/* Hover tooltip hint */}
-            <div className="mt-3 pt-2 border-t border-white/[0.04] text-[8.5px] uppercase tracking-widest text-white/25 text-left ">
+            <div className="mt-3 pt-2 border-t border-white/[0.04] text-[8.5px] uppercase tracking-wide text-white/25 text-left ">
               Click the cards below to test different routes
             </div>
           </div>
@@ -342,7 +342,7 @@ export default function ApiPlayground() {
                 <div className="absolute top-0 right-0 w-16 h-16 bg-[#f4cf8a]/5 rounded-full blur-xl pointer-events-none" />
               )}
               
-              <div className="text-[8.5px] text-white/40  uppercase tracking-[0.2em] mb-1 group-hover:text-white/60 transition duration-300">
+              <div className="text-[8.5px] text-white/40  uppercase tracking-wide mb-1 group-hover:text-white/60 transition duration-300">
                 {state.category}
               </div>
               
@@ -371,7 +371,7 @@ export default function ApiPlayground() {
                 onClick={() => handleStateChange(actualIdx)}
                 className="group text-left border-none bg-transparent hover:opacity-90 transition p-0 cursor-pointer space-y-0.5 block w-full outline-none focus:outline-none"
               >
-                <div className="text-[8.5px] text-white/40  uppercase tracking-[0.2em] transition duration-300 flex items-center gap-1">
+                <div className="text-[8.5px] text-white/40  uppercase tracking-wide transition duration-300 flex items-center gap-1">
                   {state.category}
                   {isActive && <span className="w-1 h-1 rounded-full bg-[#f4cf8a]" />}
                 </div>

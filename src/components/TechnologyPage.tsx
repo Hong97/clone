@@ -107,7 +107,7 @@ export default function TechnologyPage({
               transition={{ duration: 0.25, ease: "easeInOut" }}
               className="border-t border-white/[0.04] bg-[#060505]/98 backdrop-blur-lg lg:hidden overflow-hidden"
             >
-              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-[0.25em]">
+              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-wide">
                 <a 
                   className="text-white/60 hover:text-white pl-3 py-2.5 cursor-pointer transition" 
                   onClick={() => {
@@ -172,7 +172,7 @@ export default function TechnologyPage({
         {/* HERO SECTION */}
         <div className="mb-12 sm:mb-16 md:mb-24 lg:mb-32">
           {/* Label Tag */}
-          <div className="mb-6 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 ">
+          <div className="mb-6 text-[10px] md:text-xs tracking-wide text-[#f4cf8a]/65 ">
             [ Technology ]
           </div>
 
@@ -192,7 +192,7 @@ export default function TechnologyPage({
         {/* ARCHITECTURE SECTION */}
         <div className="border-t border-white/[0.08] lg:border-white/[0.04] pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-24 lg:pb-32">
           
-          <div className="mb-12 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 ">
+          <div className="mb-12 text-[10px] md:text-xs tracking-wide text-[#f4cf8a]/65 ">
             [ Structure ]
           </div>
 
@@ -205,7 +205,7 @@ export default function TechnologyPage({
               </div>
               <div className="md:col-span-4 space-y-1">
                 <h3 className="text-sm font-normal text-white uppercase tracking-wider">Three Surfaces</h3>
-                <p className="text-[10px] uppercase tracking-widest text-[#f4cf8a]/55 ">Xenith Chat, API, Guides</p>
+                <p className="text-[10px] uppercase tracking-wide text-[#f4cf8a]/55 ">Xenith Chat, API, Guides</p>
               </div>
               <div className="md:col-span-7 flex items-center">
                 <p className="text-xs sm:text-sm text-white/45 font-sans leading-relaxed">
@@ -221,7 +221,7 @@ export default function TechnologyPage({
               </div>
               <div className="md:col-span-4 space-y-1">
                 <h3 className="text-sm font-normal text-white uppercase tracking-wider">AId-Driven Planner</h3>
-                <p className="text-[10px] uppercase tracking-widest text-[#f4cf8a]/55  font-sans">Self-correcting helper</p>
+                <p className="text-[10px] uppercase tracking-wide text-[#f4cf8a]/55  font-sans">Self-correcting helper</p>
               </div>
               <div className="md:col-span-7 flex items-center">
                 <p className="text-xs sm:text-sm text-white/45 font-sans leading-relaxed">
@@ -237,7 +237,7 @@ export default function TechnologyPage({
               </div>
               <div className="md:col-span-4 space-y-1">
                 <h3 className="text-sm font-normal text-white uppercase tracking-wider">Simulated Ledger</h3>
-                <p className="text-[10px] uppercase tracking-widest text-[#f4cf8a]/55 ">Test keys & mock holdings</p>
+                <p className="text-[10px] uppercase tracking-wide text-[#f4cf8a]/55 ">Test keys & mock holdings</p>
               </div>
               <div className="md:col-span-7 flex items-center">
                 <p className="text-xs sm:text-sm text-white/45 font-sans leading-relaxed">
@@ -253,7 +253,7 @@ export default function TechnologyPage({
               </div>
               <div className="md:col-span-4 space-y-1">
                 <h3 className="text-sm font-normal text-white uppercase tracking-wider">Private Workspace</h3>
-                <p className="text-[10px] uppercase tracking-widest text-[#f4cf8a]/55 ">Isolated and safe memory</p>
+                <p className="text-[10px] uppercase tracking-wide text-[#f4cf8a]/55 ">Isolated and safe memory</p>
               </div>
               <div className="md:col-span-7 flex items-center">
                 <p className="text-xs sm:text-sm text-white/45 font-sans leading-relaxed">
@@ -269,7 +269,7 @@ export default function TechnologyPage({
         {/* SECURITY PILLARS SECTION */}
         <div className="border-t border-white/[0.08] pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-24 lg:pb-36">
           
-          <div className="mb-6 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 ">
+          <div className="mb-6 text-[10px] md:text-xs tracking-wide text-[#f4cf8a]/65 ">
             [ Safety ]
           </div>
 
@@ -330,7 +330,7 @@ export default function TechnologyPage({
         {/* PERFORMANCE METRICS SECTION */}
         <div className="border-t border-white/[0.08] pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-24 lg:pb-32">
           
-          <div className="mb-12 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 ">
+          <div className="mb-12 text-[10px] md:text-xs tracking-wide text-[#f4cf8a]/65 ">
             [ Key Numbers ]
           </div>
 
@@ -338,25 +338,25 @@ export default function TechnologyPage({
             {/* Metric 1 */}
             <div className="space-y-2 text-center sm:text-left sm:px-4 first:pl-0">
               <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display">Under 1s</p>
-              <p className="text-[9px] sm:text-[10px]  tracking-widest text-[#f4cf8a]/70 font-semibold">Typical AI reply speed</p>
+              <p className="text-[9px] sm:text-[10px]  tracking-wide text-[#f4cf8a]/70 font-semibold">Typical AI reply speed</p>
             </div>
 
             {/* Metric 2 */}
             <div className="space-y-2 text-center sm:text-left sm:px-6">
               <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display">100%</p>
-              <p className="text-[9px] sm:text-[10px]  tracking-widest text-white/40">Simulated risk-free sandbox</p>
+              <p className="text-[9px] sm:text-[10px]  tracking-wide text-white/40">Simulated risk-free sandbox</p>
             </div>
 
             {/* Metric 3 */}
             <div className="space-y-2 text-center sm:text-left sm:px-6">
               <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display">SOC 2</p>
-              <p className="text-[9px] sm:text-[10px]  tracking-widest text-white/40">Secure platform standards</p>
+              <p className="text-[9px] sm:text-[10px]  tracking-wide text-white/40">Secure platform standards</p>
             </div>
 
             {/* Metric 4 */}
             <div className="space-y-2 text-center sm:text-left sm:px-6 last:pr-0">
               <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display font-sans">90+ days</p>
-              <p className="text-[9px] sm:text-[10px]  tracking-widest text-[#f4cf8a]/70 font-semibold">Local history storage</p>
+              <p className="text-[9px] sm:text-[10px]  tracking-wide text-[#f4cf8a]/70 font-semibold">Local history storage</p>
             </div>
           </div>
 
@@ -365,7 +365,7 @@ export default function TechnologyPage({
         {/* STACK LIST SECTION */}
         <div className="border-t border-white/[0.08] pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-24 lg:pb-36">
           
-          <div className="mb-12 text-[10px] md:text-xs tracking-[0.35em] text-[#f4cf8a]/65 ">
+          <div className="mb-12 text-[10px] md:text-xs tracking-wide text-[#f4cf8a]/65 ">
             [ Tech Stack ]
           </div>
 
@@ -390,7 +390,7 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Layers size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px]  tracking-widest text-white/50 font-semibold">Core Framework</span>
+                  <span className="text-[9px] sm:text-[10px]  tracking-wide text-white/50 font-semibold">Core Framework</span>
                 </div>
                 <div className="text-xs sm:text-sm text-white/80 ">
                   React 18 & Vite (Lightning-fast client rendering)
@@ -403,7 +403,7 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Zap size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px]  tracking-widest text-white/50 font-semibold">AI Integration</span>
+                  <span className="text-[9px] sm:text-[10px]  tracking-wide text-white/50 font-semibold">AI Integration</span>
                 </div>
                 <div className="text-xs sm:text-sm text-white/80 ">
                   Server-side Google Gemini (Rich model reasoning)
@@ -416,7 +416,7 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Database size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px]  tracking-widest text-white/50 font-semibold">Data Safety</span>
+                  <span className="text-[9px] sm:text-[10px]  tracking-wide text-white/50 font-semibold">Data Safety</span>
                 </div>
                 <div className="text-xs sm:text-sm text-white/80 ">
                   Browser-side LocalStorage (Zero leak guarantee)
@@ -429,7 +429,7 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Lock size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px]  tracking-widest text-white/50 font-semibold">Security Check</span>
+                  <span className="text-[9px] sm:text-[10px]  tracking-wide text-white/50 font-semibold">Security Check</span>
                 </div>
                 <div className="text-xs sm:text-sm text-white/80 ">
                   Per-request sandbox simulation & rate guards
@@ -442,7 +442,7 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Activity size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px]  tracking-widest text-white/50 font-semibold">Visual Magic</span>
+                  <span className="text-[9px] sm:text-[10px]  tracking-wide text-white/50 font-semibold">Visual Magic</span>
                 </div>
                 <div className="text-xs sm:text-sm text-white/80 ">
                   Tailwind CSS + Motion (Silky smooth feedback)
@@ -469,13 +469,13 @@ export default function TechnologyPage({
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
             <button 
               onClick={onTryXenith}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-white text-black px-7 py-3 text-xs tracking-[0.2em] font-medium hover:bg-[#ffe5b0] transition-colors duration-300 cursor-pointer"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-white text-black px-7 py-3 text-xs tracking-wide font-medium hover:bg-[#ffe5b0] transition-colors duration-300 cursor-pointer"
             >
               Request Free Trial <ArrowUpRight size={14} />
             </button>
             <button 
               onClick={onNavigateProduct}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full border border-white/10 hover:border-white/30 px-7 py-3 text-xs tracking-[0.2em] font-medium text-white/80 hover:text-white transition duration-300 cursor-pointer"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full border border-white/10 hover:border-white/30 px-7 py-3 text-xs tracking-wide font-medium text-white/80 hover:text-white transition duration-300 cursor-pointer"
             >
               See It In Product <ArrowRight size={14} />
             </button>
@@ -486,11 +486,11 @@ export default function TechnologyPage({
       </div>
 
       {/* Footer Navigation */}
-      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-[0.15em] text-white/40  z-10 relative">
+      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-wide text-white/40  z-10 relative">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2.5 select-none pointer-events-none">
             <XenithLogo size={20} className="opacity-60" />
-            <span className="text-[10px] tracking-[0.3em] text-white/50">Xenith Labs © 2026</span>
+            <span className="text-[10px] tracking-wide text-white/50">Xenith Labs © 2026</span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-9 text-[9px] lg:text-[10px]">
             <a onClick={onNavigateCompany} className="hover:text-white transition cursor-pointer">Company</a>

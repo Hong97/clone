@@ -185,8 +185,8 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
               {/* Logo block */}
               <div className="mb-8 transform hover:scale-[1.02] transition-duration-500 flex flex-col items-center">
                 <XenithLogo size={110} showText={false} />
-                <span className="text-lg font-light tracking-[0.5em] text-white mt-4 font-display">XENITH</span>
-                <span className="text-[10px] tracking-[0.35em] text-[#f4cf8a] uppercase mt-1.5 ">Partner Integration Framework</span>
+                <span className="text-lg font-light tracking-wide text-white mt-4 font-display">XENITH</span>
+                <span className="text-[10px] tracking-wide text-[#f4cf8a] uppercase mt-1.5 ">Partner Integration Framework</span>
               </div>
 
               {/* Advanced Login Interface */}
@@ -202,7 +202,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                     >
-                      <h3 className="text-xs font-semibold tracking-[0.3em] text-[#f4cf8a] uppercase text-center mb-6 font-display">
+                      <h3 className="text-xs font-semibold tracking-wide text-[#f4cf8a] uppercase text-center mb-6 font-display">
                         Sovereign Access Terminal
                       </h3>
 
@@ -215,7 +215,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                             value={partnerId}
                             onChange={(e) => setPartnerId(e.target.value)}
                             placeholder="SOVEREIGN REGISTRY ID"
-                            className="w-full bg-black/60 border border-white/[0.06] hover:border-white/15 focus:border-[#f4cf8a]/40 rounded-xl py-4.5 pl-11 pr-4 text-xs tracking-widest text-[#f4cf8a]  placeholder:text-white/20 placeholder:tracking-normal outline-none transition duration-200"
+                            className="w-full bg-black/60 border border-white/[0.06] hover:border-white/15 focus:border-[#f4cf8a]/40 rounded-xl py-4.5 pl-11 pr-4 text-xs tracking-wide text-[#f4cf8a]  placeholder:text-white/20 placeholder:tracking-normal outline-none transition duration-200"
                           />
                         </div>
 
@@ -246,7 +246,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                         {/* Decrypt Access Action Button */}
                         <button 
                           type="submit"
-                          className="w-full rounded-xl bg-gradient-to-r from-[#eac57d] via-[#f4cf8a] to-[#ecd4a5] text-black text-[10px] font-semibold tracking-[0.25em] py-4 mt-4 transition duration-300 hover:opacity-90 active:scale-98 shadow-md shadow-[#f4cf8a]/10 cursor-pointer flex items-center justify-center gap-2 uppercase"
+                          className="w-full rounded-xl bg-gradient-to-r from-[#eac57d] via-[#f4cf8a] to-[#ecd4a5] text-black text-[10px] font-semibold tracking-wide py-4 mt-4 transition duration-300 hover:opacity-90 active:scale-98 shadow-md shadow-[#f4cf8a]/10 cursor-pointer flex items-center justify-center gap-2 uppercase"
                         >
                           Decrypt Credentials
                         </button>
@@ -281,7 +281,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                         <Lock className="absolute text-[#f4cf8a]" size={20} />
                       </div>
                       
-                      <h4 className="text-[10px]  tracking-[0.3em] uppercase text-white/90">Decryption Protocol Initiated</h4>
+                      <h4 className="text-[10px]  tracking-wide uppercase text-white/90">Decryption Protocol Initiated</h4>
                       <div className="text-[18px]  text-white tracking-wider font-light mt-2">{authProgress}%</div>
                       <p className="text-[9px] text-white/30  mt-4 tracking-normal">Decoding key-pairs and validation blocks...</p>
                     </motion.div>
@@ -303,8 +303,8 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                         <ShieldCheck className="text-[#f4cf8a] animate-pulse" size={28} />
                       </div>
                       
-                      <h4 className="text-[10px]  tracking-[0.3em] uppercase text-emerald-400">Handshake Signature Check</h4>
-                      <div className="text-[10px]  text-white/90 tracking-widest mt-2">CYPHER SECURITY PASSED</div>
+                      <h4 className="text-[10px]  tracking-wide uppercase text-emerald-400">Handshake Signature Check</h4>
+                      <div className="text-[10px]  text-white/90 tracking-wide mt-2">CYPHER SECURITY PASSED</div>
                       <div className="w-full bg-white/5 h-1 rounded-full overflow-hidden mt-4 max-w-[150px]">
                         <div className="bg-emerald-400 h-full transition-all duration-100" style={{ width: `${authProgress}%` }} />
                       </div>
@@ -325,7 +325,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                         <Check size={26} className="stroke-[3]" />
                       </div>
                       
-                      <h4 className="text-[10px]  tracking-[0.3em] uppercase text-emerald-400">Authenticated</h4>
+                      <h4 className="text-[10px]  tracking-wide uppercase text-emerald-400">Authenticated</h4>
                       <p className="text-[11px] text-white/50 font-sans mt-2 tracking-wide leading-relaxed">
                         Secure session established.<br/>Redirecting to Partner Command Tower...
                       </p>
@@ -349,18 +349,18 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                 <div className="transform group-hover:scale-105 transition-all">
                   <XenithLogo size={24} className="opacity-95" />
                 </div>
-                <span className="text-sm font-semibold tracking-[0.35em] text-white font-display select-none">XENITH</span>
+                <span className="text-sm font-semibold tracking-wide text-white font-display select-none">XENITH</span>
               </div>
 
               {/* Header Right Actions */}
               <div className="flex items-center gap-3.5 sm:self-center">
                 <button 
                   onClick={handleSignOut}
-                  className="rounded border border-amber-500/20 px-5 py-1.5 text-[9px] tracking-[0.16em] uppercase text-[#f4cf8a] hover:bg-[#f4cf8a]/5 transition cursor-pointer font-semibold"
+                  className="rounded border border-amber-500/20 px-5 py-1.5 text-[9px] tracking-wide uppercase text-[#f4cf8a] hover:bg-[#f4cf8a]/5 transition cursor-pointer font-semibold"
                 >
                   Sign Out
                 </button>
-                <div className="rounded border border-white/[0.08] bg-black/30 text-white/80 px-4 py-1.5 text-[9px] tracking-[0.15em] flex items-center gap-1.5  select-none">
+                <div className="rounded border border-white/[0.08] bg-black/30 text-white/80 px-4 py-1.5 text-[9px] tracking-wide flex items-center gap-1.5  select-none">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(52,211,153,0.8)]" />
                   👤 Profile
                 </div>
@@ -387,7 +387,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
             <section className="space-y-4">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/[0.03] pb-3.5 select-none">
                 <div className="space-y-1">
-                  <h3 className="text-[11px] tracking-[0.3em] font-medium text-[#f4cf8a] font-display uppercase">
+                  <h3 className="text-[11px] tracking-wide font-medium text-[#f4cf8a] font-display uppercase">
                     Sovereign Liquidity Network
                   </h3>
                   <p className="text-[10px] text-white/40">
@@ -397,7 +397,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
 
                 <div className="flex flex-col sm:items-end gap-1.5 tracking-wider text-right">
                   <span className="text-white/35 text-[9px]  uppercase">Your Level: Black Member</span>
-                  <div className="bg-[#f4cf8a]/10 border border-[#f4cf8a]/30 text-[#f4cf8a] font-bold px-4 py-1.5 rounded flex items-center justify-center gap-1.5 select-none text-[10px] tracking-widest ">
+                  <div className="bg-[#f4cf8a]/10 border border-[#f4cf8a]/30 text-[#f4cf8a] font-bold px-4 py-1.5 rounded flex items-center justify-center gap-1.5 select-none text-[10px] tracking-wide ">
                     PLUS <Star size={9} className="fill-[#f4cf8a]" />
                   </div>
                 </div>
@@ -408,7 +408,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                 
                 {/* Intro Members count panel */}
                 <div className="md:col-span-4 rounded-xl border border-white/[0.05] bg-[#0c090a]/40 p-6 flex flex-col justify-between shadow-md min-h-[160px] select-none">
-                  <div className="text-[9px]  tracking-[0.25em] text-[#f4cf8a] uppercase">
+                  <div className="text-[9px]  tracking-wide text-[#f4cf8a] uppercase">
                     Sub-Node Allocations
                   </div>
                   <div>
@@ -425,7 +425,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                 <div className="md:col-span-8 rounded-xl border border-white/[0.05] bg-[#0c090a]/40 p-6 flex flex-col justify-between shadow-md overflow-hidden relative">
                   <div className="absolute top-0 right-0 w-24 h-24 bg-[#f4cf8a]/3 rounded-full blur-xl pointer-events-none" />
                   
-                  <div className="text-[9px]  tracking-[0.25em] text-[#f4cf8a] uppercase mb-4 text-center">
+                  <div className="text-[9px]  tracking-wide text-[#f4cf8a] uppercase mb-4 text-center">
                     Liquidity Allocation Tiers
                   </div>
 
@@ -480,7 +480,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                   </div>
 
                   {/* Total Members Indicator */}
-                  <div className="text-center mt-3.5 text-[9px]  tracking-widest text-[#f4cf8a]/80 select-none">
+                  <div className="text-center mt-3.5 text-[9px]  tracking-wide text-[#f4cf8a]/80 select-none">
                     Total API Connections: 60
                   </div>
                 </div>
@@ -494,7 +494,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
               {/* MEMBER PACKAGE LIST */}
               <div className="lg:col-span-6 rounded-xl border border-white/[0.05] bg-[#0c090a]/40 p-6 flex flex-col justify-between shadow-md space-y-4">
                 <div className="flex items-center justify-between border-b border-white/[0.03] pb-3 select-none">
-                  <h3 className="text-[10px] tracking-[0.25em] font-medium text-[#f4cf8a] font-display uppercase">
+                  <h3 className="text-[10px] tracking-wide font-medium text-[#f4cf8a] font-display uppercase">
                     Sub-Node Clearance Allocations
                   </h3>
                   
@@ -537,7 +537,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                       </div>
                       <button 
                         type="submit"
-                        className="w-full bg-[#f4cf8a] hover:bg-[#ebd09d] text-black text-[9px]  uppercase tracking-widest font-semibold py-1.5 rounded transition cursor-pointer"
+                        className="w-full bg-[#f4cf8a] hover:bg-[#ebd09d] text-black text-[9px]  uppercase tracking-wide font-semibold py-1.5 rounded transition cursor-pointer"
                       >
                         Confirm Allocation
                       </button>
@@ -549,7 +549,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                 <div className="overflow-x-auto">
                   <table className="w-full text-left font-sans text-xs">
                     <thead>
-                      <tr className="text-white/30 uppercase tracking-[0.2em] text-[9px] border-b border-white/[0.04]">
+                      <tr className="text-white/30 uppercase tracking-wide text-[9px] border-b border-white/[0.04]">
                         <th className="pb-2 font-normal">Sub-Node ID</th>
                         <th className="pb-2 font-normal">Allocation Tier</th>
                         <th className="pb-2 font-normal text-right">Connected AUM</th>
@@ -610,7 +610,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                 {/* Statistics Card 1: TOTAL SUBSCRIPTION FLOW */}
                 <div className="rounded-xl border border-white/[0.05] bg-[#0c090a]/40 p-5 flex items-center justify-between shadow-md relative group select-none">
                   <div className="space-y-4 max-w-[70%]">
-                    <div className="text-[9px]  tracking-[0.25em] text-[#f4cf8a] uppercase">
+                    <div className="text-[9px]  tracking-wide text-[#f4cf8a] uppercase">
                       Cumulative Connected AUM
                     </div>
                     <div>
@@ -624,7 +624,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                   </div>
 
                   {/* Circular Gold Coin Stamp Badge: RM */}
-                  <div className="w-12 h-12 rounded-full border border-[#f4cf8a]/30 bg-[#f4cf8a]/5 flex items-center justify-center text-[#f4cf8a]  text-[10px] tracking-widest font-bold shadow-[0_0_15px_rgba(244,207,138,0.06)] group-hover:scale-105 group-hover:border-[#f4cf8a]/50 transition duration-300">
+                  <div className="w-12 h-12 rounded-full border border-[#f4cf8a]/30 bg-[#f4cf8a]/5 flex items-center justify-center text-[#f4cf8a]  text-[10px] tracking-wide font-bold shadow-[0_0_15px_rgba(244,207,138,0.06)] group-hover:scale-105 group-hover:border-[#f4cf8a]/50 transition duration-300">
                     RM
                   </div>
                 </div>
@@ -634,7 +634,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                   <div className="absolute inset-0 bg-[linear-gradient(rgba(244,207,138,0.01)_1px,transparent_1px)] bg-[size:100%_12px] opacity-10" />
                   
                   <div className="space-y-4 max-w-[60%] relative z-10">
-                    <div className="text-[9px]  tracking-[0.25em] text-[#f4cf8a] uppercase">
+                    <div className="text-[9px]  tracking-wide text-[#f4cf8a] uppercase">
                       Routing Arbitrage Profit
                     </div>
                     <div>
@@ -676,7 +676,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                 {/* Statistics Card 3: TOTAL POOL VALUE */}
                 <div className="rounded-xl border border-white/[0.05] bg-[#0c090a]/40 p-5 flex items-center justify-between shadow-md relative group select-none">
                   <div className="space-y-4 max-w-[70%]">
-                    <div className="text-[9px]  tracking-[0.25em] text-[#f4cf8a] uppercase">
+                    <div className="text-[9px]  tracking-wide text-[#f4cf8a] uppercase">
                       Liquidity Pool Capacity
                     </div>
                     <div>
@@ -715,7 +715,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
 
                 {/* Center Profit specifications */}
                 <div className="md:col-span-6 space-y-1 text-center sm:text-left">
-                  <h3 className="text-[9px] tracking-[0.3em] font-medium text-[#f4cf8a] uppercase font-display">
+                  <h3 className="text-[9px] tracking-wide font-medium text-[#f4cf8a] uppercase font-display">
                     Allocated Routing Performance (50%)
                   </h3>
                   <div className="text-4xl sm:text-5xl font-light tracking-tight text-white mb-2 leading-none">
@@ -760,7 +760,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
               {/* LIQUIDITY CLEARING BANDWIDTH */}
               <div className="lg:col-span-6 rounded-xl border border-white/[0.05] bg-[#0c090a]/40 p-6 flex flex-col justify-between shadow-md space-y-5 select-none">
                 <div className="space-y-1">
-                  <h3 className="text-[10px] tracking-[0.25em] font-medium text-[#f4cf8a] font-display uppercase">
+                  <h3 className="text-[10px] tracking-wide font-medium text-[#f4cf8a] font-display uppercase">
                     Liquidity Clearing Bandwidth
                   </h3>
                 </div>
@@ -794,7 +794,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
 
                   {/* Flow Arrow representation */}
                   <div className="flex-grow max-w-[80px] h-px bg-white/10 relative flex items-center justify-center">
-                    <span className="absolute -top-3 text-[7px] text-[#f4cf8a]/50 uppercase tracking-widest  scale-90">Bandwidth</span>
+                    <span className="absolute -top-3 text-[7px] text-[#f4cf8a]/50 uppercase tracking-wide  scale-90">Bandwidth</span>
                     <div className="absolute right-0 w-1 h-1 border-t border-r border-white/30 transform rotate-45" />
                   </div>
 
@@ -810,7 +810,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
               {/* SOVEREIGN SCALING PROTOCOLS (SOP) */}
               <div className="lg:col-span-6 rounded-xl border border-white/[0.05] bg-[#0c090a]/40 p-6 flex flex-col justify-between shadow-md space-y-4">
                 <div className="space-y-1 select-none">
-                  <h3 className="text-[10px] tracking-[0.25em] font-medium text-[#f4cf8a] font-display uppercase">
+                  <h3 className="text-[10px] tracking-wide font-medium text-[#f4cf8a] font-display uppercase">
                     Sovereign Co-Routing SOP
                   </h3>
                   <p className="text-[9px] text-white/35 lowercase">
@@ -826,7 +826,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                       setActiveSopTab("incubation");
                       triggerToast("Protocol initialized: Proof of Profit Incubation.");
                     }}
-                    className={`py-2 text-[9px] tracking-widest uppercase  rounded transition-all cursor-pointer ${
+                    className={`py-2 text-[9px] tracking-wide uppercase  rounded transition-all cursor-pointer ${
                       activeSopTab === "incubation" 
                         ? "bg-[#f4cf8a]/10 text-[#f4cf8a] border border-[#f4cf8a]/20 font-semibold" 
                         : "text-white/40 hover:text-white/70"
@@ -840,7 +840,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                       setActiveSopTab("scarcity");
                       triggerToast("Protocol initialized: Network Scarcity Limits.");
                     }}
-                    className={`py-2 text-[9px] tracking-widest uppercase  rounded transition-all cursor-pointer ${
+                    className={`py-2 text-[9px] tracking-wide uppercase  rounded transition-all cursor-pointer ${
                       activeSopTab === "scarcity" 
                         ? "bg-[#f4cf8a]/10 text-[#f4cf8a] border border-[#f4cf8a]/20 font-semibold" 
                         : "text-white/40 hover:text-white/70"
@@ -854,7 +854,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                       setActiveSopTab("briefing");
                       triggerToast("Protocol initialized: Closed-Door Assistance.");
                     }}
-                    className={`py-2 text-[9px] tracking-widest uppercase  rounded transition-all cursor-pointer ${
+                    className={`py-2 text-[9px] tracking-wide uppercase  rounded transition-all cursor-pointer ${
                       activeSopTab === "briefing" 
                         ? "bg-[#f4cf8a]/10 text-[#f4cf8a] border border-[#f4cf8a]/20 font-semibold" 
                         : "text-white/40 hover:text-white/70"
@@ -954,7 +954,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
             <section className="rounded-xl border border-white/[0.05] bg-[#0c090a]/30 p-6 flex flex-col md:flex-row items-stretch justify-between shadow-md gap-6 select-none font-sans">
               <div className="md:max-w-[55%] flex flex-col justify-between space-y-4">
                 <div className="space-y-2">
-                  <h3 className="text-[10px] tracking-[0.25em] font-medium text-[#f4cf8a] uppercase font-display">
+                  <h3 className="text-[10px] tracking-wide font-medium text-[#f4cf8a] uppercase font-display">
                     About Xenith
                   </h3>
                   <p className="text-xs leading-relaxed text-white/50 text-justify">
@@ -986,7 +986,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
             </section>
 
             {/* 8. FOOTER STAMP */}
-            <footer className="pt-8 border-t border-white/[0.03] text-center text-[9px] tracking-[0.3em] text-white/20 uppercase  space-y-3">
+            <footer className="pt-8 border-t border-white/[0.03] text-center text-[9px] tracking-wide text-white/20 uppercase  space-y-3">
               <div>© 2025 Xenith. All rights reserved.</div>
               <div className="flex justify-center gap-4 text-white/40 hover:text-white/60 transition text-[8.5px]">
                 <span>Privacy Policy</span>

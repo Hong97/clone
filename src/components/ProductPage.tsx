@@ -105,7 +105,7 @@ export default function ProductPage({
               transition={{ duration: 0.25, ease: "easeInOut" }}
               className="border-t border-white/[0.04] bg-[#060505]/98 backdrop-blur-lg lg:hidden overflow-hidden"
             >
-              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-[0.25em]">
+              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-wide">
                 <a 
                   className="text-white border-l-2 border-[#f4cf8a] pl-3 font-medium py-2.5 cursor-pointer transition" 
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -169,7 +169,7 @@ export default function ProductPage({
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 py-20 lg:py-28">
         
         {/* Hero Section Label */}
-        <div className="mb-6 text-[10px] md:text-xs uppercase tracking-[0.35em] text-[#f4cf8a]/65 ">
+        <div className="mb-6 text-[10px] md:text-xs uppercase tracking-wide text-[#f4cf8a]/65 ">
           [ Product ]
         </div>
 
@@ -195,7 +195,7 @@ export default function ProductPage({
             <div className="lg:col-span-6 space-y-6">
               
               {/* Category Pill Tag */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-[0.25em] text-white/75  backdrop-blur">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-wide text-white/75  backdrop-blur">
                 <Sparkles size={11} className="text-[#e5c185]" />
                 Xenith Assistant
               </div>
@@ -241,7 +241,7 @@ export default function ProductPage({
                       <div className="w-2.5 h-2.5 rounded-full bg-red-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-green-500/30" />
-                      <span className="text-[9px]  uppercase tracking-widest text-white/30 ml-2">Xenith Chat v1.4</span>
+                      <span className="text-[9px]  uppercase tracking-wide text-white/30 ml-2">Xenith Chat v1.4</span>
                     </div>
 
                     {/* Chat Bubble Simulation */}
@@ -291,7 +291,7 @@ export default function ProductPage({
                       <div className="w-2.5 h-2.5 rounded-full bg-red-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-green-500/30" />
-                      <span className="text-[9px]  uppercase tracking-widest text-white/30 ml-2">curl_sandbox.sh</span>
+                      <span className="text-[9px]  uppercase tracking-wide text-white/30 ml-2">curl_sandbox.sh</span>
                     </div>
 
                     {/* Developer Code Simulation lines */}
@@ -323,7 +323,7 @@ export default function ProductPage({
                   {/* status tag */}
                   <div className="pt-2 flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#f4cf8a] animate-ping" />
-                    <span className="text-[9px]  uppercase text-[#f4cf8a]/80 tracking-widest">Safe sandbox active (200 OK)</span>
+                    <span className="text-[9px]  uppercase text-[#f4cf8a]/80 tracking-wide">Safe sandbox active (200 OK)</span>
                   </div>
                 </div>
               </div>
@@ -333,7 +333,7 @@ export default function ProductPage({
             <div className="lg:col-span-6 space-y-6">
               
               {/* Category Pill Tag */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-[0.25em] text-white/75  backdrop-blur">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-wide text-white/75  backdrop-blur">
                 <Code2 size={11} className="text-[#e5c185]" />
                 Xenith Developer API
               </div>
@@ -373,7 +373,7 @@ export default function ProductPage({
             <div className="lg:col-span-6 space-y-6">
               
               {/* Category Pill Tag */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-[0.25em] text-white/75  backdrop-blur">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-wide text-white/75  backdrop-blur">
                 <FileText size={11} className="text-[#e5c185]" />
                 Xenith Guides
               </div>
@@ -420,7 +420,7 @@ export default function ProductPage({
                       <div className="w-2.5 h-2.5 rounded-full bg-red-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-green-500/30" />
-                      <span className="text-[9px]  uppercase tracking-widest text-white/30 ml-2">sample_workbook.json</span>
+                      <span className="text-[9px]  uppercase tracking-wide text-white/30 ml-2">sample_workbook.json</span>
                     </div>
 
                     {/* Documentation Simulation design */}
@@ -455,7 +455,7 @@ export default function ProductPage({
         {/* USE CASES SECTION - Matches grid structure */}
         <div className="border-t border-white/[0.08] pt-12 sm:pt-16 md:pt-24 pb-12 sm:pb-16 md:pb-24 relative">
           
-          <div className="mb-12 text-[10px] md:text-xs uppercase tracking-[0.35em] text-[#f4cf8a]/65 ">
+          <div className="mb-12 text-[10px] md:text-xs uppercase tracking-wide text-[#f4cf8a]/65 ">
             [ Use Cases ]
           </div>
 
@@ -512,13 +512,13 @@ export default function ProductPage({
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto shrink-0">
             <button 
               onClick={onNavigatePricing}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-white text-black px-7 py-3 text-xs uppercase tracking-[0.2em] font-medium hover:bg-[#ffe5b0] transition-colors duration-300 cursor-pointer"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-white text-black px-7 py-3 text-xs uppercase tracking-wide font-medium hover:bg-[#ffe5b0] transition-colors duration-300 cursor-pointer"
             >
               View Free & Premium Tiers <ArrowUpRight size={14} />
             </button>
             <button 
               onClick={onTryXenith}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full border border-white/10 hover:border-white/30 px-7 py-3 text-xs uppercase tracking-[0.2em] font-medium text-white/80 hover:text-white transition duration-300 cursor-pointer"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full border border-white/10 hover:border-white/30 px-7 py-3 text-xs uppercase tracking-wide font-medium text-white/80 hover:text-white transition duration-300 cursor-pointer"
             >
               How Chat Works <ArrowRight size={14} />
             </button>
@@ -528,11 +528,11 @@ export default function ProductPage({
       </div>
 
       {/* Elegant Footer Details */}
-      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-[0.15em] text-white/40  z-10 relative">
+      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-wide text-white/40  z-10 relative">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2.5 select-none pointer-events-none">
             <XenithLogo size={20} className="opacity-60" />
-            <span className="text-[10px] tracking-[0.3em] text-white/50">Xenith Labs © 2026</span>
+            <span className="text-[10px] tracking-wide text-white/50">Xenith Labs © 2026</span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-9 text-[9px] lg:text-[10px] uppercase">
             <a onClick={onNavigateCompany} className="hover:text-white transition cursor-pointer">Company</a>

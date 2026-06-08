@@ -288,7 +288,7 @@ export default function NewsPage({
               transition={{ duration: 0.25, ease: "easeInOut" }}
               className="border-t border-white/[0.04] bg-[#050505]/98 backdrop-blur-lg lg:hidden overflow-hidden"
             >
-              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-[0.25em]">
+              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-wide">
                 <a 
                   className="text-white/60 hover:text-white pl-3 py-2.5 cursor-pointer transition" 
                   onClick={() => {
@@ -359,11 +359,11 @@ export default function NewsPage({
             <div className="space-y-3">
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-[10px] tracking-[0.25em] text-emerald-400  font-medium uppercase">
+                <span className="text-[10px] tracking-wide text-emerald-400  font-medium uppercase">
                   {heroPost.tag}
                 </span>
                 <span className="text-white/15 text-[10px]">•</span>
-                <span className="text-[10px] tracking-[0.25em] text-[#808080] ">
+                <span className="text-[10px] tracking-wide text-[#808080] ">
                   {heroPost.date}
                 </span>
               </div>
@@ -408,14 +408,14 @@ export default function NewsPage({
                 <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
                 
                 {/* Embedded tag bubble on top-left of grid panels */}
-                <span className="absolute top-4 left-4 text-[9px]  tracking-widest text-[#f4cf8a] bg-black/60 border border-[#f4cf8a]/10 px-2 py-1 rounded-md backdrop-blur">
+                <span className="absolute top-4 left-4 text-[9px]  tracking-wide text-[#f4cf8a] bg-black/60 border border-[#f4cf8a]/10 px-2 py-1 rounded-md backdrop-blur">
                   {post.tag}
                 </span>
               </div>
 
               {/* Title & metadata */}
               <div className="space-y-1 px-1">
-                <span className="text-[9px]  tracking-[0.25em] text-[#808080] uppercase">
+                <span className="text-[9px]  tracking-wide text-[#808080] uppercase">
                   {post.date}
                 </span>
                 <h4 className="text-sm font-medium text-white group-hover:text-[#f4cf8a] transition duration-200 block">
@@ -456,7 +456,7 @@ export default function NewsPage({
                       </p>
                     </div>
                     
-                    <span className="text-[9px] md:text-[10px]  tracking-widest text-white/30 shrink-0 select-none md:pt-1">
+                    <span className="text-[9px] md:text-[10px]  tracking-wide text-white/30 shrink-0 select-none md:pt-1">
                       {post.date}
                     </span>
                   </div>
@@ -479,7 +479,7 @@ export default function NewsPage({
             <div className="col-span-2 space-y-4">
               <div className="flex items-center gap-2.5 select-none pointer-events-none">
                 <XenithLogo size={24} className="opacity-90" />
-                <span className="text-sm font-semibold tracking-[0.3em] text-white font-display">Xenith</span>
+                <span className="text-sm font-semibold tracking-wide text-white font-display">Xenith</span>
               </div>
               <p className="text-[10px] sm:text-xs leading-relaxed text-[#f4cf8a]/80 font-sans font-light max-w-xs">
                 Sovereign digital finance interfaces. We build advanced model interfaces, smart sandboxes, and safe playground endpoints.

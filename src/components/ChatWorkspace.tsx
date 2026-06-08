@@ -106,8 +106,8 @@ export default function ChatWorkspace({ initialPrompt = "", onClose }: ChatWorks
             <XenithLogo size={22} />
           </div>
           <div>
-            <div className="text-xs tracking-[0.2em] font-medium text-white">Xenith AI Assistant</div>
-            <div className="text-[10px] tracking-[0.15em] text-white/40">Safe Simulation Sandbox</div>
+            <div className="text-xs tracking-wide font-medium text-white">Xenith AI Assistant</div>
+            <div className="text-[10px] tracking-wide text-white/40">Safe Simulation Sandbox</div>
           </div>
         </div>
         
@@ -126,7 +126,7 @@ export default function ChatWorkspace({ initialPrompt = "", onClose }: ChatWorks
             key={msg.id} 
             className={`flex flex-col ${msg.role === 'user' ? 'items-end' : 'items-start'}`}
           >
-            <div className="flex items-center gap-2 mb-1.5 text-[10px] tracking-[0.15em] text-white/30 ">
+            <div className="flex items-center gap-2 mb-1.5 text-[10px] tracking-wide text-white/30 ">
               <span>{msg.role === 'user' ? 'You' : 'Xenith'}</span>
               <span>•</span>
               <span>{msg.timestamp}</span>
@@ -147,7 +147,7 @@ export default function ChatWorkspace({ initialPrompt = "", onClose }: ChatWorks
               {/* Dynamic search source tags */}
               {msg.sources && msg.sources.length > 0 && (
                 <div className="mt-4 pt-3 border-t border-white/5">
-                  <div className="text-[10px] tracking-[0.2em] text-white/35  flex items-center gap-1.5 mb-2">
+                  <div className="text-[10px] tracking-wide text-white/35  flex items-center gap-1.5 mb-2">
                     <Layers size={10} /> Grounding Sources ({msg.sources.length})
                   </div>
                   <div className="flex flex-wrap gap-2">
@@ -172,7 +172,7 @@ export default function ChatWorkspace({ initialPrompt = "", onClose }: ChatWorks
 
         {isLoading && (
           <div className="flex flex-col items-start">
-            <div className="flex items-center gap-2 mb-1 text-[10px] tracking-[0.15em] text-white/30  flex-wrap">
+            <div className="flex items-center gap-2 mb-1 text-[10px] tracking-wide text-white/30  flex-wrap">
               <span>Xenith AI</span>
               <span>•</span>
               <span className="animate-pulse">Searching and writing...</span>
@@ -190,7 +190,7 @@ export default function ChatWorkspace({ initialPrompt = "", onClose }: ChatWorks
       {/* Suggested prompts if queue is short */}
       {messages.length < 3 && (
         <div className="px-6 py-2 border-t border-white/5 bg-black/20">
-          <div className="text-[9px] tracking-[0.2em] text-white/30 mb-2 ">Suggested Inquiries</div>
+          <div className="text-[9px] tracking-wide text-white/30 mb-2 ">Suggested Inquiries</div>
           <div className="flex flex-wrap gap-1.5 pb-1">
             {[
               "What is a digital wallet portfolio?",

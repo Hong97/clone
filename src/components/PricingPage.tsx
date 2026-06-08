@@ -209,7 +209,7 @@ export default function PricingPage({
               transition={{ duration: 0.25, ease: "easeInOut" }}
               className="border-t border-white/[0.04] bg-[#060505]/98 backdrop-blur-lg lg:hidden overflow-hidden"
             >
-              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-[0.25em]">
+              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-wide">
                 <a 
                   className="text-white/60 hover:text-white pl-3 py-2.5 cursor-pointer transition" 
                   onClick={() => {
@@ -273,7 +273,7 @@ export default function PricingPage({
         
         {/* HERO HEADER */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <div className="mb-6 text-[10px] md:text-xs uppercase tracking-[0.35em] text-[#f4cf8a]/65 ">
+          <div className="mb-6 text-[10px] md:text-xs uppercase tracking-wide text-[#f4cf8a]/65 ">
             [ Pricing ]
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal tracking-[-0.04em] leading-[1.08] mb-6 font-display">
@@ -315,7 +315,7 @@ export default function PricingPage({
                 </span>
               </button>
             </div>
-            <p className="text-[10px] uppercase tracking-[0.25em] text-white/40 ">
+            <p className="text-[10px] uppercase tracking-wide text-white/40 ">
               Save up to $360 per year with sovereign multi-month accounts
             </p>
           </div>
@@ -347,7 +347,7 @@ export default function PricingPage({
               >
                 {plan.isPopular && (
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <span className="bg-[#e5c185] text-black  text-[8px] font-bold tracking-[0.25em] px-3.5 py-1 rounded-full shadow-sm">
+                    <span className="bg-[#e5c185] text-black  text-[8px] font-bold tracking-wide px-3.5 py-1 rounded-full shadow-sm">
                       Most Popular
                     </span>
                   </div>
@@ -356,7 +356,7 @@ export default function PricingPage({
                 <div className="space-y-6">
                   {/* Top Header */}
                   <div>
-                    <span className="text-xs  tracking-widest text-[#f4cf8a]/60 block mb-1 min-h-[40px]">
+                    <span className="text-xs  tracking-wide text-[#f4cf8a]/60 block mb-1 min-h-[40px]">
                       {plan.name}
                     </span>
                     <p className="text-xs text-white/40 font-sans leading-relaxed min-h-[48px]">
@@ -375,7 +375,7 @@ export default function PricingPage({
                         <span className="text-3xl md:text-4xl font-light tracking-tight text-white font-display">
                           RM {price}
                         </span>
-                        <span className="text-[9px]  tracking-widest text-white/35 ml-1">
+                        <span className="text-[9px]  tracking-wide text-white/35 ml-1">
                           / mo
                         </span>
                       </>
@@ -384,7 +384,7 @@ export default function PricingPage({
                         <span className="text-3xl md:text-4xl font-light tracking-tight text-white font-display">
                           RM 0
                         </span>
-                        <span className="text-[9px]  tracking-widest text-white/35 ml-1">
+                        <span className="text-[9px]  tracking-wide text-white/35 ml-1">
                           / Trial
                         </span>
                       </>
@@ -406,7 +406,7 @@ export default function PricingPage({
                 <div className="pt-8 w-full">
                   <button
                     onClick={() => handleCtaClick(plan)}
-                    className={`w-full rounded-full py-3.5 text-[10px] font-bold tracking-[0.2em] transition-all duration-300 cursor-pointer ${
+                    className={`w-full rounded-full py-3.5 text-[10px] font-bold tracking-wide transition-all duration-300 cursor-pointer ${
                       plan.isPopular 
                         ? "bg-white text-black hover:bg-[#ffe5b0]" 
                         : "border border-white/10 text-white/80 hover:border-white/20 hover:text-white bg-white/[0.01]"
@@ -424,7 +424,7 @@ export default function PricingPage({
         <div className="flex justify-center mb-10 sm:mb-14 pt-2">
           <button
             onClick={() => setShowAllPlans(!showAllPlans)}
-            className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.01] hover:bg-white/[0.04] hover:border-white/20 transition-all px-8 py-3 text-[10px]  tracking-[0.2em] text-[#f4cf8a] hover:text-[#ffd17d] cursor-pointer shadow-lg"
+            className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.01] hover:bg-white/[0.04] hover:border-white/20 transition-all px-8 py-3 text-[10px]  tracking-wide text-[#f4cf8a] hover:text-[#ffd17d] cursor-pointer shadow-lg"
           >
             <span>{showAllPlans ? "Hide Extra Plans" : "See All Plans"}</span>
             <ArrowRight size={11} className={`transition-transform duration-300 ${showAllPlans ? "rotate-90" : ""}`} />
@@ -434,7 +434,7 @@ export default function PricingPage({
         {/* COMPARISON TABLE */}
         <div className="border-t border-white/[0.05] pt-12 sm:pt-16 mb-12 sm:mb-16">
           <div className="mb-10">
-            <div className="text-[10px]  tracking-[0.35em] text-[#f4cf8a]/65 mb-2">
+            <div className="text-[10px]  tracking-wide text-[#f4cf8a]/65 mb-2">
               [ Compare ]
             </div>
             <h2 className="text-xl md:text-2xl font-light font-display text-white">
@@ -540,7 +540,7 @@ export default function PricingPage({
           <div className="hidden sm:block overflow-x-auto">
             <table className="w-full text-left border-collapse min-w-[700px]">
               <thead>
-                <tr className="border-b border-white/[0.06] text-[9px] tracking-widest  text-white/40">
+                <tr className="border-b border-white/[0.06] text-[9px] tracking-wide  text-white/40">
                   <th className="py-4 font-normal">Feature & Alignment</th>
                   <th className="py-4 font-normal">Basic Node</th>
                   <th className="py-4 font-normal">Plus Node</th>
@@ -619,7 +619,7 @@ export default function PricingPage({
         {/* FAQ SECTION */}
         <div className="border-t border-white/[0.05] pt-12 sm:pt-16 mb-6 sm:mb-8">
           <div className="mb-10">
-            <div className="text-[10px]  tracking-[0.35em] text-[#f4cf8a]/65 mb-2">
+            <div className="text-[10px]  tracking-wide text-[#f4cf8a]/65 mb-2">
               [ FAQ ]
             </div>
           </div>
@@ -677,7 +677,7 @@ export default function PricingPage({
           </p>
           <button 
             onClick={() => handleCtaClick(plans[1])}
-            className="inline-flex items-center gap-2 rounded-full bg-white text-black px-8 py-3.5 text-xs tracking-[0.2em] font-medium hover:bg-[#ffe5b0] transition-colors duration-300 cursor-pointer shadow-sm animate-fade-in"
+            className="inline-flex items-center gap-2 rounded-full bg-white text-black px-8 py-3.5 text-xs tracking-wide font-medium hover:bg-[#ffe5b0] transition-colors duration-300 cursor-pointer shadow-sm animate-fade-in"
           >
             Contact Sales <ArrowUpRight size={14} className="stroke-[2.5]" />
           </button>
@@ -686,11 +686,11 @@ export default function PricingPage({
       </div>
 
       {/* Footer Navigation */}
-      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-[0.15em] text-white/40  z-10 relative">
+      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-wide text-white/40  z-10 relative">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 ">
           <div className="flex items-center gap-2.5 select-none pointer-events-none">
             <XenithLogo size={20} className="opacity-60" />
-            <span className="text-[10px] tracking-[0.3em] text-white/50">Xenith Labs © 2026</span>
+            <span className="text-[10px] tracking-wide text-white/50">Xenith Labs © 2026</span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-9 text-[9px] lg:text-[10px] font-sans font-semibold">
             <a onClick={onNavigateCompany} className="hover:text-white transition cursor-pointer">Company</a>
@@ -718,7 +718,7 @@ export default function PricingPage({
               <div className="flex items-center justify-between border-b border-white/[0.05] pb-4">
                 <div className="flex items-center gap-2">
                   <Inbox size={14} className="text-[#f4cf8a]" />
-                  <span className="text-xs tracking-[0.25em]  text-white/90 font-sans">Enrollment Portal</span>
+                  <span className="text-xs tracking-wide  text-white/90 font-sans">Enrollment Portal</span>
                 </div>
                 <button 
                   onClick={() => setEnrollingPlanName(null)}
@@ -730,7 +730,7 @@ export default function PricingPage({
 
               <div className="space-y-4">
                 <div className="text-center">
-                  <div className="text-[10px] tracking-[0.2em] text-[#f4cf8a]/60  font-sans font-semibold">Selected Plan</div>
+                  <div className="text-[10px] tracking-wide text-[#f4cf8a]/60  font-sans font-semibold">Selected Plan</div>
                   <h4 className="text-xl font-medium text-white font-display mt-1">{enrollingPlanName}</h4>
                   <p className="text-[10px]  text-white/40 tracking-wider">
                     {billingCycle === "annual" ? "Annual Settlement Compliant" : "Month-to-Month Routing"}
@@ -739,7 +739,7 @@ export default function PricingPage({
 
                 <form onSubmit={submitEnrollment} className="space-y-4 font-sans">
                   <div>
-                    <label className="block text-[8px] tracking-widest text-white/40  mb-1.5 font-semibold">Company or Your Name</label>
+                    <label className="block text-[8px] tracking-wide text-white/40  mb-1.5 font-semibold">Company or Your Name</label>
                     <input 
                       required
                       type="text" 
@@ -751,7 +751,7 @@ export default function PricingPage({
                   </div>
 
                   <div>
-                    <label className="block text-[8px] tracking-widest text-white/40  mb-1.5 font-semibold">Ethereum Address (Simulated)</label>
+                    <label className="block text-[8px] tracking-wide text-white/40  mb-1.5 font-semibold">Ethereum Address (Simulated)</label>
                     <input 
                       required
                       type="text" 
@@ -768,7 +768,7 @@ export default function PricingPage({
 
                   <button 
                     type="submit"
-                    className="w-full rounded-xl bg-gradient-to-r from-[#ffd17d] to-[#e4a84b] text-black text-[10px] font-semibold py-3.5 mt-2 transition duration-200 cursor-pointer flex items-center justify-center gap-2 shadow tracking-[0.25em]"
+                    className="w-full rounded-xl bg-gradient-to-r from-[#ffd17d] to-[#e4a84b] text-black text-[10px] font-semibold py-3.5 mt-2 transition duration-200 cursor-pointer flex items-center justify-center gap-2 shadow tracking-wide"
                   >
                     {verificationSuccess ? (
                       <>

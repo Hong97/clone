@@ -102,7 +102,7 @@ export default function TechIntro() {
                       {tech.icon}
                     </div>
                     <div>
-                      <div className="text-[9px] tracking-widest text-[#f4cf8a]/60 ">{tech.tag}</div>
+                      <div className="text-[9px] tracking-wide text-[#f4cf8a]/60 ">{tech.tag}</div>
                       <div className="text-xs font-semibold text-white/90 mt-0.5">{tech.title}</div>
                     </div>
                   </div>
@@ -127,7 +127,7 @@ export default function TechIntro() {
             >
               {/* Feature info */}
               <div className="space-y-3.5">
-                <span className="text-[9px] tracking-[0.25em] text-[#f4cf8a]/60 ">
+                <span className="text-[9px] tracking-wide text-[#f4cf8a]/60 ">
                   {currentTech.tag}
                 </span>
                 
@@ -154,7 +154,7 @@ export default function TechIntro() {
 
               {/* Process Flow Interactive diagram */}
               <div className="space-y-2.5">
-                <div className="text-[8px] tracking-[0.25em] text-white/35 ">
+                <div className="text-[8px] tracking-wide text-white/35 ">
                   Active Ingress Sequence Flow
                 </div>
                 
