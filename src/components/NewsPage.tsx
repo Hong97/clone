@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import { 
   ArrowUpRight,
   ChevronRight,
@@ -57,7 +57,7 @@ export default function NewsPage({
             <div className="hidden sm:block h-10 sm:h-12 w-[1px] bg-white/20 relative z-10" />
             <div className="flex flex-col relative z-10 items-center sm:items-start select-none">
               <span className="text-white text-lg sm:text-2xl md:text-3xl font-display font-medium tracking-wide">OL v4.2</span>
-              <span className="text-[#f4cf8a]/80 text-[8px] sm:text-[9.5px] md:text-[10px]  tracking-[0.22em] uppercase max-w-[150px] sm:max-w-none">Sovereign Finance Engine</span>
+              <span className="text-[#f4cf8a]/80 text-[8px] sm:text-[9.5px] md:text-[10px] font-sans tracking-[0.08em] uppercase max-w-[150px] sm:max-w-none">Sovereign Finance Engine</span>
             </div>
           </div>
         </div>
@@ -240,7 +240,7 @@ export default function NewsPage({
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.003)_1px,transparent_1px)] bg-[size:100%_120px] pointer-events-none opacity-40 z-0" />
 
       {/* Headers and menus */}
-      <header className="relative z-20 border-b border-white/[0.04] bg-black/10 backdrop-blur-md text-xs tracking-[0.28em] text-white/45">
+      <header className="relative z-20 border-b border-white/[0.04] bg-black/10 backdrop-blur-md text-xs tracking-[0.11em] text-white/45">
         <div className="flex items-center justify-between px-8 py-5">
           <div className="flex items-center gap-9">
             <div 
@@ -288,7 +288,7 @@ export default function NewsPage({
               transition={{ duration: 0.25, ease: "easeInOut" }}
               className="border-t border-white/[0.04] bg-[#050505]/98 backdrop-blur-lg lg:hidden overflow-hidden"
             >
-              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-wide">
+              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-[0.1em]">
                 <a 
                   className="text-white/60 hover:text-white pl-3 py-2.5 cursor-pointer transition" 
                   onClick={() => {
@@ -359,11 +359,11 @@ export default function NewsPage({
             <div className="space-y-3">
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-[10px] tracking-wide text-emerald-400  font-medium uppercase">
+                <span className="text-[10px] tracking-[0.1em] text-emerald-400 font-sans font-medium uppercase">
                   {heroPost.tag}
                 </span>
                 <span className="text-white/15 text-[10px]">•</span>
-                <span className="text-[10px] tracking-wide text-[#808080] ">
+                <span className="text-[10px] tracking-[0.1em] text-[#808080] font-sans">
                   {heroPost.date}
                 </span>
               </div>
@@ -408,14 +408,14 @@ export default function NewsPage({
                 <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
                 
                 {/* Embedded tag bubble on top-left of grid panels */}
-                <span className="absolute top-4 left-4 text-[9px]  tracking-wide text-[#f4cf8a] bg-black/60 border border-[#f4cf8a]/10 px-2 py-1 rounded-md backdrop-blur">
+                <span className="absolute top-4 left-4 text-[9px] font-sans tracking-wide text-[#f4cf8a] bg-black/60 border border-[#f4cf8a]/10 px-2 py-1 rounded-md backdrop-blur">
                   {post.tag}
                 </span>
               </div>
 
               {/* Title & metadata */}
               <div className="space-y-1 px-1">
-                <span className="text-[9px]  tracking-wide text-[#808080] uppercase">
+                <span className="text-[9px] font-sans tracking-[0.1em] text-[#808080] uppercase">
                   {post.date}
                 </span>
                 <h4 className="text-sm font-medium text-white group-hover:text-[#f4cf8a] transition duration-200 block">
@@ -456,7 +456,7 @@ export default function NewsPage({
                       </p>
                     </div>
                     
-                    <span className="text-[9px] md:text-[10px]  tracking-wide text-white/30 shrink-0 select-none md:pt-1">
+                    <span className="text-[9px] md:text-[10px] font-sans tracking-wide text-white/30 shrink-0 select-none md:pt-1">
                       {post.date}
                     </span>
                   </div>
@@ -479,7 +479,7 @@ export default function NewsPage({
             <div className="col-span-2 space-y-4">
               <div className="flex items-center gap-2.5 select-none pointer-events-none">
                 <XenithLogo size={24} className="opacity-90" />
-                <span className="text-sm font-semibold tracking-wide text-white font-display">Xenith</span>
+                <span className="text-sm font-semibold tracking-[0.12em] text-white font-display">Xenith</span>
               </div>
               <p className="text-[10px] sm:text-xs leading-relaxed text-[#f4cf8a]/80 font-sans font-light max-w-xs">
                 Sovereign digital finance interfaces. We build advanced model interfaces, smart sandboxes, and safe playground endpoints.
@@ -488,7 +488,7 @@ export default function NewsPage({
 
             {/* Column 1: Products */}
             <div className="space-y-4">
-              <span className="text-[10px] tracking-wider text-white  uppercase block">Products</span>
+              <span className="text-[10px] tracking-wider text-white font-sans uppercase block">Products</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a onClick={onNavigateProduct} className="hover:text-white transition cursor-pointer">Xenith Core</a></li>
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">Sovereign Engine</a></li>
@@ -499,7 +499,7 @@ export default function NewsPage({
 
             {/* Column 2: Developers */}
             <div className="space-y-4">
-              <span className="text-[10px] tracking-wider text-white  uppercase block">Developers</span>
+              <span className="text-[10px] tracking-wider text-white font-sans uppercase block">Developers</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">API Keys</a></li>
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">Websocket SDK</a></li>
@@ -510,7 +510,7 @@ export default function NewsPage({
 
             {/* Column 3: Company */}
             <div className="space-y-4">
-              <span className="text-[10px] tracking-wider text-white  uppercase block">Company</span>
+              <span className="text-[10px] tracking-wider text-white font-sans uppercase block">Company</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a onClick={onNavigateCompany} className="hover:text-white transition cursor-pointer">About Us</a></li>
                 <li><a onClick={onTryXenith} className="hover:text-white transition cursor-pointer">Open Roles</a></li>
@@ -521,7 +521,7 @@ export default function NewsPage({
 
             {/* Column 4: Trust / Security */}
             <div className="space-y-4">
-              <span className="text-[10px] tracking-wider text-white  uppercase block">Trust</span>
+              <span className="text-[10px] tracking-wider text-white font-sans uppercase block">Trust</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">Safety Portal</a></li>
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">Privacy Portal</a></li>
@@ -532,7 +532,7 @@ export default function NewsPage({
 
             {/* Column 5: Social / Brand */}
             <div className="space-y-4 col-span-2 lg:col-span-1">
-              <span className="text-[10px] tracking-wider text-white  uppercase block">Social</span>
+              <span className="text-[10px] tracking-wider text-white font-sans uppercase block">Social</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a href="https://x.com" target="_blank" rel="noreferrer" className="hover:text-white transition cursor-pointer">@xenith</a></li>
                 <li><a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white transition cursor-pointer">GitHub</a></li>
@@ -543,7 +543,7 @@ export default function NewsPage({
           </div>
 
           {/* Bottom Copyright bar */}
-          <div className="flex flex-col sm:flex-row items-center justify-between text-[10px]  tracking-wider text-[#808080]/50 gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between text-[10px] font-sans tracking-wider text-[#808080]/50 gap-4">
             <div className="flex items-center gap-2">
               <span>Xenith Labs © 2026</span>
               <span className="text-white/10">•</span>

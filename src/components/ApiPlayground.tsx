@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ShieldCheck, LineChart, Sparkles, Lock, ArrowRight, CornerDownRight } from "lucide-react";
 
@@ -207,24 +207,24 @@ export default function ApiPlayground() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
         {/* Left Side: Typography and Info Content */}
         <div className="lg:col-span-5 space-y-4">
-          <div className="text-xs uppercase tracking-wide text-[#f4cf8a]/65 ">
-            [ API ]
+          <div className="text-xs uppercase tracking-[0.16em] text-[#f4cf8a]/85 font-sans font-semibold">
+            API Sandbox Bot
           </div>
           
           <h2 className="text-3xl md:text-[38px] tracking-[-0.03em] font-light text-white font-display leading-[1.1] text-left">
-            Integrate The Xenith Layer
+            Secure Exchange API Setup
           </h2>
 
           <p className="text-xs text-white/50 leading-relaxed font-sans max-w-sm">
-            Our Alpha API is built for institutional capital. Inject your Exchange API. Hold 100% of your own capital. connect Now.
+            Our non-custodial API architecture connects with your exchange to execute trades automatically. Keep 100% of your funds inside your own account.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <button className="rounded-full bg-white text-black px-5 py-2.5 text-xs font-semibold uppercase tracking-wide hover:bg-[#f2d9a1] transition-all duration-300">
+            <button className="rounded-full bg-white text-black px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] hover:bg-[#f2d9a1] transition-all duration-300">
               CONNECT YOUR EXCHANGE API
             </button>
-            <button className="rounded-full border border-white/10 text-white px-5 py-2.5 text-xs font-semibold uppercase tracking-wide hover:bg-white/[0.05] transition-all duration-300">
-              ALPHA NODE PRICING
+            <button className="rounded-full border border-white/10 text-white px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.16em] hover:bg-white/[0.05] transition-all duration-300">
+              AI AGENT PRICING
             </button>
           </div>
         </div>
@@ -238,17 +238,17 @@ export default function ApiPlayground() {
 
             {/* Console Toolbar Header */}
             <div className="flex items-center justify-between border-b border-white/[0.05] pb-2 mb-4">
-              <span className="text-[10px] uppercase tracking-wide text-white/40  font-medium flex items-center gap-2">
+              <span className="text-[10px] uppercase tracking-[0.12em] text-white/45 font-sans font-semibold flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                 Console Preview
               </span>
-              <span className="text-[10px] uppercase tracking-wide text-[#f4cf8a] font-semibold ">
+              <span className="text-[10px] uppercase tracking-[0.12em] text-[#f4cf8a] font-bold font-sans">
                 Live Sandbox
               </span>
             </div>
 
             {/* Active Code Execution Path & Body */}
-            <div className="flex-1 space-y-4 ">
+            <div className="flex-1 space-y-4 font-sans">
               <div className="flex items-center gap-2 text-xs font-semibold tracking-wide">
                 <span className="text-emerald-400 font-bold">{activeState.method}</span>
                 <span className="text-white/90">{activeState.path}</span>
@@ -277,7 +277,7 @@ export default function ApiPlayground() {
 
               {/* Response Code Output Section */}
               <div className="space-y-1.5">
-                <div className="text-[9px] uppercase tracking-wider text-white/40 ">Response</div>
+                <div className="text-[9px] uppercase tracking-wider text-white/40 font-sans font-semibold">Response</div>
                 
                 <AnimatePresence mode="wait">
                   {isExecuting ? (
@@ -306,7 +306,7 @@ export default function ApiPlayground() {
                       {Object.entries(activeState.response.details).map(([k, v]) => (
                         <div key={k} className="flex items-center gap-1.5">
                           <span className="text-white/40">{k}:</span>
-                          <span>{v}</span>
+                          <span className="min-w-0 break-all">{v}</span>
                         </div>
                       ))}
                     </motion.div>
@@ -316,7 +316,7 @@ export default function ApiPlayground() {
             </div>
 
             {/* Hover tooltip hint */}
-            <div className="mt-3 pt-2 border-t border-white/[0.04] text-[8.5px] uppercase tracking-wide text-white/25 text-left ">
+            <div className="mt-3 pt-2 border-t border-white/[0.04] text-[8.5px] uppercase tracking-wide text-[#f4cf8a]/50 text-left font-sans font-semibold">
               Click the cards below to test different routes
             </div>
           </div>
@@ -342,7 +342,7 @@ export default function ApiPlayground() {
                 <div className="absolute top-0 right-0 w-16 h-16 bg-[#f4cf8a]/5 rounded-full blur-xl pointer-events-none" />
               )}
               
-              <div className="text-[8.5px] text-white/40  uppercase tracking-wide mb-1 group-hover:text-white/60 transition duration-300">
+              <div className="text-[8.5px] text-[#f4cf8a]/70 font-sans uppercase tracking-[0.12em] mb-1 group-hover:text-[#f4cf8a] transition duration-300">
                 {state.category}
               </div>
               
@@ -350,7 +350,7 @@ export default function ApiPlayground() {
                 <span className="font-medium text-white text-xs md:text-sm font-display">
                   {state.title}
                 </span>
-                <span className={`text-[8.5px]  shrink-0 transition-opacity duration-300 ${isActive ? "opacity-100 text-[#f4cf8a]" : "opacity-0 group-hover:opacity-40"}`}>
+                <span className={`text-[8.5px] font-sans font-black shrink-0 transition-opacity duration-300 ${isActive ? "opacity-100 text-[#f4cf8a]" : "opacity-0 group-hover:opacity-40"}`}>
                   →
                 </span>
               </div>
@@ -371,7 +371,7 @@ export default function ApiPlayground() {
                 onClick={() => handleStateChange(actualIdx)}
                 className="group text-left border-none bg-transparent hover:opacity-90 transition p-0 cursor-pointer space-y-0.5 block w-full outline-none focus:outline-none"
               >
-                <div className="text-[8.5px] text-white/40  uppercase tracking-wide transition duration-300 flex items-center gap-1">
+                <div className="text-[8.5px] text-white/40 font-sans uppercase tracking-[0.12em] transition duration-300 flex items-center gap-1 font-semibold">
                   {state.category}
                   {isActive && <span className="w-1 h-1 rounded-full bg-[#f4cf8a]" />}
                 </div>
@@ -382,8 +382,8 @@ export default function ApiPlayground() {
                   </span>
                   {isActive && (
                     <motion.span 
-                      layoutId="activeDot"
-                      className="text-[8.5px]  text-[#f4cf8a]"
+                       layoutId="activeDot"
+                       className="text-[8.5px] font-sans text-[#f4cf8a]"
                     >
                       •
                     </motion.span>

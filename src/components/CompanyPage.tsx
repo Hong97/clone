@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import { 
   ArrowUpRight,
   ChevronRight,
@@ -34,27 +34,27 @@ export default function CompanyPage({
   const [activeMilestoneInxt, setActiveMilestoneInxt] = useState(4); // Default to a later milestone for visual impact
   
   const highlights = [
-    { name: "Xenith Core 4.3", desc: "Our most capable risk-reasoning model.", link: "#" },
-    { name: "Colossus Node", desc: "Active across 100+ global liquidity pools.", link: "#" },
-    { name: "Sovereign Engine", desc: "Zero-delay microsecond execution API.", link: "#" },
-    { name: "Research Lab", desc: "Join our quantitative engineering team.", link: "#" }
+    { name: "Xenith Trading AI", desc: "Real-time market analysis and decision intelligence.", link: "#" },
+    { name: "Risk Intelligence Engine", desc: "Adaptive risk assessment and portfolio protection.", link: "#" },
+    { name: "Market Insight Network", desc: "Multi-source financial data aggregation and interpretation.", link: "#" },
+    { name: "Research & Innovation", desc: "Advancing AI applications for modern trading and investment.", link: "#" }
   ];
 
   const coreValues = [
     {
       num: "01",
-      title: "Arbitrage from first principles",
-      desc: "We challenge conventional liquidity models by optimizing order routing down to absolute micro-spreads, grounded in direct cryptographic logic rather than central intermediaries."
+      title: "AI-Driven Market Understanding",
+      desc: "Our models continuously analyze market behavior, sentiment, and price action to identify opportunities and emerging trends in real time."
     },
     {
       num: "02",
-      title: "No spread is too narrow",
-      desc: "We capture structural inefficiencies other engines miss by constantly optimizing multi-hop pathfinders across highly volatile, decentralized ledger states."
+      title: "Risk-Aware Decision Intelligence",
+      desc: "Every recommendation is evaluated through dynamic risk models designed to support disciplined trading and long-term capital preservation."
     },
     {
       num: "03",
-      title: "Build securely, scale instantly",
-      desc: "Millisecond validation loops and automated safety gates ensure robust deployment. We live at the absolute frontier of computational speed and security."
+      title: "Built for Traders at Scale",
+      desc: "From individual traders to professional investment teams, Xenith delivers institutional-grade intelligence through a simple and accessible platform."
     }
   ];
 
@@ -67,20 +67,19 @@ export default function CompanyPage({
   ];
 
   const milestones = [
-    { year: "2024", date: "June 12, 2024", title: "Genesis Epoch", desc: "Xenith Labs established. Completed initial mathematical proofs for high-frequency multi-hop ledger routing." },
-    { year: "2024", date: "October 03, 2024", title: "Sovereign Alpha", desc: "First successful automated cross-pool spread capture executed under test-net conditions." },
-    { year: "2025", date: "January 15, 2025", title: "Colossus Node Mesh", desc: "Inaugurated dedicated millisecond latency relays in London, Singapore, and New York hubs." },
-    { year: "2025", date: "May 20, 2025", title: "Secure Sandbox Launch", desc: "Opened virtual simulated sandboxes with zero-risk gas markets for institutional builders." },
-    { year: "2025", date: "September 25, 2025", title: "Expanding Xenith for Enterprise", desc: "Releasing enterprise-grade websocket streams delivering 300K real-time telemetry updates per second." },
-    { year: "2026", date: "March 18, 2026", title: "Core 4.3 Integration", desc: "Fully integrated modern deep-reasoning intelligence to predict and secure structural capital slippages." },
-    { year: "2026", date: "May 28, 2026", title: "Autonomous Capital Model", desc: "Deploying fully automated cryptographic execution bridges across five key global sovereign networks." }
+    { year: "2024", date: "June 12, 2024", title: "Xenith Concept Initiated", desc: "Established the vision of building AI-powered trading intelligence for modern investors." },
+    { year: "2024", date: "October 03, 2024", title: "Early Market Intelligence Models", desc: "Released the first generation of market analysis and signal detection systems." },
+    { year: "2025", date: "February 15, 2025", title: "Risk Intelligence Framework", desc: "Introduced adaptive AI risk assessment and portfolio monitoring capabilities." },
+    { year: "2025", date: "July 20, 2025", title: "Multi-Asset Market Coverage", desc: "Expanded support across equities, forex, commodities, crypto, and global indices." },
+    { year: "2026", date: "March 18, 2026", title: "Advanced Trading Copilot", desc: "Launched next-generation AI trading assistant with contextual market reasoning." },
+    { year: "2026", date: "June 10, 2026", title: "Global User Expansion", desc: "Serving traders and investors across multiple regions worldwide." }
   ];
 
   const newsCards = [
     {
       id: "kilo",
-      tag: "⚡ Xenith Core",
-      title: "Introducing Core 4.3 Model Sandbox",
+      tag: "⚡ Core AI",
+      title: "Introducing Xenith Trading Copilot",
       date: "May 27, 2026",
       theme: "from-[#f4cf8a]/5 to-black/90 border-[#f4cf8a]/10 hover:border-[#f4cf8a]/30",
       graphic: (
@@ -97,8 +96,8 @@ export default function CompanyPage({
     },
     {
       id: "beta",
-      tag: "⚙️ Arbitrage",
-      title: "Dynamic Hop Routing Release",
+      tag: "⚙️ Risk AI",
+      title: "Enhanced Risk Intelligence Engine",
       date: "May 25, 2026",
       theme: "from-[#f4cf8a]/5 to-black/90 border-[#f4cf8a]/10 hover:border-[#f4cf8a]/30",
       graphic: (
@@ -115,9 +114,9 @@ export default function CompanyPage({
     },
     {
       id: "opencode",
-      tag: "🛡️ Compliance",
-      title: "SOC 2 Type II Gold Standard Certification",
-      date: "May 21, 2026",
+      tag: "🌐 Markets",
+      title: "Expanded Multi-Asset Coverage",
+      date: "April 15, 2026",
       theme: "from-[#f4cf8a]/5 to-black/90 border-[#f4cf8a]/10 hover:border-[#f4cf8a]/30",
       graphic: (
         <div className="absolute inset-0 select-none">
@@ -133,9 +132,9 @@ export default function CompanyPage({
     },
     {
       id: "openclaw",
-      tag: "🌐 Infrastructure",
-      title: "Zurich Latency Node Go-Live",
-      date: "May 19, 2026",
+      tag: "📈 Growth",
+      title: "Global Community Growth Milestone",
+      date: "March 28, 2026",
       theme: "from-[#f4cf8a]/5 to-black/90 border-[#f4cf8a]/10 hover:border-[#f4cf8a]/30",
       graphic: (
         <div className="absolute inset-0 select-none">
@@ -168,7 +167,7 @@ export default function CompanyPage({
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.003)_1px,transparent_1px)] bg-[size:100%_120px] pointer-events-none opacity-40 z-0" />
 
       {/* Headers and menus */}
-      <header className="relative z-20 border-b border-white/[0.04] bg-black/10 backdrop-blur-md text-xs tracking-[0.28em] text-white/45">
+      <header className="relative z-20 border-b border-white/[0.04] bg-black/10 backdrop-blur-md text-xs tracking-[0.11em] text-white/45">
         <div className="flex items-center justify-between px-8 py-5">
           <div className="flex items-center gap-9">
             <div 
@@ -216,7 +215,7 @@ export default function CompanyPage({
               transition={{ duration: 0.25, ease: "easeInOut" }}
               className="border-t border-white/[0.04] bg-[#050505]/98 backdrop-blur-lg lg:hidden overflow-hidden"
             >
-              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-wide">
+              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-[0.1em]">
                 <a 
                   className="text-white/60 hover:text-white pl-3 py-2.5 cursor-pointer transition" 
                   onClick={() => {
@@ -283,14 +282,14 @@ export default function CompanyPage({
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
           {/* Left Column: Mission Content */}
           <div className="lg:col-span-7 flex flex-col items-start pt-2">
-            <span className="text-[11px] tracking-[0.28em] text-[#f4cf8a]/90  block mb-5 uppercase">
+            <span className="text-[11px] tracking-[0.11em] text-[#f4cf8a]/90 font-sans block mb-5 uppercase">
               [ Our Mission ]
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-display font-light text-white leading-[1.02] tracking-[-0.035em] mb-7 max-w-2xl">
-              Accelerate global capital efficiency.
+              Empowering Smarter Trading Decisions Worldwide.
             </h1>
             <p className="text-sm md:text-base text-white/50 leading-relaxed max-w-xl font-sans font-light mb-8">
-              We build AI systems to comprehend global markets. Frontier computational risk-modeling, real-time decentralized ledger pathfinders, and high-frequency settlement nodes—purpose-engineered to augment how sovereign capital operates.
+              Xenith builds AI-powered trading intelligence that helps traders and investors analyze markets, manage risk, and execute with greater confidence. By combining real-time market data, advanced machine learning, and adaptive reasoning models, Xenith transforms complex financial information into actionable trading insights.
             </p>
             <div className="flex items-center gap-4">
               <button 
@@ -344,7 +343,7 @@ export default function CompanyPage({
               At our core
             </h2>
             <p className="text-sm text-white/50 leading-relaxed font-sans font-light">
-              We're a specialized, security-first team driven by quantitative rigor, mathematical integrity, and unwavering long-term commitment.
+              We are a trading-focused AI company committed to building intelligent systems that help people navigate financial markets with greater clarity, discipline, and confidence.
             </p>
           </div>
 
@@ -373,27 +372,30 @@ export default function CompanyPage({
         {/* SECTION C: Infrastructure / Hubs with Left Label Columns */}
         <section className="border-t border-white/[0.05] pt-12 sm:pt-16 md:pt-24 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-4 space-y-4">
-            <span className="text-[11px] tracking-[0.28em] text-[#f4cf8a]/80  block uppercase">
+            <span className="text-[11px] tracking-[0.11em] text-[#f4cf8a]/80 font-sans block uppercase">
               [ Offices ]
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-light text-white tracking-[-0.03em] leading-tight">
-              Collaboration across borders
+              Global Market Presence
             </h2>
             <p className="text-xs md:text-sm text-white/50 leading-relaxed font-sans font-light max-w-sm">
-              We locate our secure computation clusters and team members across key regional financial grids to guarantee redundancy and sub-millisecond network speeds.
+              Our team operates across major financial regions, enabling continuous market monitoring, research, and support for traders worldwide.
             </p>
             <div className="pt-2 flex gap-3">
               <button 
                 onClick={onTryXenith}
-                className="rounded-full bg-gradient-to-r from-[#ffd17d] to-[#e4a84b] text-black text-[10px] px-5 py-2  font-medium tracking-wider hover:opacity-95 transition shadow"
+                className="rounded-full bg-gradient-to-r from-[#ffd17d] to-[#e4a84b] text-black text-[10px] px-5 py-2 font-sans font-medium tracking-wider hover:opacity-95 transition shadow"
               >
                 Open Roles
               </button>
               <button 
-                onClick={onTryXenith}
-                className="rounded-full border border-[#f4cf8a]/30 bg-[#f4cf8a]/5 text-[#f4cf8a] text-[10px] px-5 py-2  tracking-wider hover:border-[#f4cf8a]/50 transition"
+                onClick={() => {
+                  const el = document.getElementById("footer-contact");
+                  if (el) el.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="rounded-full border border-[#f4cf8a]/30 bg-[#f4cf8a]/5 text-[#f4cf8a] text-[10px] px-5 py-2 font-sans tracking-wider hover:border-[#f4cf8a]/50 transition"
               >
-                Careers
+                Contact Us
               </button>
             </div>
           </div>
@@ -402,7 +404,7 @@ export default function CompanyPage({
             {offices.map((office, idx) => (
               <div 
                 key={idx}
-                className="rounded-xl border border-[#f4cf8a]/10 bg-[#f4cf8a]/[0.02] p-4.5 text-center text-xs  font-medium tracking-wide text-[#f4cf8a]"
+                className="rounded-xl border border-[#f4cf8a]/10 bg-[#f4cf8a]/[0.02] p-4.5 text-center text-xs font-sans font-medium tracking-wide text-[#f4cf8a]"
               >
                 {office}
               </div>
@@ -413,14 +415,14 @@ export default function CompanyPage({
         {/* SECTION D: Our Path of Progress - Fully interactive Horizontal Timeline */}
         <section className="border-t border-white/[0.05] pt-12 sm:pt-16 md:pt-24 text-center">
           <div className="max-w-2xl mx-auto space-y-4 mb-10 sm:mb-16 md:mb-20 block">
-            <span className="text-[11px] tracking-[0.28em] text-[#f4cf8a]/90  block mb-3 uppercase">
+            <span className="text-[11px] tracking-[0.11em] text-[#f4cf8a]/90 font-sans block mb-3 uppercase">
               [ Timeline ]
             </span>
             <h2 className="text-3xl sm:text-4xl font-display font-light text-white tracking-[-0.03em] leading-tight">
               Our path of progress
             </h2>
             <p className="text-sm text-white/50 leading-relaxed font-sans font-light">
-              From genesis mathematical concept to secure global scale — every major milestone on the roadmap.
+              From conceptual design to global operation — the progression of our core trading intelligence.
             </p>
           </div>
 
@@ -445,7 +447,7 @@ export default function CompanyPage({
                   <button
                     key={idx}
                     onClick={() => setActiveMilestoneInxt(idx)}
-                    className="group relative flex flex-col items-center focus:outline-none focus:ring-0 cursor-pointer"
+                    className="group relative flex flex-col items-center focus:outline-none focus:ring-0 cursor-pointer p-3 -m-3"
                     aria-label={`Select timeline marker for ${item.title}`}
                   >
                     {/* Circle Node indicator */}
@@ -460,7 +462,7 @@ export default function CompanyPage({
 
                     {/* Simple Year Label above each dot */}
                     <span 
-                      className={`absolute top-6 text-[9px]  tracking-wide transition-all duration-300
+                      className={`absolute top-9 text-[10px] sm:text-[9px] font-sans tracking-wide transition-all duration-300
                         ${isActive ? "text-[#f4cf8a] font-medium" : "text-white/40 group-hover:text-white/60"}
                       `}
                     >
@@ -483,7 +485,7 @@ export default function CompanyPage({
                 transition={{ duration: 0.3 }}
                 className="space-y-3"
               >
-                <div className="text-[10px]  tracking-wide text-[#f4cf8a]/85 uppercase">
+                <div className="text-[10px] font-sans tracking-[0.1em] text-[#f4cf8a]/85 uppercase">
                   {milestones[activeMilestoneInxt].date}
                 </div>
                 <h3 className="text-xl font-display font-medium text-white tracking-tight">
@@ -528,10 +530,10 @@ export default function CompanyPage({
 
                 <div className="space-y-1 flex-1 flex flex-col justify-between">
                   <div>
-                    <span className="text-[9px]  tracking-wide text-white/40">
+                    <span className="text-[10px] sm:text-[9px] font-sans tracking-wide text-white/40">
                       {post.date}
                     </span>
-                    <h4 className="text-xs sm:text-sm font-medium text-white group-hover:text-[#f4cf8a] transition duration-200 mt-1 lines-clamp-2">
+                    <h4 className="text-xs sm:text-sm font-medium text-white group-hover:text-[#f4cf8a] transition duration-200 mt-1 line-clamp-2">
                       {post.title}
                     </h4>
                   </div>
@@ -544,34 +546,34 @@ export default function CompanyPage({
         {/* SECTION F: Complex Contact section - aligned to a premium standard */}
         <section id="footer-contact" className="border-t border-white/[0.05] pt-12 sm:pt-16 md:pt-24 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
           <div className="lg:col-span-5 space-y-4">
-            <span className="text-[11px] tracking-[0.28em] text-[#f4cf8a]/90  block uppercase">
+            <span className="text-[11px] tracking-[0.11em] text-[#f4cf8a]/90 font-sans block uppercase">
               [ Get In Touch ]
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-light text-white tracking-[-0.03em] leading-tight">
-              Talk to an expert.
+              Talk to our team.
             </h2>
             <p className="text-xs md:text-sm text-white/50 leading-relaxed max-w-sm font-sans font-light">
-              Integration requests, partnership prospects, secure credential diagnostics, or general system inquiries—we verify and replies safely within 24 hours.
+              Whether you're a trader, investor, institution, or strategic partner, we're here to help you explore how AI can enhance your market decisions.
             </p>
           </div>
 
-          <div className="lg:col-span-7 space-y-4  text-xs text-white/45 max-w-2xl w-full">
+          <div className="lg:col-span-7 space-y-4 font-sans text-xs text-white/45 max-w-2xl w-full">
             <div className="border border-[#f4cf8a]/10 rounded-2xl bg-[#f4cf8a]/[0.01] divide-y divide-[#f4cf8a]/5 overflow-hidden">
-              <div className="flex items-center justify-between p-5 hover:bg-[#f4cf8a]/[0.02] transition-colors duration-300">
-                <span className="text-[#f4cf8a]/70 tracking-wider uppercase font-medium">Systems Integration</span>
-                <a href="mailto:integrations@xenith.ai" className="text-white hover:underline hover:text-[#f4cf8a] transition cursor-pointer">
-                  integrations@xenith.ai ↗
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-4 p-5 hover:bg-[#f4cf8a]/[0.02] transition-colors duration-300">
+                <span className="text-[#f4cf8a]/70 tracking-wider uppercase font-medium">Partnerships</span>
+                <a href="mailto:partnerships@xenith.ai" className="text-white hover:underline hover:text-[#f4cf8a] transition cursor-pointer">
+                  partnerships@xenith.ai ↗
                 </a>
               </div>
-              <div className="flex items-center justify-between p-5 hover:bg-[#f4cf8a]/[0.02] transition-colors duration-300">
-                <span className="text-[#f4cf8a]/70 tracking-wider uppercase font-medium">Institutional Trust</span>
-                <a href="mailto:trust@xenith.ai" className="text-white hover:underline hover:text-[#f4cf8a] transition cursor-pointer">
-                  trust@xenith.ai ↗
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-4 p-5 hover:bg-[#f4cf8a]/[0.02] transition-colors duration-300">
+                <span className="text-[#f4cf8a]/70 tracking-wider uppercase font-medium">Business & Institutional</span>
+                <a href="mailto:business@xenith.ai" className="text-white hover:underline hover:text-[#f4cf8a] transition cursor-pointer">
+                  business@xenith.ai ↗
                 </a>
               </div>
-              <div className="flex items-center justify-between p-5 hover:bg-[#f4cf8a]/[0.02] transition-colors duration-300">
-                <span className="text-[#f4cf8a]/70 tracking-wider uppercase font-medium">Global Latency Relays</span>
-                <span className="text-[#f4cf8a]/80 font-sans font-light">Singapore · New York · London · Zurich</span>
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-4 p-5 hover:bg-[#f4cf8a]/[0.02] transition-colors duration-300">
+                <span className="text-[#f4cf8a]/70 tracking-wider uppercase font-medium">Global Availability</span>
+                <span className="text-[#f4cf8a]/80 font-sans font-light sm:text-right">Supporting users across major financial markets worldwide</span>
               </div>
             </div>
           </div>
@@ -589,16 +591,16 @@ export default function CompanyPage({
             <div className="col-span-2 space-y-4">
               <div className="flex items-center gap-2.5 select-none pointer-events-none">
                 <XenithLogo size={24} className="opacity-90" />
-                <span className="text-sm font-semibold tracking-wide text-white">Xenith</span>
+                <span className="text-sm font-semibold tracking-[0.12em] text-white">Xenith</span>
               </div>
               <p className="text-[10px] sm:text-xs leading-relaxed text-[#f4cf8a]/80 font-sans font-light max-w-xs">
-                Sovereign digital finance interfaces. We build advanced model interfaces, smart sandboxes, and safe playground endpoints.
+                AI-powered digital trading intelligence. We build advanced market analysis interfaces, risk execution systems, and institutional-grade trading infrastructure.
               </p>
             </div>
 
             {/* Column 1: Products */}
             <div className="space-y-4">
-              <span className="text-[10px] tracking-wider text-white  uppercase block">Products</span>
+              <span className="text-[10px] tracking-wider text-white font-sans uppercase block">Products</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a onClick={onNavigateProduct} className="hover:text-white transition cursor-pointer">Xenith Core</a></li>
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">Sovereign Engine</a></li>
@@ -609,7 +611,7 @@ export default function CompanyPage({
 
             {/* Column 2: Developers */}
             <div className="space-y-4">
-              <span className="text-[10px] tracking-wider text-white  uppercase block">Developers</span>
+              <span className="text-[10px] tracking-wider text-white font-sans uppercase block">Developers</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">API Keys</a></li>
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">Websocket SDK</a></li>
@@ -620,7 +622,7 @@ export default function CompanyPage({
 
             {/* Column 3: Company */}
             <div className="space-y-4">
-              <span className="text-[10px] tracking-wider text-white  uppercase block">Company</span>
+              <span className="text-[10px] tracking-wider text-white font-sans uppercase block">Company</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a onClick={onBackToHome} className="hover:text-white transition cursor-pointer font-medium text-white/90">About Us</a></li>
                 <li><a onClick={onTryXenith} className="hover:text-white transition cursor-pointer">Open Roles</a></li>
@@ -632,7 +634,7 @@ export default function CompanyPage({
 
             {/* Column 4: Trust / Security */}
             <div className="space-y-4">
-              <span className="text-[10px] tracking-wider text-white  uppercase block">Trust</span>
+              <span className="text-[10px] tracking-wider text-white font-sans uppercase block">Trust</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">Safety Portal</a></li>
                 <li><a onClick={onNavigateTechnology} className="hover:text-white transition cursor-pointer">Privacy Portal</a></li>
@@ -643,7 +645,7 @@ export default function CompanyPage({
 
             {/* Column 5: Social / Brand */}
             <div className="space-y-4 col-span-2 lg:col-span-1">
-              <span className="text-[10px] tracking-wider text-white  uppercase block">Social</span>
+              <span className="text-[10px] tracking-wider text-white font-sans uppercase block">Social</span>
               <ul className="space-y-2.5 text-[11px] font-sans font-light">
                 <li><a href="https://x.com" target="_blank" rel="noreferrer" className="hover:text-white transition cursor-pointer">@xenith</a></li>
                 <li><a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white transition cursor-pointer">GitHub</a></li>
@@ -654,7 +656,7 @@ export default function CompanyPage({
           </div>
 
           {/* Bottom Copyright bar */}
-          <div className="flex flex-col sm:flex-row items-center justify-between text-[10px]  tracking-wider text-[#808080]/50 gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between text-[10px] font-sans tracking-wider text-[#808080]/50 gap-4">
             <div className="flex items-center gap-2">
               <span>Xenith Labs © 2026</span>
               <span className="text-white/10">•</span>

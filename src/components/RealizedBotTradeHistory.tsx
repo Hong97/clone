@@ -61,13 +61,13 @@ export default function RealizedBotTradeHistory() {
   return (
     <div className="w-full rounded-2xl bg-[#0b0f18] border border-white/[0.06] p-5 ">
       {/* Header */}
-      <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xs font-bold tracking-[0.18em] text-white uppercase">
+      <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+        <h2 className="text-xs font-bold tracking-[0.12em] sm:tracking-[0.18em] text-white uppercase">
           Realized Bot Trade History
         </h2>
         <button
           onClick={() => setShowArchived(!showArchived)}
-          className="text-[9px] tracking-[0.18em] font-bold text-white/60 border border-white/10 hover:border-white/25 hover:text-white/90 rounded px-3 py-1.5 transition uppercase cursor-pointer"
+          className="text-[9px] tracking-[0.18em] font-bold text-white/60 border border-white/10 hover:border-white/25 hover:text-white/90 rounded px-3 py-2.5 sm:py-1.5 transition uppercase cursor-pointer"
         >
           Archived Logs
         </button>
@@ -85,19 +85,19 @@ export default function RealizedBotTradeHistory() {
               {/* Left: pair info */}
               <div className="flex-1 min-w-0">
                 {trade.pair ? (
-                  <div className="flex items-center gap-2 mb-1.5">
+                  <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mb-1.5">
                     <span className="text-xs font-bold text-white tracking-wide">
                       {trade.pair}
                     </span>
-                    <span className="text-[9px] font-bold tracking-wider text-emerald-400 border border-emerald-400/30 bg-emerald-400/10 px-1.5 py-0.5 rounded">
+                    <span className="text-[10px] sm:text-[9px] font-bold tracking-wider text-emerald-400 border border-emerald-400/30 bg-emerald-400/10 px-1.5 py-0.5 rounded">
                       {trade.direction}
                     </span>
-                    <span className="text-[10px] text-white/40">
+                    <span className="text-[11px] sm:text-[10px] text-white/40">
                       {trade.quantity}
                     </span>
                   </div>
                 ) : null}
-                <div className="text-[10px] text-white/45 tracking-wide">
+                <div className="text-[11px] sm:text-[10px] text-white/45 tracking-wide">
                   ${trade.entryPrice}{" "}
                   <span className="text-white/25 mx-1">→</span>
                   ${trade.exitPrice}
@@ -114,7 +114,7 @@ export default function RealizedBotTradeHistory() {
                   {isProfit ? "+" : ""}${Math.abs(trade.pnl).toFixed(2)}
                 </div>
                 <div
-                  className={`flex items-center justify-end gap-1 text-[9px] tracking-[0.12em] font-bold ${
+                  className={`flex items-center justify-end gap-1 text-[10px] sm:text-[9px] tracking-[0.12em] font-bold ${
                     isProfit ? "text-emerald-400/70" : "text-red-400/70"
                   }`}
                 >

@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import { 
   Check, 
   HelpCircle, 
@@ -33,58 +33,60 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
       name: "BASIC NODE",
       priceMonthly: 0,
       priceAnnual: 0,
-      tagline: "Dedicated entry pool for Malaysian retail traders with a RM 500 trial quota maximum.",
+      tagline: "Entry-level node for autonomous trading and sandbox evaluation.",
       isPopular: false,
       features: [
-        "RM 500 trial limit for sandbox transactions",
-        "Beginner-friendly digital finance sandbox",
-        "Xenith smart exploration assistant",
-        "Simple, clear indicators and plain reports"
+        "Autonomous Execution (Sandbox)",
+        "Basic AI Market Ingestion",
+        "Passive Portfolio Monitoring",
+        "Pre-Emptive Risk Alerts"
       ],
       ctaText: "Start Free Trial",
-      actionValue: "Initialize 0 RM Retail Experience tier and explore trial features."
+      actionValue: "Initialize 0 USD Retail Experience tier and explore trial features."
     },
     {
       name: "PLUS NODE",
-      priceMonthly: 89,
-      priceAnnual: 71,
-      tagline: "Optimized AI Node for retail traders. Seamless performance with zero custody risk.",
+      priceMonthly: 19.9,
+      priceAnnual: 15.9,
+      tagline: "Advanced stratum with multi-agent orchestration and dynamic capital routing.",
       isPopular: true,
       features: [
-        "Base AI Frequency",
-        "Standard Spread Capture",
-        "Standard Gas Fee"
+        "Advanced Market Intelligence",
+        "Multi-Agent Coordination",
+        "Automated Capital Allocation",
+        "Active Smart Risk Shields",
+        "Gateway & Webhook Tunnels"
       ],
       ctaText: "Choose Plus Node",
       actionValue: "Become Plus Node Member and unlock premium features."
     },
     {
       name: "PRO NODE",
-      priceMonthly: 890,
-      priceAnnual: 712,
-      tagline: "For high-volume accounts. Precision mining, unlimited capacity, and dual-engine backup configuration to ensure zero downtime.",
+      priceMonthly: 199,
+      priceAnnual: 159,
+      tagline: "Institutional infrastructure delivering dedicated speed execution and API suites.",
       isPopular: false,
       features: [
-        "Enhanced Dark Pool Routing",
-        "Millisecond Order Priority",
-        "Reduced Gas Fee",
-        "Access Advanced Analytics"
+        "Dedicated Speed-Lane Engine",
+        "Institutional Order Routing",
+        "Unlimited Capital Capacity",
+        "Full REST & WebSocket APIs",
+        "Dedicated Bare-Metal Node"
       ],
       ctaText: "Activate Pro Node",
       actionValue: "Request Pro Node workspace and verify strict rules."
     },
     {
-      name: "GENESIS NODE (Invite-Only) - LIMIT 30 SEATS",
+      name: "GENESIS NODE (Invite-Only)",
       priceMonthly: "Invite",
       priceAnnual: "Invite",
-      tagline: "Premium institutional node for sovereign liquidity, limited to 30 active licenses.",
+      tagline: "Bespoke liquidity structures for sovereign institutional partners.",
       isPopular: false,
       features: [
-        "Institutional Maker Rebates",
-        "Global SAI Gas Dividend",
-        "Ecosystem Co-Founder Rights",
-        "Dedicated Premium Support",
-        "Access Pre-Launch Product"
+        "Infinite Agent Concurrency",
+        "Custom Drawdown Guard Models",
+        "Direct On-Site Deployment",
+        "Exclusive Pre-Release Models"
       ],
       ctaText: "Request Invite",
       actionValue: "Apply for exclusive GENESIS NODE entry pass."
@@ -100,7 +102,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
     e.preventDefault();
     setVerificationSuccess(true);
     setTimeout(() => {
-      onTriggerWorkspace(`Configure and initiate my new account as a: ${enrollingPlanName || "Sovereign Member"} under ${billingCycle} billing billing rules.`);
+      onTriggerWorkspace(`Configure and initiate my new account as a: ${enrollingPlanName || "Selected Agent"} under ${billingCycle} billing rules.`);
       setEnrollingPlanName(null);
     }, 1600);
   };
@@ -113,7 +115,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
         <div className="inline-flex items-center gap-1 rounded-full bg-white/[0.02] p-1 border border-white/[0.05]">
           <button
             onClick={() => setBillingCycle("monthly")}
-            className={`rounded-full px-4 py-1.5 text-[10px]  uppercase tracking-wider transition duration-250 cursor-pointer ${
+            className={`rounded-full px-4 py-1.5 text-[10px] font-sans uppercase tracking-wider transition duration-250 cursor-pointer ${
               billingCycle === "monthly" 
                 ? "bg-[#f4cf8a] text-black font-semibold shadow-md" 
                 : "text-white/60 hover:text-white"
@@ -123,7 +125,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
           </button>
           <button
             onClick={() => setBillingCycle("annual")}
-            className={`rounded-full px-4 py-1.5 text-[10px]  uppercase tracking-wider transition duration-250 cursor-pointer flex items-center gap-1.5 ${
+            className={`rounded-full px-4 py-1.5 text-[10px] font-sans uppercase tracking-wider transition duration-250 cursor-pointer flex items-center gap-1.5 ${
               billingCycle === "annual" 
                 ? "bg-[#f4cf8a] text-black font-semibold shadow-md" 
                 : "text-white/60 hover:text-white"
@@ -139,8 +141,8 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
             </span>
           </button>
         </div>
-        <p className="text-[10px] uppercase tracking-wide text-white/40 ">
-          Save up to $360 per year with sovereign multi-month accounts
+        <p className="text-[10px] uppercase tracking-[0.1em] text-white/40 font-sans">
+          Save up to $360 per year with annual billing packages
         </p>
       </div>
 
@@ -150,7 +152,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
       }`}>
         {plans.map((plan, index) => {
           const billingPrice = billingCycle === "monthly" ? plan.priceMonthly : plan.priceAnnual;
-          const isGenesis = plan.name.includes("GENESIS");
+          const isGenesis = plan.name.includes("GENESIS") || plan.name.includes("ENTERPRISE");
           
           if (isGenesis && !showAllPlans) {
             return null;
@@ -168,7 +170,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
               }`}
             >
               {plan.isPopular && (
-                <div className="absolute top-0 right-6 -translate-y-1/2 rounded-full bg-gradient-to-r from-[#ffd17d] to-[#e4a84b] text-black font-semibold  text-[9px] uppercase tracking-wide px-3 py-1 flex items-center gap-1 shadow-sm font-sans">
+                <div className="absolute top-0 right-6 -translate-y-1/2 rounded-full bg-gradient-to-r from-[#ffd17d] to-[#e4a84b] text-black font-semibold font-sans text-[9px] uppercase tracking-wide px-3 py-1 flex items-center gap-1 shadow-sm font-sans">
                   <Sparkles size={10} />
                   <span>Selected Member Tier</span>
                 </div>
@@ -183,15 +185,15 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
                 {/* Price Display */}
                 <div className="py-2 border-y border-white/[0.04] flex items-baseline gap-1">
                   {typeof billingPrice === "string" ? (
-                    <span className="text-2.5xl sm:text-3.5xl font-medium tracking-wide text-[#f4cf8a] font-display">
+                    <span className="text-3xl sm:text-4xl font-medium tracking-wide text-[#f4cf8a] font-display">
                       {billingPrice}
                     </span>
                   ) : (
                     <>
-                      <span className="text-2xl sm:text-3.5xl font-light tracking-tight text-white font-display">
-                        RM {billingPrice}
+                      <span className="text-3xl sm:text-4xl font-light tracking-tight text-white font-display">
+                        $ {billingPrice}
                       </span>
-                      <span className="text-[10px] uppercase  tracking-wide text-[#f4cf8a]/70">
+                      <span className="text-[10px] uppercase font-sans tracking-wide text-[#f4cf8a]/70">
                         / {billingCycle === "monthly" ? "mo" : "mo, billed annually"}
                       </span>
                     </>
@@ -231,7 +233,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
       <div className="flex justify-center pt-2">
         <button
           onClick={() => setShowAllPlans(!showAllPlans)}
-          className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.01] hover:bg-white/[0.04] hover:border-white/20 transition-all px-8 py-3 text-[10px]  uppercase tracking-wide text-[#f4cf8a] hover:text-[#ffd17d] cursor-pointer shadow-lg"
+          className="inline-flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.01] hover:bg-white/[0.04] hover:border-white/20 transition-all px-8 py-3 text-[10px] font-sans uppercase tracking-[0.06em] text-[#f4cf8a] hover:text-[#ffd17d] cursor-pointer shadow-lg"
         >
           <span>{showAllPlans ? "Hide Extra Plans" : "See All Plans"}</span>
           <ArrowRight size={11} className={`transition-transform duration-300 ${showAllPlans ? "rotate-90" : ""}`} />
@@ -246,7 +248,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.96 }}
-              className="relative w-full max-w-md overflow-hidden rounded-3xl border border-white/[0.08] bg-[#0c0909] p-6 text-white shadow-2xl space-y-6"
+              className="relative w-full max-w-md max-h-[90svh] overflow-y-auto rounded-3xl border border-white/[0.08] bg-[#0c0909] p-6 text-white shadow-2xl space-y-6"
             >
               {/* Internal subtle background flare */}
               <div className="absolute right-0 top-0 h-32 w-32 rounded-full bg-[#f4cf8a]/10 blur-3xl pointer-events-none" />
@@ -254,7 +256,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
               <div className="flex items-center justify-between border-b border-white/[0.05] pb-4">
                 <div className="flex items-center gap-2">
                   <Inbox size={14} className="text-[#f4cf8a]" />
-                  <span className="text-xs uppercase tracking-wide  text-white/90">Enrollment Portal</span>
+                  <span className="text-xs uppercase tracking-[0.1em] font-sans text-white/90">Enrollment Portal</span>
                 </div>
                 <button 
                   onClick={() => setEnrollingPlanName(null)}
@@ -266,32 +268,32 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
 
               <div className="space-y-4">
                 <div className="text-center">
-                  <div className="text-[10px] uppercase tracking-wide text-[#f4cf8a]/60 ">SELECTED PLAN</div>
+                  <div className="text-[10px] uppercase tracking-[0.06em] text-[#f4cf8a]/60 font-sans">SELECTED PLAN</div>
                   <h4 className="text-xl font-medium text-white font-display mt-1">{enrollingPlanName}</h4>
-                  <p className="text-[10px] uppercase  text-white/40 tracking-wider">
-                    {billingCycle === "annual" ? "ANNUAL SETTLEMENT COMPLIANT" : "MONTH-TO-MONTH ROUTING"}
+                  <p className="text-[10px] uppercase font-sans text-white/40 tracking-wider">
+                    {billingCycle === "annual" ? "ANNUAL BILLING" : "MONTH-TO-MONTH BILLING"}
                   </p>
                 </div>
 
                 <form onSubmit={submitEnrollment} className="space-y-4">
                   <div>
-                    <label className="block text-[8px] uppercase tracking-wide text-white/40  mb-1.5">Company or Your Name</label>
+                    <label className="block text-[8px] uppercase tracking-wide text-white/40 font-sans mb-1.5">Company or Your Name</label>
                     <input 
                       required
                       type="text" 
                       placeholder="e.g. Jane Doe"
-                      className="w-full bg-black/60 border border-white/5 focus:border-[#f4cf8a]/40 rounded-xl px-4 py-3 placeholder:text-white/20 text-xs outline-none text-white  transition"
+                      className="w-full bg-black/60 border border-white/5 focus:border-[#f4cf8a]/40 rounded-xl px-4 py-3 placeholder:text-white/20 text-base sm:text-xs outline-none text-white font-sans transition"
                       value={formInputs.companyName}
                       onChange={e => setFormInputs({...formInputs, companyName: e.target.value})}
                     />
                   </div>
 
                   <div>
-                    <label className="block text-[8px] uppercase tracking-wide text-white/40  mb-1.5">Ethereum Address (Simulated)</label>
+                    <label className="block text-[8px] uppercase tracking-wide text-white/40 font-sans mb-1.5">Ethereum Address (Simulated)</label>
                     <input 
                       required
                       type="text" 
-                      className="w-full bg-black/60 border border-white/5 focus:border-[#f4cf8a]/40 rounded-xl px-4 py-3 text-xs outline-none text-white  transition"
+                      className="w-full bg-black/60 border border-white/5 focus:border-[#f4cf8a]/40 rounded-xl px-4 py-3 text-base sm:text-xs outline-none text-white font-sans transition"
                       value={formInputs.ledgerAddr}
                       onChange={e => setFormInputs({...formInputs, ledgerAddr: e.target.value})}
                     />
@@ -304,7 +306,7 @@ export default function PricingTable({ onTriggerWorkspace }: { onTriggerWorkspac
 
                   <button 
                     type="submit"
-                    className="w-full rounded-xl bg-gradient-to-r from-[#ffd17d] to-[#e4a84b] text-black text-[10px] font-semibold uppercase tracking-wide py-3.5 mt-2 transition duration-200 cursor-pointer flex items-center justify-center gap-2 shadow"
+                    className="w-full rounded-xl bg-gradient-to-r from-[#ffd17d] to-[#e4a84b] text-black text-[10px] font-semibold uppercase tracking-[0.1em] py-3.5 mt-2 transition duration-200 cursor-pointer flex items-center justify-center gap-2 shadow"
                   >
                     {verificationSuccess ? (
                       <>

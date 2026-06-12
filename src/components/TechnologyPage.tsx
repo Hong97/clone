@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import { 
   Shield, 
   Eye, 
@@ -59,8 +59,8 @@ export default function TechnologyPage({
       <div className="absolute top-[1500px] left-1/2 -translate-x-[35%] w-[650px] h-[650px] rounded-full border border-white/[0.012] pointer-events-none z-0" />
 
       {/* Navigation Header */}
-      <header className="relative z-20 border-b border-white/[0.04] bg-black/10 backdrop-blur-md text-xs tracking-[0.28em] text-white/45">
-        <div className="flex items-center justify-between px-8 py-5">
+      <header className="relative z-20 border-b border-white/[0.04] bg-black/10 backdrop-blur-md text-xs tracking-[0.11em] text-white/45">
+        <div className="flex items-center justify-between px-5 sm:px-8 py-5">
           <div className="flex items-center gap-9">
             <div 
               className="flex items-center gap-2.5 cursor-pointer group select-none" 
@@ -107,7 +107,7 @@ export default function TechnologyPage({
               transition={{ duration: 0.25, ease: "easeInOut" }}
               className="border-t border-white/[0.04] bg-[#060505]/98 backdrop-blur-lg lg:hidden overflow-hidden"
             >
-              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-wide">
+              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-[0.1em]">
                 <a 
                   className="text-white/60 hover:text-white pl-3 py-2.5 cursor-pointer transition" 
                   onClick={() => {
@@ -172,27 +172,27 @@ export default function TechnologyPage({
         {/* HERO SECTION */}
         <div className="mb-12 sm:mb-16 md:mb-24 lg:mb-32">
           {/* Label Tag */}
-          <div className="mb-6 text-[10px] md:text-xs tracking-wide text-[#f4cf8a]/65 ">
+          <div className="mb-6 text-[10px] md:text-xs tracking-[0.12em] text-[#f4cf8a]/65 font-sans">
             [ Technology ]
           </div>
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal tracking-[-0.04em] leading-[1.1] max-w-3xl mb-8 font-display">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/70">Built with simplicity</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/70">Built for Autonomous</span>
             <br />
-            <span className="text-white/25 mt-1 block font-light">so you can learn with confidence.</span>
+            <span className="text-white/25 mt-1 block font-light">Trading Intelligence.</span>
           </h1>
 
           {/* Description */}
           <p className="text-sm sm:text-base text-white/50 max-w-2xl leading-relaxed">
-            Xenith is built on three simple commitments: your queries are private, every financial explanation is easy to trace, and our interactive code sandbox lets you learn about ledger tech with zero real-world risk.
+            XENITH combines market intelligence, autonomous execution, capital allocation, and risk management into a unified trading infrastructure designed for modern operators.
           </p>
         </div>
 
         {/* ARCHITECTURE SECTION */}
         <div className="border-t border-white/[0.08] lg:border-white/[0.04] pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-24 lg:pb-32">
           
-          <div className="mb-12 text-[10px] md:text-xs tracking-wide text-[#f4cf8a]/65 ">
+          <div className="mb-12 text-[10px] md:text-xs tracking-[0.12em] text-[#f4cf8a]/65 font-sans">
             [ Structure ]
           </div>
 
@@ -200,64 +200,64 @@ export default function TechnologyPage({
             
             {/* Architecture Row 01 */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 md:p-8 rounded-xl border border-white/[0.04] bg-[#0b0808]/20 hover:bg-[#0b0808]/40 hover:border-white/[0.1] transition-all duration-300">
-              <div className="md:col-span-1 text-base md:text-lg  text-white/20">
+              <div className="md:col-span-1 text-base md:text-lg font-sans text-white/20">
                 01
               </div>
               <div className="md:col-span-4 space-y-1">
-                <h3 className="text-sm font-normal text-white uppercase tracking-wider">Three Surfaces</h3>
-                <p className="text-[10px] uppercase tracking-wide text-[#f4cf8a]/55 ">Xenith Chat, API, Guides</p>
+                <h3 className="text-sm font-normal text-white uppercase tracking-wider">INTELLIGENCE LAYER</h3>
+                <p className="text-[10px] uppercase tracking-wide text-[#f4cf8a]/55 font-sans">MARKET ANALYSIS · STRATEGY REASONING · DECISION SUPPORT</p>
               </div>
               <div className="md:col-span-7 flex items-center">
                 <p className="text-xs sm:text-sm text-white/45 font-sans leading-relaxed">
-                  Three simple ways to explore: ask our conversational AI assistant, test mock code calls, or read clean text templates.
+                  The intelligence layer continuously monitors market conditions, identifies opportunities, evaluates risk, and provides context-aware trading insights.
                 </p>
               </div>
             </div>
 
             {/* Architecture Row 02 */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 md:p-8 rounded-xl border border-white/[0.04] bg-[#0b0808]/20 hover:bg-[#0b0808]/40 hover:border-white/[0.1] transition-all duration-300">
-              <div className="md:col-span-1 text-base md:text-lg  text-white/20">
+              <div className="md:col-span-1 text-base md:text-lg font-sans text-white/20">
                 02
               </div>
               <div className="md:col-span-4 space-y-1">
-                <h3 className="text-sm font-normal text-white uppercase tracking-wider">AId-Driven Planner</h3>
-                <p className="text-[10px] uppercase tracking-wide text-[#f4cf8a]/55  font-sans">Self-correcting helper</p>
+                <h3 className="text-sm font-normal text-white uppercase tracking-wider">AGI DECISION ENGINE</h3>
+                <p className="text-[10px] uppercase tracking-wide text-[#f4cf8a]/55 font-sans">ADAPTIVE STRATEGY GENERATION</p>
               </div>
               <div className="md:col-span-7 flex items-center">
                 <p className="text-xs sm:text-sm text-white/45 font-sans leading-relaxed">
-                  Our helper reads your plain english queries, outlines a step-by-step response, and double-checks its arithmetic.
+                  The decision engine dynamically adjusts execution strategies based on changing market conditions, liquidity, volatility, and risk exposure.
                 </p>
               </div>
             </div>
 
             {/* Architecture Row 03 */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 md:p-8 rounded-xl border border-white/[0.04] bg-[#0b0808]/20 hover:bg-[#0b0808]/40 hover:border-white/[0.1] transition-all duration-300">
-              <div className="md:col-span-1 text-base md:text-lg  text-white/20">
+              <div className="md:col-span-1 text-base md:text-lg font-sans text-white/20">
                 03
               </div>
               <div className="md:col-span-4 space-y-1">
-                <h3 className="text-sm font-normal text-white uppercase tracking-wider">Simulated Ledger</h3>
-                <p className="text-[10px] uppercase tracking-wide text-[#f4cf8a]/55 ">Test keys & mock holdings</p>
+                <h3 className="text-sm font-normal text-white uppercase tracking-wider">EXECUTION INFRASTRUCTURE</h3>
+                <p className="text-[10px] uppercase tracking-wide text-[#f4cf8a]/55 font-sans">MULTI-EXCHANGE ROUTING</p>
               </div>
               <div className="md:col-span-7 flex items-center">
                 <p className="text-xs sm:text-sm text-white/45 font-sans leading-relaxed">
-                  Full play-money environments and test balances, letting you experience finance logic without any danger of real losses.
+                  Orders are intelligently routed through optimized execution paths to improve speed, liquidity access, and execution quality.
                 </p>
               </div>
             </div>
 
             {/* Architecture Row 04 */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 md:p-8 rounded-xl border border-white/[0.04] bg-[#0b0808]/20 hover:bg-[#0b0808]/40 hover:border-white/[0.1] transition-all duration-300">
-              <div className="md:col-span-1 text-base md:text-lg  text-white/20">
+              <div className="md:col-span-1 text-base md:text-lg font-sans text-white/20">
                 04
               </div>
               <div className="md:col-span-4 space-y-1">
-                <h3 className="text-sm font-normal text-white uppercase tracking-wider">Private Workspace</h3>
-                <p className="text-[10px] uppercase tracking-wide text-[#f4cf8a]/55 ">Isolated and safe memory</p>
+                <h3 className="text-sm font-normal text-white uppercase tracking-wider">RISK INTELLIGENCE LAYER</h3>
+                <p className="text-[10px] uppercase tracking-wide text-[#f4cf8a]/55 font-sans">CONTINUOUS MONITORING</p>
               </div>
               <div className="md:col-span-7 flex items-center">
                 <p className="text-xs sm:text-sm text-white/45 font-sans leading-relaxed">
-                  Your chat history and custom configurations live only in your browser database, keeping your data entirely yours.
+                  Dedicated risk systems monitor exposure, drawdowns, capital allocation, and execution performance in real time.
                 </p>
               </div>
             </div>
@@ -269,12 +269,12 @@ export default function TechnologyPage({
         {/* SECURITY PILLARS SECTION */}
         <div className="border-t border-white/[0.08] pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-24 lg:pb-36">
           
-          <div className="mb-6 text-[10px] md:text-xs tracking-wide text-[#f4cf8a]/65 ">
+          <div className="mb-6 text-[10px] md:text-xs tracking-[0.12em] text-[#f4cf8a]/65 font-sans">
             [ Safety ]
           </div>
 
           <h2 className="text-2xl sm:text-3xl font-light tracking-[-0.03em] font-display text-white leading-snug mb-12">
-            Four commitments to safe learning.
+            Four pillars of reliable execution.
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -284,9 +284,9 @@ export default function TechnologyPage({
               <div className="p-2 text-[#e5c185] bg-white/[0.02] border border-white/5 rounded-lg w-fit mb-5">
                 <Shield size={18} className="stroke-[1.5]" />
               </div>
-              <h3 className="text-sm font-normal mb-3 tracking-wide text-white">Risk-free practicing</h3>
+              <h3 className="text-sm font-normal mb-3 tracking-wide text-white">Capital Protection</h3>
               <p className="text-xs text-white/40 leading-relaxed">
-                Everything works with simulated token wallets, letting you practice with sample keys safely.
+                Multi-layer risk controls continuously monitor exposure, position sizing, and abnormal market conditions.
               </p>
             </div>
 
@@ -295,9 +295,9 @@ export default function TechnologyPage({
               <div className="p-2 text-[#e5c185] bg-white/[0.02] border border-white/5 rounded-lg w-fit mb-5">
                 <Eye size={18} className="stroke-[1.5]" />
               </div>
-              <h3 className="text-sm font-normal mb-3 tracking-wide text-white">Completely visible</h3>
+              <h3 className="text-sm font-normal mb-3 tracking-wide text-white">Execution Transparency</h3>
               <p className="text-xs text-white/40 leading-relaxed">
-                We trace every explanation to its source, so you understand the math and reasoning behind every reply.
+                Every decision, strategy adjustment, and execution path can be reviewed and analyzed.
               </p>
             </div>
 
@@ -306,9 +306,9 @@ export default function TechnologyPage({
               <div className="p-2 text-[#e5c185] bg-white/[0.02] border border-white/5 rounded-lg w-fit mb-5">
                 <Lock size={18} className="stroke-[1.5]" />
               </div>
-              <h3 className="text-sm font-normal mb-3 tracking-wide text-white">Strict privacy</h3>
+              <h3 className="text-sm font-normal mb-3 tracking-wide text-white">Secure Infrastructure</h3>
               <p className="text-xs text-white/40 leading-relaxed">
-                We require absolutely no actual banking keys, banking credentials, or personal debit card passwords.
+                Enterprise-grade security architecture protects user data, system access, and execution environments.
               </p>
             </div>
 
@@ -317,9 +317,9 @@ export default function TechnologyPage({
               <div className="p-2 text-[#e5c185] bg-white/[0.02] border border-white/5 rounded-lg w-fit mb-5">
                 <Cpu size={18} className="stroke-[1.5]" />
               </div>
-              <h3 className="text-sm font-normal mb-3 tracking-wide text-white">Predictable logic</h3>
+              <h3 className="text-sm font-normal mb-3 tracking-wide text-white">Adaptive Intelligence</h3>
               <p className="text-xs text-white/40 leading-relaxed">
-                Our templates and tools are deterministic, meaning you get the same correct results every time you execute.
+                Models continuously respond to market changes while maintaining disciplined execution frameworks.
               </p>
             </div>
 
@@ -330,33 +330,33 @@ export default function TechnologyPage({
         {/* PERFORMANCE METRICS SECTION */}
         <div className="border-t border-white/[0.08] pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-24 lg:pb-32">
           
-          <div className="mb-12 text-[10px] md:text-xs tracking-wide text-[#f4cf8a]/65 ">
+          <div className="mb-12 text-[10px] md:text-xs tracking-[0.12em] text-[#f4cf8a]/65 font-sans">
             [ Key Numbers ]
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 rounded-xl border border-white/[0.04] bg-[#0b0808]/20 p-8 md:p-10 divide-y-0 divide-x-0 sm:divide-x sm:divide-white/[0.04] gap-y-8 sm:gap-y-0">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 rounded-xl border border-white/[0.04] bg-[#0b0808]/20 p-6 sm:p-8 md:p-10 divide-y-0 divide-x-0 sm:divide-x sm:divide-white/[0.04] gap-y-8 sm:gap-y-0">
             {/* Metric 1 */}
             <div className="space-y-2 text-center sm:text-left sm:px-4 first:pl-0">
               <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display">Under 1s</p>
-              <p className="text-[9px] sm:text-[10px]  tracking-wide text-[#f4cf8a]/70 font-semibold">Typical AI reply speed</p>
+              <p className="text-[9px] sm:text-[10px] font-sans tracking-wide text-[#f4cf8a]/70 font-semibold">AI Response Latency</p>
             </div>
 
             {/* Metric 2 */}
             <div className="space-y-2 text-center sm:text-left sm:px-6">
-              <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display">100%</p>
-              <p className="text-[9px] sm:text-[10px]  tracking-wide text-white/40">Simulated risk-free sandbox</p>
+              <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display">14.2ms</p>
+              <p className="text-[9px] sm:text-[10px] font-sans tracking-wide text-white/40">Average Execution Routing Speed</p>
             </div>
 
             {/* Metric 3 */}
             <div className="space-y-2 text-center sm:text-left sm:px-6">
-              <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display">SOC 2</p>
-              <p className="text-[9px] sm:text-[10px]  tracking-wide text-white/40">Secure platform standards</p>
+              <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display">99.9%</p>
+              <p className="text-[9px] sm:text-[10px] font-sans tracking-wide text-white/40">System Availability</p>
             </div>
 
             {/* Metric 4 */}
             <div className="space-y-2 text-center sm:text-left sm:px-6 last:pr-0">
-              <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display font-sans">90+ days</p>
-              <p className="text-[9px] sm:text-[10px]  tracking-wide text-[#f4cf8a]/70 font-semibold">Local history storage</p>
+              <p className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white font-display font-sans">24/7</p>
+              <p className="text-[9px] sm:text-[10px] font-sans tracking-wide text-[#f4cf8a]/70 font-semibold">Market Monitoring Coverage</p>
             </div>
           </div>
 
@@ -365,7 +365,7 @@ export default function TechnologyPage({
         {/* STACK LIST SECTION */}
         <div className="border-t border-white/[0.08] pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-24 lg:pb-36">
           
-          <div className="mb-12 text-[10px] md:text-xs tracking-wide text-[#f4cf8a]/65 ">
+          <div className="mb-12 text-[10px] md:text-xs tracking-[0.12em] text-[#f4cf8a]/65 font-sans">
             [ Tech Stack ]
           </div>
 
@@ -374,10 +374,10 @@ export default function TechnologyPage({
             {/* Left Column info */}
             <div className="lg:col-span-5 space-y-4">
               <h2 className="text-2xl sm:text-3xl font-light tracking-[-0.03em] font-display text-white leading-tight">
-                A simple look at what we run.
+                The infrastructure behind autonomous execution.
               </h2>
               <p className="text-xs sm:text-sm text-white/45 font-sans leading-relaxed max-w-md">
-                No complex layers. These are the straightforward components that power your Xenith playground under the hood.
+                XENITH integrates intelligence models, execution engines, market data systems, and risk monitoring layers into a unified trading architecture.
               </p>
             </div>
 
@@ -390,10 +390,10 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Layers size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px]  tracking-wide text-white/50 font-semibold">Core Framework</span>
+                  <span className="text-[9px] sm:text-[10px] font-sans tracking-wide text-white/50 font-semibold">Core Framework</span>
                 </div>
-                <div className="text-xs sm:text-sm text-white/80 ">
-                  React 18 & Vite (Lightning-fast client rendering)
+                <div className="text-xs sm:text-sm text-white/80 font-sans">
+                  High-performance client architecture optimized for real-time interaction.
                 </div>
               </div>
 
@@ -403,10 +403,10 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Zap size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px]  tracking-wide text-white/50 font-semibold">AI Integration</span>
+                  <span className="text-[9px] sm:text-[10px] font-sans tracking-wide text-white/50 font-semibold">AI Integration</span>
                 </div>
-                <div className="text-xs sm:text-sm text-white/80 ">
-                  Server-side Google Gemini (Rich model reasoning)
+                <div className="text-xs sm:text-sm text-white/80 font-sans">
+                  Advanced reasoning models supporting market interpretation and strategy generation.
                 </div>
               </div>
 
@@ -416,10 +416,10 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Database size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px]  tracking-wide text-white/50 font-semibold">Data Safety</span>
+                  <span className="text-[9px] sm:text-[10px] font-sans tracking-wide text-white/50 font-semibold">Data Infrastructure</span>
                 </div>
-                <div className="text-xs sm:text-sm text-white/80 ">
-                  Browser-side LocalStorage (Zero leak guarantee)
+                <div className="text-xs sm:text-sm text-white/80 font-sans">
+                  Low-latency data pipelines powering intelligence and execution systems.
                 </div>
               </div>
 
@@ -429,10 +429,10 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Lock size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px]  tracking-wide text-white/50 font-semibold">Security Check</span>
+                  <span className="text-[9px] sm:text-[10px] font-sans tracking-wide text-white/50 font-semibold">Security Layer</span>
                 </div>
-                <div className="text-xs sm:text-sm text-white/80 ">
-                  Per-request sandbox simulation & rate guards
+                <div className="text-xs sm:text-sm text-white/80 font-sans">
+                  Enterprise-grade safeguards, access controls, and execution isolation.
                 </div>
               </div>
 
@@ -442,10 +442,10 @@ export default function TechnologyPage({
                   <span className="p-1 px-1.5 rounded bg-white/[0.03] text-white/40 border border-white/5">
                     <Activity size={11} className="text-[#f4cf8a]/85" />
                   </span>
-                  <span className="text-[9px] sm:text-[10px]  tracking-wide text-white/50 font-semibold">Visual Magic</span>
+                  <span className="text-[9px] sm:text-[10px] font-sans tracking-wide text-white/50 font-semibold">Execution Monitoring</span>
                 </div>
-                <div className="text-xs sm:text-sm text-white/80 ">
-                  Tailwind CSS + Motion (Silky smooth feedback)
+                <div className="text-xs sm:text-sm text-white/80 font-sans">
+                  Continuous system health checks and performance optimization.
                 </div>
               </div>
 
@@ -459,25 +459,25 @@ export default function TechnologyPage({
         <div className="border-t border-white/[0.08] pt-12 sm:pt-16 md:pt-24 pb-12 flex flex-col items-center justify-center text-center">
           
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-[-0.03em] font-display text-white mb-4 leading-tight">
-            Learn and build step-by-step.
+            Trade with intelligence. Execute with confidence.
           </h2>
           
           <p className="text-xs sm:text-sm text-white/40 max-w-xl leading-relaxed mb-8">
-            Check out our easy, copy-paste sample code, explore secure wallet APIs, and build your own custom client dashboards in under 10 minutes.
+            Access the infrastructure powering market intelligence, autonomous execution, and institutional-grade trading operations.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
             <button 
               onClick={onTryXenith}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-white text-black px-7 py-3 text-xs tracking-wide font-medium hover:bg-[#ffe5b0] transition-colors duration-300 cursor-pointer"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-white text-black px-7 py-3 text-xs tracking-[0.06em] font-medium hover:bg-[#ffe5b0] transition-colors duration-300 cursor-pointer"
             >
-              Request Free Trial <ArrowUpRight size={14} />
+              Request Access <ArrowUpRight size={14} />
             </button>
             <button 
               onClick={onNavigateProduct}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full border border-white/10 hover:border-white/30 px-7 py-3 text-xs tracking-wide font-medium text-white/80 hover:text-white transition duration-300 cursor-pointer"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full border border-white/10 hover:border-white/30 px-7 py-3 text-xs tracking-[0.06em] font-medium text-white/80 hover:text-white transition duration-300 cursor-pointer"
             >
-              See It In Product <ArrowRight size={14} />
+              Explore The Platform <ArrowRight size={14} />
             </button>
           </div>
 
@@ -486,11 +486,11 @@ export default function TechnologyPage({
       </div>
 
       {/* Footer Navigation */}
-      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-wide text-white/40  z-10 relative">
+      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-[0.15em] text-white/40 font-sans z-10 relative">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2.5 select-none pointer-events-none">
             <XenithLogo size={20} className="opacity-60" />
-            <span className="text-[10px] tracking-wide text-white/50">Xenith Labs © 2026</span>
+            <span className="text-[10px] tracking-[0.12em] text-white/50">Xenith Labs © 2026</span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-9 text-[9px] lg:text-[10px]">
             <a onClick={onNavigateCompany} className="hover:text-white transition cursor-pointer">Company</a>

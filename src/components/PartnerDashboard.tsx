@@ -215,7 +215,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                             value={partnerId}
                             onChange={(e) => setPartnerId(e.target.value)}
                             placeholder="SOVEREIGN REGISTRY ID"
-                            className="w-full bg-black/60 border border-white/[0.06] hover:border-white/15 focus:border-[#f4cf8a]/40 rounded-xl py-4.5 pl-11 pr-4 text-xs tracking-wide text-[#f4cf8a]  placeholder:text-white/20 placeholder:tracking-normal outline-none transition duration-200"
+                            className="w-full bg-black/60 border border-white/[0.06] hover:border-white/15 focus:border-[#f4cf8a]/40 rounded-xl py-4.5 pl-11 pr-4 text-base sm:text-xs tracking-wide text-[#f4cf8a]  placeholder:text-white/20 placeholder:tracking-normal outline-none transition duration-200"
                           />
                         </div>
 
@@ -227,12 +227,12 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                             value={passkey}
                             onChange={(e) => setPasskey(e.target.value)}
                             placeholder="CYPHER KEYWORD"
-                            className="w-full bg-black/60 border border-white/[0.06] hover:border-white/15 focus:border-[#f4cf8a]/40 rounded-xl py-4.5 pl-11 pr-11 text-xs tracking-wide text-white/80  placeholder:text-white/20 placeholder:tracking-normal outline-none transition duration-200"
+                            className="w-full bg-black/60 border border-white/[0.06] hover:border-white/15 focus:border-[#f4cf8a]/40 rounded-xl py-4.5 pl-11 pr-11 text-base sm:text-xs tracking-wide text-white/80  placeholder:text-white/20 placeholder:tracking-normal outline-none transition duration-200"
                           />
                           <button 
                             type="button"
                             onClick={() => setShowPasskey(!showPasskey)}
-                            className="absolute right-3.5 top-1/2 -translate-y-1/2 text-white/30 hover:text-white transition duration-150"
+                            className="absolute right-1 top-1/2 -translate-y-1/2 p-2.5 text-white/30 hover:text-white transition duration-150"
                           >
                             {showPasskey ? <EyeOff size={15} /> : <Eye size={15} />}
                           </button>
@@ -356,7 +356,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
               <div className="flex items-center gap-3.5 sm:self-center">
                 <button 
                   onClick={handleSignOut}
-                  className="rounded border border-amber-500/20 px-5 py-1.5 text-[9px] tracking-wide uppercase text-[#f4cf8a] hover:bg-[#f4cf8a]/5 transition cursor-pointer font-semibold"
+                  className="rounded border border-amber-500/20 px-5 py-2.5 sm:py-1.5 text-[9px] tracking-wide uppercase text-[#f4cf8a] hover:bg-[#f4cf8a]/5 transition cursor-pointer font-semibold"
                 >
                   Sign Out
                 </button>
@@ -429,7 +429,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                     Liquidity Allocation Tiers
                   </div>
 
-                  <div className="grid grid-cols-3 gap-3 w-full">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full">
                     {/* Free Option Card */}
                     <div 
                       onClick={() => {
@@ -501,7 +501,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                   {/* Interactive Button to insert a mock member */}
                   <button 
                     onClick={() => setIsAddMemberOpen(!isAddMemberOpen)}
-                    className="text-[9px]  border border-[#f4cf8a]/30 bg-black hover:bg-[#f4cf8a]/5 text-[#f4cf8a] transition-all px-3 py-1 rounded cursor-pointer shrink-0"
+                    className="text-[9px]  border border-[#f4cf8a]/30 bg-black hover:bg-[#f4cf8a]/5 text-[#f4cf8a] transition-all px-3 py-2 sm:py-1 rounded cursor-pointer shrink-0"
                   >
                     {isAddMemberOpen ? "Close Panel" : "+ Register Sub-Node"}
                   </button>
@@ -517,18 +517,18 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                       onSubmit={handleAddMember}
                       className="bg-black/60 border border-white/[0.05] p-3 rounded-lg space-y-3"
                     >
-                      <div className="flex items-center gap-2">
-                        <input 
-                          type="text" 
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+                        <input
+                          type="text"
                           value={newMemberId}
                           onChange={(e) => setNewMemberId(e.target.value)}
                           placeholder="e.g. Sub-Node 07"
-                          className="flex-grow bg-black border border-white/10 rounded px-2.5 py-1.5 text-xs text-white placeholder:text-white/20 outline-none"
+                          className="flex-grow bg-black border border-white/10 rounded px-2.5 py-1.5 text-base sm:text-xs text-white placeholder:text-white/20 outline-none"
                         />
                         <select 
                           value={newMemberPackage}
                           onChange={(e) => setNewMemberPackage(e.target.value as any)}
-                          className="bg-black border border-white/10 rounded px-2.5 py-1.5 text-xs text-white outline-none cursor-pointer"
+                          className="bg-black border border-white/10 rounded px-2.5 py-1.5 text-base sm:text-xs text-white outline-none cursor-pointer"
                         >
                           <option value="FREE">BASIC</option>
                           <option value="PLUS">PLUS (RM 89)</option>
@@ -608,8 +608,8 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
               <div className="lg:col-span-6 space-y-4">
                 
                 {/* Statistics Card 1: TOTAL SUBSCRIPTION FLOW */}
-                <div className="rounded-xl border border-white/[0.05] bg-[#0c090a]/40 p-5 flex items-center justify-between shadow-md relative group select-none">
-                  <div className="space-y-4 max-w-[70%]">
+                <div className="rounded-xl border border-white/[0.05] bg-[#0c090a]/40 p-5 flex items-center justify-between gap-3 shadow-md relative group select-none">
+                  <div className="space-y-4 max-w-[78%] sm:max-w-[70%]">
                     <div className="text-[9px]  tracking-wide text-[#f4cf8a] uppercase">
                       Cumulative Connected AUM
                     </div>
@@ -624,7 +624,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                   </div>
 
                   {/* Circular Gold Coin Stamp Badge: RM */}
-                  <div className="w-12 h-12 rounded-full border border-[#f4cf8a]/30 bg-[#f4cf8a]/5 flex items-center justify-center text-[#f4cf8a]  text-[10px] tracking-wide font-bold shadow-[0_0_15px_rgba(244,207,138,0.06)] group-hover:scale-105 group-hover:border-[#f4cf8a]/50 transition duration-300">
+                  <div className="w-12 h-12 shrink-0 rounded-full border border-[#f4cf8a]/30 bg-[#f4cf8a]/5 flex items-center justify-center text-[#f4cf8a]  text-[10px] tracking-wide font-bold shadow-[0_0_15px_rgba(244,207,138,0.06)] group-hover:scale-105 group-hover:border-[#f4cf8a]/50 transition duration-300">
                     RM
                   </div>
                 </div>
@@ -648,7 +648,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                   </div>
 
                   {/* Gorgeous gold neon sparkline chart drawing */}
-                  <div className="w-[120px] h-[50px] relative shrink-0">
+                  <div className="w-[90px] sm:w-[120px] h-[50px] relative shrink-0">
                     <svg className="w-full h-full text-[#f4cf8a]" viewBox="0 0 120 50">
                       <defs>
                         <linearGradient id="glow-grad-profit" x1="0" y1="0" x2="0" y2="1">
@@ -767,13 +767,13 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
 
                 {/* Numerical rows layout */}
                 <div className="space-y-2.5 font-sans text-xs">
-                  <div className="flex items-center justify-between pb-1.5 border-b border-white/[0.03]">
-                    <span className="text-white/40">Node Level:</span>
-                    <span className="text-emerald-400 font-semibold text-sm">Genesis Node (Level Black)</span>
+                  <div className="flex flex-wrap items-center justify-between gap-x-3 min-w-0 pb-1.5 border-b border-white/[0.03]">
+                    <span className="text-white/40 shrink-0">Node Level:</span>
+                    <span className="text-emerald-400 font-semibold text-sm text-right break-words">Genesis Node (Level Black)</span>
                   </div>
-                  <div className="flex items-center justify-between pb-1.5 border-b border-white/[0.03]">
-                    <span className="text-white/40">Authorized API Connections:</span>
-                    <span className="text-amber-500 font-semibold text-sm">1 / 3 Links Active</span>
+                  <div className="flex flex-wrap items-center justify-between gap-x-3 min-w-0 pb-1.5 border-b border-white/[0.03]">
+                    <span className="text-white/40 shrink-0">Authorized API Connections:</span>
+                    <span className="text-amber-500 font-semibold text-sm text-right break-words">1 / 3 Links Active</span>
                   </div>
                   <div className="flex flex-col gap-1 pt-1">
                     <span className="text-[#f4cf8a] font-semibold text-[10px] tracking-wider uppercase">System Notice:</span>
@@ -789,12 +789,12 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                     <div className="w-12 h-12 rounded-full border border-emerald-500/20 bg-emerald-500/5 text-emerald-400 font-semibold text-xs flex items-center justify-center">
                       1
                     </div>
-                    <span className="text-[8px] tracking-wider text-white/30 uppercase mt-1">Active Links</span>
+                    <span className="text-[10px] sm:text-[8px] tracking-wider text-white/30 uppercase mt-1 text-center leading-tight">Active Links</span>
                   </div>
 
                   {/* Flow Arrow representation */}
                   <div className="flex-grow max-w-[80px] h-px bg-white/10 relative flex items-center justify-center">
-                    <span className="absolute -top-3 text-[7px] text-[#f4cf8a]/50 uppercase tracking-wide  scale-90">Bandwidth</span>
+                    <span className="absolute -top-3 text-[10px] sm:text-[7px] text-[#f4cf8a]/50 uppercase tracking-wide  scale-90">Bandwidth</span>
                     <div className="absolute right-0 w-1 h-1 border-t border-r border-white/30 transform rotate-45" />
                   </div>
 
@@ -802,7 +802,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                     <div className="w-12 h-12 rounded-full border border-[#f4cf8a]/40 bg-[#f4cf8a]/5 text-[#f4cf8a] font-semibold text-xs flex items-center justify-center shadow-[0_0_12px_rgba(244,207,138,0.1)]">
                       2
                     </div>
-                    <span className="text-[8px] tracking-wider text-white/30 uppercase mt-1">Available Whitelists</span>
+                    <span className="text-[10px] sm:text-[8px] tracking-wider text-white/30 uppercase mt-1 text-center leading-tight">Available Whitelists</span>
                   </div>
                 </div>
               </div>
@@ -826,7 +826,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                       setActiveSopTab("incubation");
                       triggerToast("Protocol initialized: Proof of Profit Incubation.");
                     }}
-                    className={`py-2 text-[9px] tracking-wide uppercase  rounded transition-all cursor-pointer ${
+                    className={`py-3 sm:py-2 text-[9px] tracking-wide uppercase  rounded transition-all cursor-pointer ${
                       activeSopTab === "incubation" 
                         ? "bg-[#f4cf8a]/10 text-[#f4cf8a] border border-[#f4cf8a]/20 font-semibold" 
                         : "text-white/40 hover:text-white/70"
@@ -840,7 +840,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                       setActiveSopTab("scarcity");
                       triggerToast("Protocol initialized: Network Scarcity Limits.");
                     }}
-                    className={`py-2 text-[9px] tracking-wide uppercase  rounded transition-all cursor-pointer ${
+                    className={`py-3 sm:py-2 text-[9px] tracking-wide uppercase  rounded transition-all cursor-pointer ${
                       activeSopTab === "scarcity" 
                         ? "bg-[#f4cf8a]/10 text-[#f4cf8a] border border-[#f4cf8a]/20 font-semibold" 
                         : "text-white/40 hover:text-white/70"
@@ -854,7 +854,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                       setActiveSopTab("briefing");
                       triggerToast("Protocol initialized: Closed-Door Assistance.");
                     }}
-                    className={`py-2 text-[9px] tracking-wide uppercase  rounded transition-all cursor-pointer ${
+                    className={`py-3 sm:py-2 text-[9px] tracking-wide uppercase  rounded transition-all cursor-pointer ${
                       activeSopTab === "briefing" 
                         ? "bg-[#f4cf8a]/10 text-[#f4cf8a] border border-[#f4cf8a]/20 font-semibold" 
                         : "text-white/40 hover:text-white/70"
@@ -884,7 +884,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                             Proof of Profit (14-Day Incubation)
                           </span>
                         </div>
-                        <p className="text-[11px] text-white/50 leading-relaxed text-justify">
+                        <p className="text-[11px] text-white/50 leading-relaxed text-left md:text-justify">
                           Maintain zero external disclosure for the first 14 days of activation. Allow your automated arbitrage ledger to generate verified consistent returns (<span className="text-emerald-400 font-semibold">+0.5% to +0.8% daily</span>) in your private terminal. Let the objective yield performance establish absolute trust before allocating bandwidth to external peers.
                         </p>
                         <div className="text-[10.5px] text-[#f4cf8a]/70  tracking-wider bg-white/[0.01] p-2 rounded border border-white/[0.02]">
@@ -910,7 +910,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                             Limit Matrix Allocations (Scarcity Strategy)
                           </span>
                         </div>
-                        <p className="text-[11px] text-white/50 leading-relaxed text-justify">
+                        <p className="text-[11px] text-white/50 leading-relaxed text-left md:text-justify">
                           Access bandwidth is strictly restricted to <span className="text-amber-500 font-semibold">3 active sub-node channels</span> per core Genesis server. Maintain this quota strictly to protect local routing priority speeds. This enhances scarcity and encourages allocating connections exclusively to maximum-tier partners.
                         </p>
                         <div className="text-[10.5px] text-[#f4cf8a]/70  tracking-wider bg-white/[0.01] p-2 rounded border border-white/[0.02]">
@@ -936,7 +936,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                             Technical Co-Clearing (Assist Protocol)
                           </span>
                         </div>
-                        <p className="text-[11px] text-white/50 leading-relaxed text-justify">
+                        <p className="text-[11px] text-white/50 leading-relaxed text-left md:text-justify">
                           Avoid raw sales pitches or complicated high-frequency explanations directly. Rely on our Technical Advisory program: organize closed-door sessions with qualified candidates, and let our infrastructure engineering experts present our cold-storage, live arbitration, and sandbox physical isolation layers.
                         </p>
                         <div className="text-[10.5px] text-[#f4cf8a]/70  tracking-wider bg-white/[0.01] p-2 rounded border border-white/[0.02]">
@@ -957,7 +957,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
                   <h3 className="text-[10px] tracking-wide font-medium text-[#f4cf8a] uppercase font-display">
                     About Xenith
                   </h3>
-                  <p className="text-xs leading-relaxed text-white/50 text-justify">
+                  <p className="text-xs leading-relaxed text-white/50 text-left md:text-justify">
                     Xenith is an AI-powered tool built to help you manage digital assets securely through real-time data, strategy automation, and advanced API connectivity.
                   </p>
                 </div>
@@ -988,7 +988,7 @@ export default function PartnerDashboard({ onBackToHome }: PartnerDashboardProps
             {/* 8. FOOTER STAMP */}
             <footer className="pt-8 border-t border-white/[0.03] text-center text-[9px] tracking-wide text-white/20 uppercase  space-y-3">
               <div>© 2025 Xenith. All rights reserved.</div>
-              <div className="flex justify-center gap-4 text-white/40 hover:text-white/60 transition text-[8.5px]">
+              <div className="flex justify-center gap-4 text-white/40 hover:text-white/60 transition text-[10px] sm:text-[8.5px]">
                 <span>Privacy Policy</span>
                 <span>|</span>
                 <span>Terms of Service</span>

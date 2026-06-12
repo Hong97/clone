@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import { 
   Cpu, 
   ShieldCheck, 
@@ -28,32 +28,32 @@ export default function TechIntro() {
   const techFeatures: TechFeature[] = [
     {
       id: "custody",
-      tag: "Zero-Custody",
-      title: "Zero-Custody Architecture",
-      description: "Funds never leave your Binance/OKX wallets. Our Alpha API cannot withdraw capital.",
-      metricLabel: "Withdrawal Permit",
-      metricValue: "Strictly Blocked",
-      flowSteps: ["Setup API Connection", "Untick Withdrawal Permit", "Secure Alpha Trading"],
+      tag: "Non-Custodial",
+      title: "Non-Custodial Security",
+      description: "All funds stay in your personal exchange account. Xenith AI has zero direct access to hold or withdraw your assets.",
+      metricLabel: "Withdrawal Permissions",
+      metricValue: "Strictly Disabled",
+      flowSteps: ["Connect API Keys", "Disable Withdrawals", "AI Trade Execution"],
       icon: <Cpu size={20} className="text-[#f4cf8a]" />
     },
     {
       id: "hsm",
-      tag: "API Protection",
-      title: "Encrypted Protection Shield",
-      description: "Keep your API keys secret and secure.",
-      metricLabel: "Encryption Cipher",
-      metricValue: "AES-256 Symmetric",
-      flowSteps: ["Input Keys", "In-Flight Envelope Lock", "Sandbox Execution"],
+      tag: "Secure API Keys",
+      title: "Secure API Architecture",
+      description: "Your API credentials are fully encrypted and restricted to Read/Trade access permissions only.",
+      metricLabel: "Key Permitted Actions",
+      metricValue: "Read & Trade Only",
+      flowSteps: ["Read Market Data", "Analyze Opportunities", "Execute Orders"],
       icon: <ShieldCheck size={20} className="text-[#f4cf8a]" />
     },
     {
       id: "audit",
-      tag: "Transparency",
-      title: "Real-Time Audit Logs",
-      description: "Watch the XENITH AI execute millimeter-level spread capture.",
-      metricLabel: "Average Latency",
-      metricValue: "< 1 Millisecond",
-      flowSteps: ["Market Ingress Scan", "Spread Variance Identified", "Instant Arbitrage Capture"],
+      tag: "AI Automation",
+      title: "Automated Strategy Execution",
+      description: "Deploy and monitor sophisticated trading algorithms 24/7 without manual intervention or emotional biases.",
+      metricLabel: "Trading Downtime",
+      metricValue: "0% (24/7 Coverage)",
+      flowSteps: ["Scan Price Action", "Validate Strategy", "Trigger Auto Trade"],
       icon: <Layers size={20} className="text-[#f4cf8a]" />
     }
   ];
@@ -70,17 +70,17 @@ export default function TechIntro() {
         {/* Left Side: interactive lists/triggers */}
         <div className="lg:col-span-5 flex flex-col justify-between space-y-4">
           <div className="space-y-4">
-            <div className="text-[10px] tracking-[0.32em] text-[#f4cf8a]  font-semibold flex items-center gap-2">
+            <div className="text-[10px] tracking-[0.16em] text-[#f4cf8a] font-sans uppercase font-bold flex items-center gap-2">
               <Zap size={10} className="text-[#f4cf8a]" />
               <span>Core System Architecture</span>
             </div>
             
             <h3 className="text-2xl font-light text-white tracking-tight font-display leading-[1.15]">
-              Liquidity Harvest Design
+              Autonomous Execution Design
             </h3>
             
             <p className="text-xs text-white/50 leading-relaxed max-w-sm">
-              The Xenith AI infrastructure operates a delta-neutral, high-frequency execution protocol. By capturing micro-deviations across major exchange books, we harvest yield instantly without asset holding risks.
+              The Xenith AI system operates 24/7 as an autonomous trading agent. By integrating with major exchanges via secure APIs, the bot monitors market trends and initiates trades without taking custody of your capital.
             </p>
           </div>
 
@@ -102,7 +102,7 @@ export default function TechIntro() {
                       {tech.icon}
                     </div>
                     <div>
-                      <div className="text-[9px] tracking-wide text-[#f4cf8a]/60 ">{tech.tag}</div>
+                      <div className="text-[10px] tracking-[0.12em] text-[#f4cf8a]/80 font-sans font-semibold uppercase">{tech.tag}</div>
                       <div className="text-xs font-semibold text-white/90 mt-0.5">{tech.title}</div>
                     </div>
                   </div>
@@ -127,7 +127,7 @@ export default function TechIntro() {
             >
               {/* Feature info */}
               <div className="space-y-3.5">
-                <span className="text-[9px] tracking-wide text-[#f4cf8a]/60 ">
+                <span className="text-[10px] tracking-[0.15em] text-[#f4cf8a]/85 font-sans font-semibold uppercase">
                   {currentTech.tag}
                 </span>
                 
@@ -141,7 +141,7 @@ export default function TechIntro() {
               </div>
 
               {/* Dynamic Metric HUD strip */}
-              <div className="grid grid-cols-2 gap-4 bg-white/[0.02] border border-white/5 rounded-xl p-4 ">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-white/[0.02] border border-white/5 rounded-xl p-4 font-sans">
                 <div>
                   <div className="text-[8px] tracking-wider text-white/30">Metric Designate</div>
                   <div className="text-[10px] text-[#f4cf8a] font-semibold mt-0.5">{currentTech.metricLabel}</div>
@@ -154,15 +154,15 @@ export default function TechIntro() {
 
               {/* Process Flow Interactive diagram */}
               <div className="space-y-2.5">
-                <div className="text-[8px] tracking-wide text-white/35 ">
-                  Active Ingress Sequence Flow
+                <div className="text-[9px] tracking-[0.12em] text-[#f4cf8a]/60 font-sans font-semibold uppercase">
+                  Active Execution Sequence Flow
                 </div>
                 
-                <div className="grid grid-cols-3 gap-2 overflow-hidden text-center text-[9px]  text-white/60">
+                <div className="grid grid-cols-3 gap-1.5 sm:gap-2 overflow-hidden text-center text-[9px] sm:text-[10px] font-sans text-white/65">
                   {currentTech.flowSteps.map((step, idx) => (
-                    <div 
-                      key={idx} 
-                      className="relative bg-black/60 border border-white/5 rounded-lg py-2.5 px-1.5 flex flex-col justify-center items-center min-h-[44px]"
+                    <div
+                      key={idx}
+                      className="relative bg-black/60 border border-white/5 rounded-lg py-2.5 px-1 sm:px-1.5 flex flex-col justify-center items-center min-h-[44px]"
                     >
                       <div className="absolute top-1 left-1.5 text-[8px] text-white/30 font-bold">0{idx + 1}</div>
                       <span className="text-white/80 leading-snug px-0.5">{step}</span>
@@ -175,12 +175,12 @@ export default function TechIntro() {
           </AnimatePresence>
 
           {/* Secure watermark block */}
-          <div className="mt-6 pt-4 border-t border-white/[0.04] flex items-center justify-between text-[9px]  text-white/30">
-            <span className="flex items-center gap-1.5">
+          <div className="mt-6 pt-4 border-t border-white/[0.04] flex items-center justify-between text-[10px] tracking-wide font-sans text-white/35 font-normal">
+            <span className="flex items-center gap-1.5 uppercase tracking-wider text-[9px] font-semibold text-white/40">
               <Lock size={9} className="text-[#f4cf8a]" />
               Secured with Standard High-Grade Encryption
             </span>
-            <span>Xenith Secure Session</span>
+            <span className="uppercase tracking-wider text-[9px] font-semibold text-white/40">Xenith Secure Session</span>
           </div>
 
         </div>

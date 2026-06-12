@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import { 
   Sparkles, 
   Code2, 
@@ -57,8 +57,8 @@ export default function ProductPage({
       <div className="absolute top-[1400px] left-1/2 -translate-x-[35%] w-[650px] h-[650px] rounded-full border border-white/[0.012] pointer-events-none z-0" />
 
       {/* Product View Header (Matching Design exactly) */}
-      <header className="relative z-20 border-b border-white/[0.04] bg-black/10 backdrop-blur-md text-xs tracking-[0.28em] text-white/45">
-        <div className="flex items-center justify-between px-8 py-5">
+      <header className="relative z-20 border-b border-white/[0.04] bg-black/10 backdrop-blur-md text-xs tracking-[0.11em] text-white/45">
+        <div className="flex items-center justify-between px-5 sm:px-8 py-5">
           <div className="flex items-center gap-9">
             <div 
               className="flex items-center gap-2.5 cursor-pointer group select-none" 
@@ -105,7 +105,7 @@ export default function ProductPage({
               transition={{ duration: 0.25, ease: "easeInOut" }}
               className="border-t border-white/[0.04] bg-[#060505]/98 backdrop-blur-lg lg:hidden overflow-hidden"
             >
-              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-wide">
+              <nav className="flex flex-col px-8 py-6 gap-5 text-xs tracking-[0.1em]">
                 <a 
                   className="text-white border-l-2 border-[#f4cf8a] pl-3 font-medium py-2.5 cursor-pointer transition" 
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -169,20 +169,20 @@ export default function ProductPage({
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 py-20 lg:py-28">
         
         {/* Hero Section Label */}
-        <div className="mb-6 text-[10px] md:text-xs uppercase tracking-wide text-[#f4cf8a]/65 ">
-          [ Product ]
+        <div className="mb-6 text-[10px] md:text-xs uppercase tracking-[0.12em] text-[#f4cf8a]/65 font-sans">
+          Institutional Suite
         </div>
 
         {/* Hero Big Title */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal tracking-[-0.04em] leading-[1.1] max-w-3xl mb-8 font-display">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/70">Simple financial AI.</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/70">Institutional AI</span>
           <br />
-          <span className="text-white/25 mt-1 block">Three friendly surfaces.</span>
+          <span className="text-white/25 mt-1 block">Trading Intelligence.</span>
         </h1>
 
         {/* Hero Description */}
         <p className="text-sm sm:text-base text-white/50 max-w-2xl leading-relaxed mb-12 sm:mb-20 md:mb-32">
-          Xenith provides a complete companion suite: an easy AI assistant for answering financial questions, a developer-friendly sandbox to test your code, and step-by-step guides that make learning digital finance straightforward.
+          Xenith provides three fully integrated execution layers: institutional trading intelligence (Xenith Assistant), full-scale execution infrastructure (Developer API), and elite deployment playbooks (Guides). We unify advanced market reasoning, strategic automated decisions, and high-performance routing into a single high-trust platform.
         </p>
 
         {/* THREE SURFACES DETAILS SECTION */}
@@ -195,34 +195,38 @@ export default function ProductPage({
             <div className="lg:col-span-6 space-y-6">
               
               {/* Category Pill Tag */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-wide text-white/75  backdrop-blur">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-[0.1em] text-white/75 font-sans backdrop-blur">
                 <Sparkles size={11} className="text-[#e5c185]" />
-                Xenith Assistant
+                Trading Intelligence
               </div>
 
               {/* Title */}
               <h2 className="text-2xl sm:text-3xl font-light tracking-[-0.03em] font-display text-white leading-snug">
-                An easy chat workspace for your finance questions.
+                Xenith Assistant: The Elite Copilot for Trading Operations
               </h2>
 
               {/* Text */}
               <p className="text-sm text-white/50 leading-relaxed font-sans">
-                Ask about market concepts, compare investment ideas in simple terms, and draft hypothetical budget plans in plain English. There are no confusing formulas or hidden black boxes.
+                Deploy conversational intelligence to analyze market structures, trace order blocks, and evaluate capital allocation. Xenith Assistant is your premier copilot, turning complex cross-exchange datasets into swift, actionable trading insights.
               </p>
 
               {/* Bullets with customized golden bullet styling */}
               <ul className="space-y-3.5 pt-2 text-xs sm:text-sm text-white/70 transition-all">
                 <li className="flex items-start gap-2.5">
                   <span className="text-[#e5c185] font-bold select-none">•</span>
-                  <span>Natural language chat to explore live and mock market data easily</span>
+                  <span>Analyze live market regimes, liquidity distributions, and execution paths via natural language</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="text-[#e5c185] font-bold select-none">•</span>
-                  <span>Clear explanations with links to helpful financial education sites</span>
+                  <span>Query real-time risk summaries, order flow structures, and trend diagnostics instantly</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="text-[#e5c185] font-bold select-none">•</span>
-                  <span>Private and safe sandbox environment for stress-free practicing</span>
+                  <span>Define custom position-pricing models and routing parameters programmatically</span>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <span className="text-[#e5c185] font-bold select-none">•</span>
+                  <span>Conduct detailed post-trade logic reviews and inspect execution logs in a secure panel</span>
                 </li>
               </ul>
             </div>
@@ -241,7 +245,7 @@ export default function ProductPage({
                       <div className="w-2.5 h-2.5 rounded-full bg-red-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-green-500/30" />
-                      <span className="text-[9px]  uppercase tracking-wide text-white/30 ml-2">Xenith Chat v1.4</span>
+                      <span className="text-[9px] font-sans uppercase tracking-wide text-white/30 ml-2">Xenith Chat v1.4</span>
                     </div>
 
                     {/* Chat Bubble Simulation */}
@@ -291,28 +295,34 @@ export default function ProductPage({
                       <div className="w-2.5 h-2.5 rounded-full bg-red-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-green-500/30" />
-                      <span className="text-[9px]  uppercase tracking-wide text-white/30 ml-2">curl_sandbox.sh</span>
+                      <span className="text-[9px] font-sans uppercase tracking-wide text-white/30 ml-2">curl_sandbox.sh</span>
                     </div>
 
                     {/* Developer Code Simulation lines */}
-                    <div className="space-y-3  text-[10px] sm:text-xs text-white/40 pt-2 leading-relaxed">
+                    <div className="space-y-3 font-sans text-[10px] sm:text-xs text-white/40 pt-1 leading-relaxed">
                       <div>
-                        <span className="text-[#e5c185]">const</span> <span className="text-white/80">xenith</span> = <span className="text-[#e5c185]">new</span> <span className="text-teal-400">XenithClient</span>(<span className="text-white/60">{"{"}</span>
+                        <span className="text-[#e5c185]">const</span> <span className="text-white/80">xenith</span> = <span className="text-[#e5c185]">new</span> <span className="text-teal-400">XenithEngine</span>(<span className="text-white/60">{"{"}</span>
                       </div>
                       <div className="pl-4">
-                        <span className="text-zinc-500">apiKey:</span> <span className="text-green-300">"xk_test_sec_demo_abc"</span>
+                        <span className="text-zinc-500">api_key:</span> <span className="text-green-300">"xe_live_inst_prod_8f1s"</span>,
+                      </div>
+                      <div className="pl-4">
+                        <span className="text-zinc-500">network:</span> <span className="text-green-300">"mainnet-low-latency"</span>
                       </div>
                       <div>
                         <span className="text-white/60">{"});"}</span>
                       </div>
-                      <div className="pt-2">
-                        <span className="text-[#e5c185]">const</span> <span className="text-white/80">stream</span> = <span className="text-[#e5c185]">await</span> <span className="text-white/80">xenith</span>.<span className="text-sky-300">intelligence</span>.<span className="text-sky-300">stream</span>(<span className="text-white/60">{"{"}</span>
+                      <div className="pt-1">
+                        <span className="text-[#e5c185]">const</span> <span className="text-white/80">execution</span> = <span className="text-[#e5c185]">await</span> <span className="text-white/80">xenith</span>.<span className="text-sky-300">intelligence</span>.<span className="text-sky-300">evaluateStrategy</span>(<span className="text-white/60">{"{"}</span>
                       </div>
                       <div className="pl-4">
-                        <span className="text-zinc-500">model:</span> <span className="text-green-300">"xenith-friendly-v1"</span>,
+                        <span className="text-zinc-500">strategy:</span> <span className="text-green-300">"delta_neutral_arbitrage"</span>,
                       </div>
                       <div className="pl-4">
-                        <span className="text-zinc-500">grounding:</span> <span className="text-[#e5c185]">true</span>
+                        <span className="text-zinc-500">risk_profile:</span> <span className="text-green-300">"institutional_strict"</span>,
+                      </div>
+                      <div className="pl-4">
+                        <span className="text-zinc-500">allocation_ratio:</span> <span className="text-[#e5c185]">0.50</span>
                       </div>
                       <div>
                         <span className="text-white/60">{"});"}</span>
@@ -323,7 +333,7 @@ export default function ProductPage({
                   {/* status tag */}
                   <div className="pt-2 flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#f4cf8a] animate-ping" />
-                    <span className="text-[9px]  uppercase text-[#f4cf8a]/80 tracking-wide">Safe sandbox active (200 OK)</span>
+                    <span className="text-[9px] font-sans uppercase text-[#f4cf8a]/80 tracking-wide">Safe sandbox active (200 OK)</span>
                   </div>
                 </div>
               </div>
@@ -333,34 +343,38 @@ export default function ProductPage({
             <div className="lg:col-span-6 space-y-6">
               
               {/* Category Pill Tag */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-wide text-white/75  backdrop-blur">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-[0.1em] text-white/75 font-sans backdrop-blur">
                 <Code2 size={11} className="text-[#e5c185]" />
-                Xenith Developer API
+                Execution Infrastructure
               </div>
 
               {/* Title */}
               <h2 className="text-2xl sm:text-3xl font-light tracking-[-0.03em] font-display text-white leading-snug">
-                Simple sandbox API for quick prototyping.
+                Developer API: Direct Integration & Automated Execution
               </h2>
 
               {/* Text */}
               <p className="text-sm text-white/50 leading-relaxed font-sans">
-                A simple and clean API to write your very first financial script or bot. Read simulated balances, format mock invoices, and build your own custom helper dashboards effortlessly.
+                Access Xenith’s performance layers directly via low-latency endpoints. Programmatically deploy quantitative models, route orders, automate trade sequences, and track real-time portfolio risk using unified API nodes.
               </p>
 
               {/* Bullets */}
               <ul className="space-y-3.5 pt-2 text-xs sm:text-sm text-white/70">
                 <li className="flex items-start gap-2.5">
                   <span className="text-[#e5c185] font-bold select-none">•</span>
-                  <span>Simple API keys that let you build without fear of breaking anything</span>
+                  <span>Deploy custom algorithms and execution options with high-precision APIs</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="text-[#e5c185] font-bold select-none">•</span>
-                  <span>No complex backend setup required — run everything directly on a simple web page</span>
+                  <span>Stream real-time price feeds, live ledger order logs, and active risk metrics</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="text-[#e5c185] font-bold select-none">•</span>
-                  <span>Webhooks to notify your code when a simulated payment completes</span>
+                  <span>Configure secure Webhooks to automate execution on critical system alerts</span>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <span className="text-[#e5c185] font-bold select-none">•</span>
+                  <span>Integrate smoothly with key exchange networks and secure custody solutions</span>
                 </li>
               </ul>
             </div>
@@ -373,34 +387,38 @@ export default function ProductPage({
             <div className="lg:col-span-6 space-y-6">
               
               {/* Category Pill Tag */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-wide text-white/75  backdrop-blur">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-1.5 text-[10px] uppercase tracking-[0.1em] text-white/75 font-sans backdrop-blur">
                 <FileText size={11} className="text-[#e5c185]" />
-                Xenith Guides
+                Xenith Playbooks
               </div>
 
               {/* Title */}
               <h2 className="text-2xl sm:text-3xl font-light tracking-[-0.03em] font-display text-white leading-snug">
-                Plain-English guides with copy-paste magic.
+                Xenith Playbooks: Strategic Guides & Deployment Blueprints
               </h2>
 
               {/* Text */}
               <p className="text-sm text-white/50 leading-relaxed font-sans">
-                No dry manuals here. We write step-by-step guides with fully working examples in Python and TypeScript, accompanied by interactive mock data so you can see things run in real time.
+                Deploy battle-tested execution blueprints and risk management frameworks. Our playbooks deliver complete mathematical strategies, ready-to-run code blocks, and optimal cross-market configurations.
               </p>
 
               {/* Bullets */}
               <ul className="space-y-3.5 pt-2 text-xs sm:text-sm text-white/70">
                 <li className="flex items-start gap-2.5">
                   <span className="text-[#e5c185] font-bold select-none">•</span>
-                  <span>Pre-filled templates for common budgets and compound interest charts</span>
+                  <span>Access refined templates for automated market-making, arbitrage, and route planning</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="text-[#e5c185] font-bold select-none">•</span>
-                  <span>Easy reference guides mapping digital finance concepts</span>
+                  <span>Deconstruct real AI trade operations to master quantitative risk and allocation rules</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <span className="text-[#e5c185] font-bold select-none">•</span>
-                  <span>Fully interactive playground that requires no installations</span>
+                  <span>Deploy advanced multi-agent coordination models and re-routing setups safely</span>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <span className="text-[#e5c185] font-bold select-none">•</span>
+                  <span>Simulate execution parameters inside secure sandboxes before live-money deployment</span>
                 </li>
               </ul>
             </div>
@@ -420,14 +438,14 @@ export default function ProductPage({
                       <div className="w-2.5 h-2.5 rounded-full bg-red-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/30" />
                       <div className="w-2.5 h-2.5 rounded-full bg-green-500/30" />
-                      <span className="text-[9px]  uppercase tracking-wide text-white/30 ml-2">sample_workbook.json</span>
+                      <span className="text-[9px] font-sans uppercase tracking-wide text-white/30 ml-2">execution_blueprint.json</span>
                     </div>
 
                     {/* Documentation Simulation design */}
                     <div className="space-y-3 pt-3">
-                      <div className="flex justify-between items-center text-[10px]  border-b border-white/[0.03] pb-1.5">
-                        <span className="text-white/60">GET /v1/simulation/balance</span>
-                        <span className="text-[#e5c185] px-1.5 py-0.5 rounded bg-[#e5c185]/10 text-[8px]">SANDBOX</span>
+                      <div className="flex justify-between items-center text-[10px] font-sans border-b border-white/[0.03] pb-1.5">
+                        <span className="text-white/60">GET /v1/market/state</span>
+                        <span className="text-[#e5c185] px-1.5 py-0.5 rounded bg-[#e5c185]/10 text-[8px]">LIVE PROD</span>
                       </div>
                       
                       <div className="space-y-2">
@@ -436,10 +454,10 @@ export default function ProductPage({
                         <div className="h-1.5 bg-white/5 rounded w-10/12" />
                       </div>
 
-                      <div className="p-2.5 rounded bg-black/30 border border-white/5  text-[9px] text-teal-300">
-                        "{`status`}": "{`demo_account_active`}",
+                      <div className="p-2.5 rounded bg-black/30 border border-white/5 font-sans text-[9px] text-teal-300">
+                        "{`status`}": "{`execution_layer_active`}",
                         <br />
-                        "{`mock_balance`}": 5000.00
+                        "{`target_liquidity`}": "deep_orderbook"
                       </div>
                     </div>
                   </div>
@@ -455,7 +473,7 @@ export default function ProductPage({
         {/* USE CASES SECTION - Matches grid structure */}
         <div className="border-t border-white/[0.08] pt-12 sm:pt-16 md:pt-24 pb-12 sm:pb-16 md:pb-24 relative">
           
-          <div className="mb-12 text-[10px] md:text-xs uppercase tracking-wide text-[#f4cf8a]/65 ">
+          <div className="mb-12 text-[10px] md:text-xs uppercase tracking-[0.12em] text-[#f4cf8a]/65 font-sans">
             [ Use Cases ]
           </div>
 
@@ -466,9 +484,9 @@ export default function ProductPage({
               <div className="p-2 text-[#e5c185] bg-white/[0.02] border border-white/5 rounded-lg w-fit mb-5">
                 <Layers size={18} />
               </div>
-              <h3 className="text-lg font-normal mb-3 font-display text-white">Financial Planning</h3>
+              <h3 className="text-lg font-normal mb-3 font-display text-white">AI Trading Operations</h3>
               <p className="text-xs text-white/45 leading-relaxed font-sans">
-                Practice analyzing budgets, tracking savings benchmarks, and calculating potential long-term investment growth.
+                Streamline transaction flows, track high-frequency benchmark metrics, and deploy deep-reasoning agents to automatically adapt to dynamic liquidity events.
               </p>
             </div>
 
@@ -477,9 +495,9 @@ export default function ProductPage({
               <div className="p-2 text-[#e5c185] bg-white/[0.02] border border-white/5 rounded-lg w-fit mb-5">
                 <Database size={18} />
               </div>
-              <h3 className="text-lg font-normal mb-3 font-display text-white">Simple Learning</h3>
+              <h3 className="text-lg font-normal mb-3 font-display text-white">Strategy Development</h3>
               <p className="text-xs text-white/45 leading-relaxed font-sans">
-                Instantly pull mock portfolios, interactive charts, and token listings to understand digital ledger logic safely.
+                Backtest quantitative ideas, ingest multi-venue orderbook statistics, and construct complex multi-stage strategies inside a low-latency environment.
               </p>
             </div>
 
@@ -488,9 +506,9 @@ export default function ProductPage({
               <div className="p-2 text-[#e5c185] bg-white/[0.02] border border-white/5 rounded-lg w-fit mb-5">
                 <ShieldCheck size={18} />
               </div>
-              <h3 className="text-lg font-normal mb-3 font-display text-white">Interactive History</h3>
+              <h3 className="text-lg font-normal mb-3 font-display text-white">Execution Intelligence</h3>
               <p className="text-xs text-white/45 leading-relaxed font-sans">
-                Review and audit your sandbox actions with simple transaction graphs, showing exactly how money moves.
+                Review execution trails, evaluate slippage logs, and audit decentralized ledger routes with integrated state visualizations.
               </p>
             </div>
 
@@ -502,25 +520,25 @@ export default function ProductPage({
         <div className="border-t border-white/[0.08] pt-12 sm:pt-16 md:pt-24 pb-12 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
             <h2 className="text-3xl sm:text-4xl font-light tracking-[-0.03em] font-display text-white mb-2 leading-tight">
-              Ready to try Xenith AI for yourself?
+              Ready to deploy Xenith AI?
             </h2>
             <p className="text-xs sm:text-sm text-white/40">
-              Start playing in minutes within our risk-free, sandboxed workspace.
+              Integrate with our high-trust execution suite and master multi-market capital allocation.
             </p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto shrink-0">
             <button 
               onClick={onNavigatePricing}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-white text-black px-7 py-3 text-xs uppercase tracking-wide font-medium hover:bg-[#ffe5b0] transition-colors duration-300 cursor-pointer"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-white text-black px-7 py-3 text-xs uppercase tracking-[0.06em] font-medium hover:bg-[#ffe5b0] transition-colors duration-300 cursor-pointer"
             >
-              View Free & Premium Tiers <ArrowUpRight size={14} />
+              View Institutional Tiers <ArrowUpRight size={14} />
             </button>
             <button 
               onClick={onTryXenith}
-              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full border border-white/10 hover:border-white/30 px-7 py-3 text-xs uppercase tracking-wide font-medium text-white/80 hover:text-white transition duration-300 cursor-pointer"
+              className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full border border-white/10 hover:border-white/30 px-7 py-3 text-xs uppercase tracking-[0.06em] font-medium text-white/80 hover:text-white transition duration-300 cursor-pointer"
             >
-              How Chat Works <ArrowRight size={14} />
+              Explore Intelligence Terminal <ArrowRight size={14} />
             </button>
           </div>
         </div>
@@ -528,11 +546,11 @@ export default function ProductPage({
       </div>
 
       {/* Elegant Footer Details */}
-      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-8 text-xs tracking-wide text-white/40  z-10 relative">
+      <footer className="border-t border-white/[0.04] bg-black/40 py-12 px-6 sm:px-8 text-xs tracking-[0.15em] text-white/40 font-sans z-10 relative">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2.5 select-none pointer-events-none">
             <XenithLogo size={20} className="opacity-60" />
-            <span className="text-[10px] tracking-wide text-white/50">Xenith Labs © 2026</span>
+            <span className="text-[10px] tracking-[0.12em] text-white/50">Xenith Labs © 2026</span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-9 text-[9px] lg:text-[10px] uppercase">
             <a onClick={onNavigateCompany} className="hover:text-white transition cursor-pointer">Company</a>
